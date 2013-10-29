@@ -213,6 +213,15 @@ docpadConfig = {
 		
 		# Portfolio list 
 		portfolio: [
+		  # Recovery
+		  name: "Recovery Brasil"
+		  idName: "recovery"
+		  thumb: "/assets/img/portfolio/site-recovery-brasil-thumb.jpg"
+		  imgModal: "/assets/img/portfolio/site-recovery-brasil.jpg"
+		  participation: "Desenvolvimento do HTML, CSS e Javascript."
+		  participationEn: "Development of HTML, CSS and Javascript."
+		  link: "http://www.recoverybrasil.com.br/"
+		,  
 		  # Trend-i
 		  name: "Trend-i"
 		  idName: "trendi"
@@ -221,15 +230,6 @@ docpadConfig = {
 		  participation: "Desenvolvimento do HTML, CSS e Javascript."
 		  participationEn: "Development of HTML, CSS and Javascript."
 		  link: "http://www.trendi.com.br/"
-		,  
-		  # Max In Time
-		  name: "Max in Time"
-		  idName: "max-in-time"
-		  thumb: "/assets/img/portfolio/site-max-in-time-thumb.jpg"
-		  imgModal: "/assets/img/portfolio/site-max-in-time.jpg"
-		  participation: "Desenvolvimento do HTML, CSS e Javascript."
-		  participationEn: "Development of HTML, CSS and Javascript."
-		  link: "http://www.maxintime.net.br/"
 		,  
 		  # BTG
 		  name: "BTG Pactual"
