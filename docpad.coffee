@@ -213,6 +213,15 @@ docpadConfig = {
 		
 		# Portfolio list 
 		portfolio: [
+		  # JPR 2014
+		  name: "JPR 2014"
+		  idName: "jpr-2014"
+		  thumb: "/assets/img/portfolio/site-jpr-2014-thumb.jpg"
+		  imgModal: "/assets/img/portfolio/site-jpr-2014.jpg"
+		  participation: "Desenvolvimento do HTML, CSS e Javascript."
+		  participationEn: "Development of HTML, CSS and Javascript."
+		  link: "http://www.spr.org.br/pt/jpr/2014/"
+		,  
 		  # Recovery
 		  name: "Recovery Brasil"
 		  idName: "recovery"
