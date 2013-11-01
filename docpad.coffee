@@ -152,33 +152,40 @@ docpadConfig = {
 
 		# Projetos list 
 		projetos: [
+		  # Piano Keyboard
+		  name: "Piano Keyboard"
+		  thumb: "/assets/img/projetos/piano-keyboard.jpg"
+		  participation: "Piano usando CSS, HTML e Javascript"
+		  participationEn: "Piano Keyboard developed in HTML, CSS and Javascript"
+		  demo: "http://www.felipefialho.com/piano/"   
+		,
 		  # Table Responsive
 		  name: "Table Responsive - Action"
 		  thumb: "/assets/img/projetos/table-action.jpg"
-		  participation: "Exemplo de 'Tabela Responsiva' para modelo com ações"
+		  participation: "Exemplo de 'Tabela Responsiva' para modelo com ações."
 		  participationEn: "Other example of 'Table Responsive'. This example, is indicated for tables that require actions."
-		  link: "http://codepen.io/LFeh/pen/beEoG"   
+		  demo: "http://codepen.io/LFeh/pen/beEoG"   
 		,
 		  # Table Action
 		  name: "Table Responsive"
 		  thumb: "/assets/img/projetos/table-responsive.jpg"
 		  participation: "Exemplo de 'Tabela Responsiva'"
 		  participationEn: "Example of 'Table Responsive' for better adjust in small sizes."
-		  link: "http://codepen.io/LFeh/pen/hsreD"   
+		  demo: "http://codepen.io/LFeh/pen/hsreD"   
 		,
 		  # Progress
 		  name: "Button Progress"
 		  thumb: "/assets/img/projetos/button-progress.jpg"
 		  participation: "'Botão de Progresso' usando CSS Animate"
 		  participationEn: "Button Progress in CSS Animate"
-		  link: "http://codepen.io/LFeh/pen/KviDw"   
+		  demo: "http://codepen.io/LFeh/pen/KviDw"   
 		,
 		  # Social Media CSS3
 		  name: "Pure CSS3 - Social Media"
 		  thumb: "/assets/img/projetos/social-media-css3.jpg"
 		  participation: "Caixa de redes sociais com animações em CSS3"
 		  participationEn: "Elegant box of 'Social Networks' animated using only CSS"
-		  link: "http://codepen.io/LFeh/details/IvmJD"   
+		  demo: "http://codepen.io/LFeh/details/IvmJD"   
 		,
 		  # Grunt base
 		  name: "Grunt Base"
@@ -192,7 +199,6 @@ docpadConfig = {
 		  thumb: "/assets/img/projetos/nav-css3.jpg"
 		  participation: "Sub-Navegação usando apenas CSS."
 		  participationEn: "Navigation in pure CSS3, contains submenu and delay using only CSS."
-		  link: "https://github.com/LFeh/NavPureCSS3"   
 		  demo: "http://codepen.io/LFeh/pen/BLpcG"    
 		,
 		  # Cartman
@@ -200,8 +206,7 @@ docpadConfig = {
 		  thumb: "/assets/img/projetos/cartman-css3.jpg"
 		  participation: "Protótipo de Eric Cartman totalmente desenvolvido em CSS3. Fiz para estudos, mas curti o resultado final."
 		  participationEn: "Eric Cartman in Pure CSS3 (with animation)."
-		  link: "http://codepen.io/LFeh/pen/qzDCJ"   
-		  demo: "https://developer.mozilla.org/pt-BR/demos/detail/pure-css3-eric-cartman"    
+		  demo: "http://codepen.io/LFeh/pen/qzDCJ"    
 		,     
 		  # Website
 		  name: "LFeh Website"
