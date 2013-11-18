@@ -77,8 +77,14 @@ docpadConfig = {
 		
 		# Blog posts
 		posts: [
+		  name: 'Usando height com CSS Transitions'
+		  description: 'Me deparei com um problema que alguns de vocês já devem ter passado, e posto aqui a resolução dele: A limitação do uso de "height: auto" em CSS Transitions.'
+		  date: '18/11/2013'
+		  year: '2013'
+		  path: 'usando-height-com-css-transitions'
+		,  
 		  name: 'Tutorial - Tabela Responsiva'
-		  description: 'Em layouts responsivos, um dos componentes que sempre me incomodava eram as tabelas. Acredito que isso também ocorra com outros desenvolvedores....'
+		  description: 'Em layouts responsivos, um dos componentes que sempre me incomodava eram as tabelas. Acredito que isso também ocorra com outros desenvolvedores...'
 		  date: '14/10/2013'
 		  year: '2013'
 		  path: 'tutorial-tabela-responsiva'
