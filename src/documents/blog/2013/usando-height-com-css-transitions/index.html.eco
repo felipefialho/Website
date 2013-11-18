@@ -7,11 +7,11 @@ path: "../../../"
 pathBlog: "../../"
 ---
 
-<p class="lead">Hoje me deparei com um problema que alguns de vocês já devem ter passado, e posto aqui a resolução dele: A limitação do uso de "height: auto" em CSS Transitions.</p>
+<p class="lead">Hoje me deparei com um problema que alguns de vocês já devem ter passado, e posto aqui a resolução: A limitação do uso de "height: auto" em CSS Transitions.</p>
  
 <h3>O problema</h3>
 
-<p>Você precisa expandir a altura de algum elemento que está escondido ao invés de um simples "display: none/block" resolve usar CSS Transitions para o movimento ficar mais interessante e emular um "slide-down".</p>
+<p>Você precisa expandir a altura de algum elemento que está escondido e ao invés de um simples "display: none/block", resolve usar CSS Transitions para o movimento ficar mais interessante e emular um "slide-down".</p>
 
 <p>Então você faz algo desse tipo:</p>
 
