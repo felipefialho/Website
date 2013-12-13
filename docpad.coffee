@@ -158,6 +158,13 @@ docpadConfig = {
 
 		# Projetos list 
 		projetos: [
+		  # Merry Christmas!
+		  name: "Pure CSS - Merry Christmas!"
+		  thumb: "/assets/img/projetos/merry-christmas.jpg"
+		  participation: "Pure CSS Especial de Natal"
+		  participationEn: "Christmas Special in Pure CSS"
+		  demo: "http://codepen.io/LFeh/details/EjcBK"   
+		,
 		  # Piano Keyboard
 		  name: "Piano Keyboard"
 		  thumb: "/assets/img/projetos/piano-keyboard.jpg"
@@ -170,21 +177,21 @@ docpadConfig = {
 		  thumb: "/assets/img/projetos/table-action.jpg"
 		  participation: "Exemplo de 'Tabela Responsiva' para modelo com ações."
 		  participationEn: "Other example of 'Table Responsive'. This example, is indicated for tables that require actions."
-		  demo: "http://codepen.io/LFeh/pen/beEoG"   
+		  demo: "http://codepen.io/LFeh/details/beEoG"   
 		,
 		  # Table Action
 		  name: "Table Responsive"
 		  thumb: "/assets/img/projetos/table-responsive.jpg"
 		  participation: "Exemplo de 'Tabela Responsiva'"
 		  participationEn: "Example of 'Table Responsive' for better adjust in small sizes."
-		  demo: "http://codepen.io/LFeh/pen/hsreD"   
+		  demo: "http://codepen.io/LFeh/details/hsreD"   
 		,
 		  # Progress
 		  name: "Button Progress"
 		  thumb: "/assets/img/projetos/button-progress.jpg"
 		  participation: "'Botão de Progresso' usando CSS Animate"
 		  participationEn: "Button Progress in CSS Animate"
-		  demo: "http://codepen.io/LFeh/pen/KviDw"   
+		  demo: "http://codepen.io/LFeh/details/KviDw"   
 		,
 		  # Social Media CSS3
 		  name: "Pure CSS3 - Social Media"
@@ -205,14 +212,14 @@ docpadConfig = {
 		  thumb: "/assets/img/projetos/nav-css3.jpg"
 		  participation: "Sub-Navegação usando apenas CSS."
 		  participationEn: "Navigation in pure CSS3, contains submenu and delay using only CSS."
-		  demo: "http://codepen.io/LFeh/pen/BLpcG"    
+		  demo: "http://codepen.io/LFeh/details/BLpcG"    
 		,
 		  # Cartman
 		  name: "Pure CSS3 - Eric Cartman"
 		  thumb: "/assets/img/projetos/cartman-css3.jpg"
 		  participation: "Protótipo de Eric Cartman totalmente desenvolvido em CSS3. Fiz para estudos, mas curti o resultado final."
 		  participationEn: "Eric Cartman in Pure CSS3 (with animation)."
-		  demo: "http://codepen.io/LFeh/pen/qzDCJ"    
+		  demo: "http://codepen.io/LFeh/details/qzDCJ"    
 		,     
 		  # Website
 		  name: "LFeh Website"
