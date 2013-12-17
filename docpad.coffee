@@ -78,7 +78,7 @@ docpadConfig = {
 		# Blog posts
 		posts: [
 		  name: 'Retrospectiva 2013'
-		  description: 'Me deparei com um problema que alguns de vocês já devem ter passado, e posto aqui a resolução dele: A limitação do uso de "height: auto" em CSS Transitions.'
+		  description: 'Último dia de trabalho no ano, e é o momento ideal para analisar o que foi feito esse ano, reforçar as bases e se preparar para ter um 2014 ainda mais produtivo.'
 		  date: '17/12/2013'
 		  year: '2013'
 		  path: 'retrospectiva-2013'
