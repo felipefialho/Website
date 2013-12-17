@@ -78,7 +78,7 @@ docpadConfig = {
 		# Blog posts
 		posts: [
 		  name: 'Retrospectiva 2013'
-		  description: 'Último dia de trabalho no ano, e é o momento ideal para analisar o que foi feito esse ano, reforçar as bases e se preparar para ter um 2014 ainda mais produtivo.'
+		  description: 'Último dia de trabalho no ano, e é o momento ideal para analisar o que foi feito, reforçar as bases e se preparar para ter um 2014 ainda mais produtivo.'
 		  date: '17/12/2013'
 		  year: '2013'
 		  path: 'retrospectiva-2013'
