@@ -77,6 +77,12 @@ docpadConfig = {
 		
 		# Blog posts
 		posts: [
+		  name: 'Retrospectiva 2013'
+		  description: 'Me deparei com um problema que alguns de vocês já devem ter passado, e posto aqui a resolução dele: A limitação do uso de "height: auto" em CSS Transitions.'
+		  date: '17/12/2013'
+		  year: '2013'
+		  path: 'retrospectiva-2013'
+		,  
 		  name: 'Usando height com CSS Transitions'
 		  description: 'Me deparei com um problema que alguns de vocês já devem ter passado, e posto aqui a resolução dele: A limitação do uso de "height: auto" em CSS Transitions.'
 		  date: '18/11/2013'
@@ -194,7 +200,7 @@ docpadConfig = {
 		  demo: "http://codepen.io/LFeh/details/KviDw"   
 		,
 		  # Social Media CSS3
-		  name: "Pure CSS3 - Social Media"
+		  name: "Social Media Box"
 		  thumb: "/assets/img/projetos/social-media-css3.jpg"
 		  participation: "Caixa de redes sociais com animações em CSS3"
 		  participationEn: "Elegant box of 'Social Networks' animated using only CSS"
