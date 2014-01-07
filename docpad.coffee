@@ -164,6 +164,13 @@ docpadConfig = {
 
 		# Projetos list 
 		projetos: [
+		  # A Clockwork Orange
+		  name: "Pure CSS - A Clockwork Orange"
+		  thumb: "/assets/img/projetos/clockwork-orange.jpg"
+		  participation: "Pure CSS homenageando o filme Laranja Mecânica."
+		  participationEn: "My tribute in Pure CSS to this great movie."
+		  demo: "http://codepen.io/LFeh/details/kjlnJ"   
+		,
 		  # Merry Christmas!
 		  name: "Pure CSS - Merry Christmas!"
 		  thumb: "/assets/img/projetos/merry-christmas.jpg"
