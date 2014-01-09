@@ -7,7 +7,7 @@ path: "../../../"
 pathBlog: "../../"
 ---
 
-<p class="lead">Possívelmente o Bootstrap tornou-se o Framework mais usado na web. Parte desse sucesso está ligada a facilidade de uso, responsividade e soluções interessantes prontas para usar. Mas será que podemos aperfeiçoar essa utilização?</p>
+<p class="lead">Parte do sucesso do Bootstrap está ligado a facilidade de uso, responsividade e soluções interessantes prontas para usar. Mas será que podemos aperfeiçoar essa utilização?</p>
 
 <p>Não é segredo que gosto muito do Bootstrap, faz parte do meu workflow e fiquei muito feliz quando minha <a href="https://github.com/twbs/bootstrap/pull/11162/files#r7084342">primeira contribuição</a> foi aprovada. Dessa forma vou detalhar para vocês como costumo utilizar esse Framework.</p>
 
