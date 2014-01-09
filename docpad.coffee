@@ -77,6 +77,12 @@ docpadConfig = {
 		
 		# Blog posts
 		posts: [
+		  name: 'Utilizando o Bootstrap de forma consistente'
+		  description: 'Possívelmente o Bootstrap tornou-se o Framework mais usado na web. Parte desse sucesso está ligada a facilidade de uso, responsividade e soluções interessantes prontas para usar. Mas será que podemos aperfeiçoar essa utilização?'
+		  date: '09/11/2014'
+		  year: '2014'
+		  path: 'utilizando-o-bootstrap-de-forma-consistente'
+		,  
 		  name: 'Retrospectiva 2013'
 		  description: 'Último dia de trabalho no ano, e é o momento ideal para analisar o que foi feito, reforçar as bases e se preparar para ter um 2014 ainda mais produtivo.'
 		  date: '17/12/2013'
