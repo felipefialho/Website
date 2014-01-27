@@ -170,6 +170,13 @@ docpadConfig = {
 
 		# Projetos list 
 		projetos: [
+		  # Modal - Pure CSS
+		  name: "Modal - Pure CSS"
+		  thumb: "/assets/img/projetos/modal-css.jpg"
+		  participation: "Exemplo de modal apenas com CSS, sem javascript."
+		  participationEn: "Example of modal in CSS only, no javascript."
+		  demo: "http://codepen.io/LFeh/details/kjlnJ"   
+		,
 		  # A Clockwork Orange
 		  name: "A Clockwork Orange"
 		  thumb: "/assets/img/projetos/clockwork-orange.jpg"
