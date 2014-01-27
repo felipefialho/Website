@@ -175,7 +175,7 @@ docpadConfig = {
 		  thumb: "/assets/img/projetos/modal-css.jpg"
 		  participation: "Exemplo de modal apenas com CSS, sem javascript."
 		  participationEn: "Example of modal in CSS only, no javascript."
-		  demo: "http://codepen.io/LFeh/details/kjlnJ"   
+		  demo: "http://codepen.io/LFeh/details/oEula"   
 		,
 		  # A Clockwork Orange
 		  name: "A Clockwork Orange"
