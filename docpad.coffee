@@ -401,7 +401,7 @@ docpadConfig = {
 		  imgModal: "/assets/img/portfolio/site-santander.jpg"
 		  participation: "Desenvolvimento do HTML e CSS. Participação no Javascript."
 		  participationEn: "Development of HTML, CSS and participation in Javascript."
-	    ]
+	  ]
 
 		# -----------------------------
 		# Helper Functions
