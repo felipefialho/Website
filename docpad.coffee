@@ -170,6 +170,14 @@ docpadConfig = {
 
 		# Projetos list 
 		projetos: [
+		  # CheSS.js
+		  name: "CheSS.js"
+		  thumb: "/assets/img/projetos/chess.jpg"
+		  participation: "Moderno jogo de Xadrez desenvolvido com HTML, CSS e Javascript."
+		  participationEn: "A modern and light chess game developed with HTML, CSS and Javascript."
+		  demo: "http://chessjs.trendi.com.br/chess",
+		  link: "https://github.com/chessjs/chess"      
+		,
 		  # Modal - Pure CSS
 		  name: "Modal - Pure CSS"
 		  thumb: "/assets/img/projetos/modal-css.jpg"
