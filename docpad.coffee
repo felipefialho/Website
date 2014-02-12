@@ -228,7 +228,7 @@ docpadConfig = {
 		  demo: "http://codepen.io/LFeh/details/KviDw"   
 		,
 		  # Social Media - Pure CSS
-		  name: "Social Media Box"
+		  name: "Social Media - Pure CSS"
 		  thumb: "/assets/img/projetos/social-media-css3.jpg"
 		  participation: "Caixa de redes sociais usando apenas CSS"
 		  participationEn: "Elegant box of 'Social Networks' using only CSS"
