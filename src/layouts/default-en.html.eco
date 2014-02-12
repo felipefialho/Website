@@ -22,11 +22,8 @@
 
 	<!-- Meta -->
 	<%- @getBlock('meta').toHTML() %>
-
-	<!-- Modernizr -->
-	<%- @getBlock('scripts').add(@site.scriptsTop).toHTML() %>
-
-	<!-- Styles + Our Own -->
+ 
+	<!-- Styles  -->
 	<%- @getBlock('styles').add(@site.styles).toHTML() %>
 
 	<!-- Favicon -->
@@ -65,9 +62,7 @@
 	</div>	
 	<!-- Scripts -->
 	<%- @getBlock('scripts').add(@site.scripts).toHTML() %>
-	<!--[if IE 7]>
-		<%- @getBlock("scripts").add(["/scripts/plugin/lte-ie7.js"]).toHTML() %>
-	<![endif]-->
+	
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
