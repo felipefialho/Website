@@ -227,12 +227,12 @@ docpadConfig = {
 		  participationEn: "Button Progress in CSS Animate"
 		  demo: "http://codepen.io/LFeh/details/KviDw"   
 		,
-		  # Social Media CSS3
+		  # Social Media - Pure CSS
 		  name: "Social Media Box"
 		  thumb: "/assets/img/projetos/social-media-css3.jpg"
-		  participation: "Caixa de redes sociais com animações em CSS3"
-		  participationEn: "Elegant box of 'Social Networks' animated using only CSS"
-		  demo: "http://codepen.io/LFeh/details/IvmJD"   
+		  participation: "Caixa de redes sociais usando apenas CSS"
+		  participationEn: "Elegant box of 'Social Networks' using only CSS"
+		  demo: "http://codepen.io/LFeh/details/ktixE"   
 		,
 		  # Grunt base
 		  name: "Grunt Base"
@@ -241,11 +241,11 @@ docpadConfig = {
 		  participationEn: "My Grunt Boilerplate"
 		  link: "https://github.com/LFeh/Grunt-Base"   
 		,
-		  # Nav in CSS3
-		  name: "Pure CSS3 - Navigation"
+		  # Nav in CSS
+		  name: "Navigation - Pure CSS"
 		  thumb: "/assets/img/projetos/nav-css3.jpg"
 		  participation: "Sub-Navegação usando apenas CSS."
-		  participationEn: "Navigation in pure CSS3, contains submenu and delay using only CSS."
+		  participationEn: "Navigation in pure CSS, contains submenu and delay using only CSS."
 		  demo: "http://codepen.io/LFeh/details/BLpcG"    
 		,
 		  # Cartman
