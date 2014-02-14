@@ -1,7 +1,7 @@
 {
   "name": "Website",
   "version": "0.0.1",
-  "description": "My Website using HTML5 Boilerplate skeleton for DocPad.",
+  "description": "My Website using DocPad.",
   "homepage": "www.felipefialho.com",
   "keywords": [
     "LFeh",
@@ -21,7 +21,7 @@
     "docpad": "6.38",
     "docpad-plugin-coffeescript": "latest",
     "sitemap": "latest",
-    "bal-util": ">=1.13.10 <1.14", 
+    "bal-util": ">=1.13.10 <1.14",
     "docpad-plugin-eco": "2.0.2",
     "docpad-plugin-marked": "~2.1.0",
     "docpad-plugin-partials": "2.6.3",
@@ -34,5 +34,8 @@
     "grunt-contrib-clean": "~0.4.1",
     "grunt-contrib-uglify": "~0.2.1"
   },
-  "main": "node_modules/docpad/bin/docpad-server"
+  "main": "node_modules/docpad/bin/docpad-server",
+  "devDependencies": {
+    "grunt-processhtml": "~0.3.0"
+  }
 }

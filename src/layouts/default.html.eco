@@ -56,6 +56,7 @@
 		</section>
 		<a class="fork" href="https://github.com/LFeh/Website"><img alt="Fork me on GitHub" src="/assets/img/default/fork.png"></a>
 	</div>	
+	
 	<!-- Scripts -->
 	<%- @getBlock('scripts').add(@site.scripts).toHTML() %>
 

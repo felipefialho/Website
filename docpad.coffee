@@ -38,12 +38,8 @@ docpadConfig = {
 			styles: [ 
 				'/assets/css/style.css'
 			]
-
-			# The website's scripts
-			scriptsTop: [
-				'/assets/js/modernizr-2.6.2.min.js'
-			]
-
+ 			
+ 			# Scripts
 			scripts: [ 
 				'/assets/js/scripts.min.js'
 			]
