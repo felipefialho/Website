@@ -230,12 +230,12 @@ docpadConfig = {
 		  participationEn: "Elegant box of 'Social Networks' using only CSS"
 		  demo: "http://codepen.io/LFeh/details/ktixE"   
 		,
-		  # Grunt base
-		  name: "Grunt Base"
+		  # Grunt Boilerplate
+		  name: "Grunt Boilerplate"
 		  thumb: "/assets/img/projetos/grunt-base.jpg"
 		  participation: "Projeto com configurações básica para rodar o Grunt."
 		  participationEn: "My Grunt Boilerplate"
-		  link: "https://github.com/LFeh/Grunt-Base"   
+		  link: "https://github.com/LFeh/grunt-boilerplate"   
 		,
 		  # Nav in CSS
 		  name: "Navigation - Pure CSS"
