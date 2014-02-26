@@ -13,7 +13,7 @@
 
 
 	<!-- Site Properities -->
-	<title><%= @getPreparedTitle() %></title>
+	<title><%= @getPreparedTitleEn() %></title>
 	<meta name="description" content="<%= @getPreparedDescriptionEn() %>" />
 	<meta name="keywords" content="<%= @getPreparedKeywords() %>" /> 
 

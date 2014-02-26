@@ -16,7 +16,10 @@ docpadConfig = {
 			url: "http://www.felipefialho.com"
 
 			# The default title of our website
-			title: "Luiz Felipe Tartarotti Fialho"
+			title: "Luiz Felipe Tartarotti Fialho - Desenvolvedor Front-End"
+
+			# The default title of our website - English
+			title_en: "Luiz Felipe Tartarotti Fialho - Front-End Developer"
 
 			# The default author of our website
 			author: "Luiz Felipe Tartarotti Fialho"
@@ -412,6 +415,14 @@ docpadConfig = {
 			# if our document does not have it's own title, then we should just use the site's title
 			else
 				@site.title
+
+		getPreparedTitleEn: ->
+				# if we have a document title, then we should use that and suffix the site's title onto it
+				if @document.title_en
+					"#{@document.title} | #{@site.title}"
+				# if our document does not have it's own title, then we should just use the site's title
+				else
+					@site.title_en
 
 		# Get the prepared site/document description
 		getPreparedDescription: ->
