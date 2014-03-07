@@ -18,16 +18,19 @@
 
 1. Start hacking away by modifying the `src` directory
 
-### For Watch
+## For Watch
 
 1.
 	``` 
 	grunt w
 	```
 
-### For Build
+## For Build
 
 1.
 	``` 
 	docpad generate & grunt build
 	```
+## License
+ 
+[MIT License](https://github.com/LFeh/MITLicense) © Luiz Felipe Tartarotti Fialho
