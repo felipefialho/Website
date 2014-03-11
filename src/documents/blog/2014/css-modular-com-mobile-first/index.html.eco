@@ -88,7 +88,7 @@ pathBlog: "../../"
 
 <p>E claro... nossos melhores amigos <a href="http://gruntjs.com/">Grunt </a> ou <a href="http://gulpjs.com/">Gulp</a> vão melhorar ainda mais esse processo.</p>
 
-<p>Existe um pequeno problema quando usamos os Media Queries dessa maneira... código desnecessário. Vamos ter milhares de Media Queries repetidas espalhadas pelo projeto.</p>
+<p>Existe um pequeno problema quando usamos os Media Queries dessa maneira... código desnecessário. Vamos ter milhares de Media Queries repetidos espalhados pelo projeto.</p>
 
 <p>A boa notícia é que tanto o Grunt quanto o Gulp tem um plugin que resolve esse problema (indicação do <a href="https://www.facebook.com/nicolas.rossett">
 Nícolas Rossett</a>): <a href="https://github.com/buildingblocks/grunt-combine-media-queries">grunt-combine-media-queries</a> ou <a href="https://github.com/konitter/gulp-combine-media-queries">gulp-combine-media-queries</a>.</p>
