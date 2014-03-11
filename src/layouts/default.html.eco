@@ -19,7 +19,7 @@
 
 	<!-- Meta -->
 	<%- @getBlock('meta').toHTML() %>
- 
+
 	<!-- Styles -->
 	<%- @getBlock('styles').add(@site.styles).toHTML() %>
 
@@ -35,18 +35,18 @@
 				<!-- HEADER -->
 				<header>
 					<div class="photo">
-						<img src="/assets/img/default/luiz-felipe-tartarotti-fialho.png" alt="Cartoon de Luiz Felipe Tartarotti Fialho">
+						<img src="/assets/img/default/luiz-felipe-tartarotti-fialho.png" alt="Cartoon de Luiz Felipe Tartarotti Fialho" height="151" width="100">
 					</div>
 					<h1 class="logo">
 						<a href="/">Felipe Fialho</a>
-					</h1>	
+					</h1>
 					<h4 itemprop="title">Desenvolvedor Front-End</h4>
 				</header>
 				<!-- END HEADER -->
 				<!-- NAV -->
 				<%-@partial('nav.html.eco', @)%>
 				<!-- END NAV -->
-			</div>	
+			</div>
 		</aside>
 		<!-- END SIDE -->
 		<section class="wrap span9">
@@ -54,9 +54,9 @@
 				<%- @content %>
 			</article>
 		</section>
-		<a class="fork" href="https://github.com/LFeh/Website"><img alt="Fork me on GitHub" src="/assets/img/default/fork.png"></a>
-	</div>	
-	
+		<a class="fork" href="https://github.com/LFeh/Website"><img alt="Fork me on GitHub" src="/assets/img/default/fork.png" height="150" width="150"></a>
+	</div>
+
 	<!-- Scripts -->
 	<%- @getBlock('scripts').add(@site.scripts).toHTML() %>
 
@@ -70,6 +70,6 @@
 	  ga('send', 'pageview');
 
 	</script>
-	
+
 </body>
 </html>
