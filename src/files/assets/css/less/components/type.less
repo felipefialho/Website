@@ -60,26 +60,6 @@ em      { font-style: italic; }
 cite    { font-style: normal; }
 
 // Utility classes
-.muted               { color: @grayLight; }
-a.muted:hover,
-a.muted:focus        { color: darken(@grayLight, 10%); }
-
-.text-warning        { color: @warningText; }
-a.text-warning:hover,
-a.text-warning:focus { color: darken(@warningText, 10%); }
-
-.text-error          { color: @errorText; }
-a.text-error:hover,
-a.text-error:focus   { color: darken(@errorText, 10%); }
-
-.text-info           { color: @infoText; }
-a.text-info:hover,
-a.text-info:focus    { color: darken(@infoText, 10%); }
-
-.text-success        { color: @successText; }
-a.text-success:hover,
-a.text-success:focus { color: darken(@successText, 10%); }
-
 .text-left           { text-align: left; }
 .text-right          { text-align: right; }
 .text-center         { text-align: center; }
@@ -173,33 +153,6 @@ ol.inline {
   }
 }
 
-// Description Lists
-dl {
-  margin: @baseLineHeight 0;
-}
-dt,
-dd {
-  line-height: @baseLineHeight;
-}
-dt {
-  font-weight: bold;
-}
-
-// Horizontal layout (like forms)
-.dl-horizontal {
-  .clearfix(); // Ensure dl clears floats if empty dd elements present
-  dt {
-    float: left;
-    width: @horizontalComponentOffset - 20;
-    clear: left;
-    text-align: right;
-    .text-overflow();
-  }
-  dd {
-    margin-left: @horizontalComponentOffset;
-  }
-}
-
 // MISC
 // ----
 
@@ -226,7 +179,6 @@ p{
 // Horizontal rules
 hr {
   margin: @baseLineHeight 0;
-  border: 0; 
+  border: 0;
   border-bottom: 1px solid @white;
 }
- 

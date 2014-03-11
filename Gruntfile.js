@@ -9,8 +9,8 @@ module.exports = function( grunt ) {
   // Set scripts
   var scripts = [
 
-    // Jquery 
-    '<%= config.dev %>**/jquery-2.1.0.min.js', 
+    // Jquery
+    '<%= config.dev %>**/jquery-2.1.0.min.js',
 
       // Plugins bootstrap
     '<%= config.dev %>**/bootstrap-transition.js', // Transitions (required for any animation)
@@ -19,78 +19,86 @@ module.exports = function( grunt ) {
 
     // General starting
     'src/**/_general.js'
-  ]; 
+  ];
 
   grunt.initConfig({
 
   // Config path
-  config: PathConfig, 
+  config: PathConfig,
 
   // Clean files
   clean: {
     dist: [
-      "<%= config.dist %>/**/**/bootstrap/**", 
-      "<%= config.dist %>/**/**/jquery/**", 
-      "<%= config.dist %>/**/**/_general.js"
+      "<%= config.dist %>/files/",
+      "<%= config.dist %>/**/bootstrap/",
+      "<%= config.dist %>/**/jquery/",
+      "<%= config.dist %>/**/_general.js",
+      "<%= config.dist %>/**/less/"
     ]
-  }, 
+  },
 
   // HTMLmin
-  htmlmin: {                                     
-    dist: {                                       
-      options: {                                  
+  htmlmin: {
+    dist: {
+      options: {
         removeComments: true,
         collapseWhitespace: true
       },
       files: [{
-        expand: true,      
-        cwd: '<%= config.dist %>',       
-        src: ['*.html','**/*.html'],  
-        dest: '<%= config.dist %>',    
+        expand: true,
+        cwd: '<%= config.dist %>',
+        src: ['*.html','**/*.html'],
+        dest: '<%= config.dist %>',
       }],
     }
- }, 
+ },
 
   // imageMin
-  imagemin: {                           
-    dist: {                            
-      options: {                       
+  imagemin: {
+    dist: {
+      options: {
       optimizationLevel: 3
     },
     files: [{
-        expand: true,      
-        cwd: '<%= config.dist %>',       
-        src: ['**/*.png', '**/*.jpg', '**/*.jpeg'],  
-        dest: '<%= config.dist %>',    
+        expand: true,
+        cwd: '<%= config.dist %>',
+        src: ['**/*.png', '**/*.jpg', '**/*.jpeg'],
+        dest: '<%= config.dist %>',
       }],
     }
-  }, 
+  },
 
   // Less
-  less: { 
-   dev: {
-     options: {
-       paths: ["<%= config.dev %>files/assets/css/less"]
-     },
+  less: {
+    dist: {
+      options: {
+        compress: true,
+        cleancss: true
+      },
+      files: {
+        "<%= config.dist %>assets/css/style.css": "<%= config.dev %>files/assets/css/less/style.less"
+      }
+    },
+    dev: {
      files: {
        "<%= config.dev %>files/assets/css/style.css": "<%= config.dev %>files/assets/css/less/style.less"
      }
     }
-  }, 
+  },
 
   // Uglify
-  uglify: {  
+  uglify: {
     options: {
-      mangle : false 
-    },                               
-   dev: {   
+      mangle : false
+    },
+    dev: {
       files : {
         '<%= config.dev %>files/assets/js/scripts.min.js': scripts
       }
     }
   },
 
-  // Watch 
+  // Watch
   watch : {
      options: {
       debounceDelay: 500,
@@ -108,7 +116,7 @@ module.exports = function( grunt ) {
       'Gruntfile.js'
       ],
       tasks : ['uglify:dev']
-    } 
+    }
   },
 
   // GZip Assets
@@ -123,7 +131,7 @@ module.exports = function( grunt ) {
       dest: '<%= config.dist %>/assets/'
     }
   },
- 
+
 
 });
 
@@ -136,7 +144,7 @@ grunt.loadNpmTasks('grunt-contrib-uglify');
 grunt.loadNpmTasks('grunt-contrib-watch');
 
 // Tasks runnings
-grunt.registerTask( 'build', ['clean:dist', 'htmlmin:dist', 'imagemin:dist'] );
+grunt.registerTask( 'build', ['htmlmin:dist', 'imagemin:dist', 'less:dist', 'clean:dist'] );
 
 // Watch
 grunt.registerTask( 'w', [ 'watch' ] );
