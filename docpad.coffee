@@ -76,6 +76,12 @@ docpadConfig = {
 
 		# Blog posts
 		posts: [
+		  name: 'CSS Modular com Mobile First'
+		  description: 'Mobile First vai muito além de código, é um pensamento que precisa existir desde o ínicio do projeto. mas nesse artigo vou abordar apenas codificação e maneiras de deixar o workflow mais agradavel.'
+		  date: '10/03/2014'
+		  year: '2014'
+		  path: 'css-modular-com-mobile-first'
+		,
 		  name: 'Utilizando o Bootstrap de forma consistente'
 		  description: 'Parte do sucesso do Bootstrap está ligado a facilidade de uso, responsividade e soluções interessantes prontas para usar. Mas será que podemos aperfeiçoar essa utilização?'
 		  date: '09/01/2014'

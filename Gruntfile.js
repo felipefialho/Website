@@ -1,73 +1,73 @@
 module.exports = function( grunt ) {
 
-// Paths
-var PathConfig = {
-	dev: 'src/',
-	dist: 'out/'
-};
+  // Paths
+  var PathConfig = {
+    dev: 'src/',
+    dist: 'out/'
+  };
 
-// Set scripts
-var scripts = [
+  // Set scripts
+  var scripts = [
 
-	// Jquery 
-	'src/**/jquery-2.1.0.min.js', 
+    // Jquery 
+    '<%= config.dev %>**/jquery-2.1.0.min.js', 
 
-  	// Plugins bootstrap
-	'src/**/bootstrap-transition.js', // Transitions (required for any animation)
-	'src/**/bootstrap-modal.js', // Modals
-	'src/**/bootstrap-collapse.js', // Collapse
+      // Plugins bootstrap
+    '<%= config.dev %>**/bootstrap-transition.js', // Transitions (required for any animation)
+    '<%= config.dev %>**/bootstrap-modal.js', // Modals
+    '<%= config.dev %>**/bootstrap-collapse.js', // Collapse
 
-	// General starting
-	'src/**/_general.js'
+    // General starting
+    'src/**/_general.js'
   ]; 
 
   grunt.initConfig({
 
-	// Config path
+  // Config path
   config: PathConfig, 
 
-	// Clean files
+  // Clean files
   clean: {
-   dist: [
-   "<%= config.dist %>/**/**/bootstrap/**", 
-   "<%= config.dist %>/**/**/jquery/**", 
-   "<%= config.dist %>/**/**/_general.js"
-   ]
+    dist: [
+      "<%= config.dist %>/**/**/bootstrap/**", 
+      "<%= config.dist %>/**/**/jquery/**", 
+      "<%= config.dist %>/**/**/_general.js"
+    ]
+  }, 
+
+  // HTMLmin
+  htmlmin: {                                     
+    dist: {                                       
+      options: {                                  
+        removeComments: true,
+        collapseWhitespace: true
+      },
+      files: [{
+        expand: true,      
+        cwd: '<%= config.dist %>',       
+        src: ['*.html','**/*.html'],  
+        dest: '<%= config.dist %>',    
+      }],
+    }
  }, 
 
-	// HTMLmin
-	htmlmin: {                                     
-   dist: {                                       
-     options: {                                  
-       removeComments: true,
-       collapseWhitespace: true
-     },
-     files: [{
-       expand: true,      
-       cwd: '<%= config.dist %>',       
-       src: ['*.html','**/*.html'],  
-       dest: '<%= config.dist %>',    
-     }],
-   }
- }, 
+  // imageMin
+  imagemin: {                           
+    dist: {                            
+      options: {                       
+      optimizationLevel: 3
+    },
+    files: [{
+        expand: true,      
+        cwd: '<%= config.dist %>',       
+        src: ['**/*.png', '**/*.jpg', '**/*.jpeg'],  
+        dest: '<%= config.dist %>',    
+      }],
+    }
+  }, 
 
-	// imageMin
-	imagemin: {                           
-   dist: {                            
-     options: {                       
-       optimizationLevel: 3
-     },
-     files: [{
-       expand: true,      
-       cwd: '<%= config.dist %>',       
-       src: ['**/*.png', '**/*.jpg', '**/*.jpeg'],  
-       dest: '<%= config.dist %>',    
-     }],
-   }
- }, 
-
-	// Less
-	less: { 
+  // Less
+  less: { 
    dev: {
      options: {
        paths: ["<%= config.dev %>files/assets/css/less"]
@@ -77,8 +77,8 @@ var scripts = [
      }
     }
   }, 
- 
-	// Uglify
+
+  // Uglify
   uglify: {  
     options: {
       mangle : false 
@@ -90,39 +90,39 @@ var scripts = [
     }
   },
 
-	// Watch 
+  // Watch 
   watch : {
-   options: {
-    debounceDelay: 500,
-  },
-  less: {
-    files : [
-    '<%= config.dev %>**/*.less'
-    ],
-    tasks : ['less:dev']
-  },
-  js: {
-    files : [
-    '<%= config.dev %>**/js/*.js',
-    '!<%= config.dev %>**/js/scripts.min.js',
-    'Gruntfile.js'
-    ],
-    tasks : ['uglify:dev']
-  } 
-},
-
-// GZip Assets
-compress: {
-  gzip: {
-    options: {
-      mode: 'gzip'
+     options: {
+      debounceDelay: 500,
     },
-    expand: true,
-    cwd: '<%= config.dist %>assets/',
-    src: ['**/*.css', '**/*.js'],
-    dest: '<%= config.dist %>/assets/'
-  }
-},
+    less: {
+      files : [
+      '<%= config.dev %>**/*.less'
+      ],
+      tasks : ['less:dev']
+    },
+    js: {
+      files : [
+      '<%= config.dev %>**/js/*.js',
+      '!<%= config.dev %>**/js/scripts.min.js',
+      'Gruntfile.js'
+      ],
+      tasks : ['uglify:dev']
+    } 
+  },
+
+  // GZip Assets
+  compress: {
+    gzip: {
+      options: {
+        mode: 'gzip'
+      },
+      expand: true,
+      cwd: '<%= config.dist %>assets/',
+      src: ['**/*.css', '**/*.js'],
+      dest: '<%= config.dist %>/assets/'
+    }
+  },
  
 
 });
