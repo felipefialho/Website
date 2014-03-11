@@ -14,7 +14,7 @@ pathBlog: "../../"
 <h3>O uso tradicional</h3>
 
 <p>Imagino que a maneira na qual os Media Queries são mais utilizados é adicionando as condicionais no fim do CSS, algo como:</p>
- 
+
 <code>
 <pre>@media (max-width: 767px) {
   ...
@@ -23,7 +23,7 @@ pathBlog: "../../"
 
 <p>Um dos principais motivos para eu utilizar dessa forma, era nosso bom (só que não) e velho amigo IE8. Ainda forneço suporte mínimo para esse navegador e como ele não aceita Media Queries, eu desenvolvia a versão mais "básica" para desktop, e ia "limpando" conforme a resolução.</p>
 
-<p>Cheguei a pesquisar plugins que ajudariam a con tornar esse problema, mas na época não encontrei nada que funcionasse ou me agradasse plenamente.</p>
+<p>Cheguei a pesquisar plugins que ajudariam a contornar esse problema, mas na época não encontrei nada que funcionasse ou me agradasse plenamente.</p>
 
 <h3>Novos tempos</h3>
 
@@ -36,7 +36,7 @@ pathBlog: "../../"
 <p>Basta adicionar o seguinte código no <code>head</code> e como mágica Media Queries funcionarão perfeitamente no IE.</p>
 
 <code>
-<pre>&lt;!--[if lt IE 9]&gt; 
+<pre>&lt;!--[if lt IE 9]&gt;
 &lt;script type='text/javascript' src="assets/js/respond.min.js"&gt;&lt;/script&gt;
 &lt;![endif]--&gt;</pre>
 </code>
@@ -46,16 +46,16 @@ pathBlog: "../../"
 <p>Não tem segredo. Simplesmente adiciono os Media Queries em sequencia da classe que desejo alterar. Caso use algum pré-processador, isso será ainda mais simples, porque você pode deixar tudo organizado. Usando o LESS como exemplo:</p>
 
 <code>
-<pre>.navbar { 
-  margin-top: 20px; 
+<pre>.navbar {
+  margin-top: 20px;
   @media (min-width: @screen-sm-min) {
     float: left;
     width: 25%;
   }
   @media (min-width: @screen-lg-min) {
-    position: fixed; 
+    position: fixed;
     top: 40px; left: 20px;
-  } 
+  }
 }</pre>
 </code>
 
@@ -64,7 +64,7 @@ pathBlog: "../../"
 <code>
 <pre>.navbar {
   margin-top: 20px;
-} 
+}
 @media (min-width: 768px) {
   .navbar {
     float: left;
@@ -83,7 +83,7 @@ pathBlog: "../../"
 <p>Dessa forma conseguimos trabalhar com Mobile First de um jeito realmente interessante, e tudo flui muito naturalmente. Setamos primeiro as propriedades que são comuns para todas as resoluções e <i>progressivamente</i> vamos adicionando as funcionalidades para resoluções maiores. </p>
 
 <p>E além de tudo, os componentes vão ter todas as propriedades deles dentro do próprio 'include'. Caso queira adicionar ou remover determinado componente, não precisa se preocupar em alterar os Media Queries separados para ajustar o projeto.</p>
- 
+
 <h3>Plus: Os imprescindíveis automatizadores</h3>
 
 <p>E claro... nossos melhores amigos <a href="http://gruntjs.com/">Grunt </a> ou <a href="http://gulpjs.com/">Gulp</a> vão melhorar ainda mais esse processo.</p>
@@ -96,7 +96,7 @@ Nícolas Rossett</a>): <a href="https://github.com/buildingblocks/grunt-combine-
 <p>Esse ótimo plugin vai pegar todos os Media Queries espalhados pelo CSS e juntar tudo no final conforme a resolução. Exatamente da maneira que você sempre fez.</p>
 
 <h3>Conclusão</h3>
- 
+
 <p>Quero deixar claro que essa é uma preferência pessoal de uso dos Media Queries, caso não se sinta confortável para trabalhar dessa forma, nada impede que continue usando da maneira tradicional, o importante é estar sempre seguro dentro do seu próprio workflow.</p>
 
 <p class="end">Abraços e até a próxima ;)</p>
