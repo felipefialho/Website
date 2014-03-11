@@ -23,7 +23,7 @@ pathBlog: "../../"
 
 <p>Um dos principais motivos para eu utilizar dessa forma, era nosso bom (só que não) e velho amigo IE8. Ainda forneço suporte mínimo para esse navegador e como ele não aceita Media Queries, eu desenvolvia a versão mais "básica" para desktop, e ia "limpando" conforme a resolução.</p>
 
-<p>Cheguei a pesquisar plugins que ajudariam a contornar esse problema, mas na época não encontrei nada que funcionasse ou me agradasse plenamente.</p>
+<p>Cheguei a pesquisar plugins que ajudariam a con tornar esse problema, mas na época não encontrei nada que funcionasse ou me agradasse plenamente.</p>
 
 <h3>Novos tempos</h3>
 
@@ -97,6 +97,6 @@ Nícolas Rossett</a>): <a href="https://github.com/buildingblocks/grunt-combine-
 
 <h3>Conclusão</h3>
  
-<p>Quero deixar claro que essa é uma preferência pessoal de uso dos Media Queries, se não se sentir confortável dessa forma, nada impede que continue usando da maneira tradicional, o importante é estar sempre seguro e confortável dentro do seu próprio workflow.</p>
+<p>Quero deixar claro que essa é uma preferência pessoal de uso dos Media Queries, caso não se sinta confortável para trabalhar dessa forma, nada impede que continue usando da maneira tradicional, o importante é estar sempre seguro dentro do seu próprio workflow.</p>
 
 <p class="end">Abraços e até a próxima ;)</p>
