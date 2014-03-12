@@ -15,7 +15,7 @@ pathBlog: "../../"
 
 <p>Para essa técnica, indico fortemente o uso do Grunt ou qualquer outro automatizador. Facilitar compilar o pré-processador CSS, concatenar o Javascript e otimizar todo o processo.</p>
 
-<p>Se não conhece essas ferramentas, já escrevi sobre o <a href="../grunt-voce-deveria-estar-usando/">Grunt</a>, mas sugiro ler o excelente <a href="http://www.vitorbritto.com.br/blog/automacao-de-tarefas-com-gruntjs-parte-1/">artigo do Vitor Britto</a>.</p> 
+<p>Se não conhece essas ferramentas, já escrevi sobre o <a href="../../2013/grunt-voce-deveria-estar-usando/">Grunt</a>, mas sugiro ler o excelente <a href="http://www.vitorbritto.com.br/blog/automacao-de-tarefas-com-gruntjs-parte-1/">artigo do Vitor Britto</a>.</p> 
 
 <h3>Baixando o Bootstrap</h3> 
 
@@ -29,13 +29,13 @@ pathBlog: "../../"
 
 <h3>Separando os arquivos</h3>
 
-<p>Após baixar o arquivo, copie as pastas <b>less</b> e <b>js</b> para o seu projeto seguindo sua organização. Caso ainda não tenha nada muito definido, pode dar uma lida no artigo <a href="../sobre-organizacao-de-componentes-com-pre-processadores/">Sobre organização de componentes com pré-processadores</a>.</p>
+<p>Após baixar o arquivo, copie as pastas <b>less</b> e <b>js</b> para o seu projeto seguindo sua organização. Caso ainda não tenha nada muito definido, pode dar uma lida no artigo <a href="../../2013/sobre-organizacao-de-componentes-com-pre-processadores/">Sobre organização de componentes com pré-processadores</a>.</p>
 
 <p>Pode copiar também a pasta <b>fonts</b> caso queira utilizar os icons fonts do Bootstrap. Eu prefiro criar minhas coleções no <a href="icomoon.io/app/">Icomoon</a>, assim seleciono exatamente quais ícones vão ser usados. Mas faça como achar melhor.</p>
 
 <h3>Selecionando os componentes</h3>
 
-<p>Adoro componentes, e inclusive escrevi um artigo abordando <a href="../um-conto-sobre-componentizacao-e-quebra-de-paradigmas/#.Us6WCtJDuf8">Componentização e Atomic Design</a>. Eles são a chave para um projeto consistente.</p>
+<p>Adoro componentes, e inclusive escrevi um artigo abordando <a href="../../2013/um-conto-sobre-componentizacao-e-quebra-de-paradigmas/">Componentização e Atomic Design</a>. Eles são a chave para um projeto consistente.</p>
 
 <p>Lembra da sessão <b>customize</b> no site do Bootstrap? Vamos fazer a mesma coisa, mas de forma manual...</p>
 
