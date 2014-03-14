@@ -164,13 +164,7 @@ docpadConfig = {
 		  description: 'Não tive formação como programador, sempre fui focado no HTML e CSS, apesar de claro, saber fazer integração e trabalhar no ambiente Back-End, além de me virar com JQuery.'
 		  date: '29/04/2013'
 		  year: '2013'
-		  path: 'o-que-um-bom-desenvolvedor-front-end-precisa-saber'
-		,
-		  name: 'Desenvolvedores Front-End que você deveria acompanhar'
-		  description: 'Em 2009, quando iniciei na carreira de desenvolvedor, a profissão não tinha nem nome, era o "menino do HTML" ou "o rapaz que corta o layout".'
-		  date: '26/04/2013'
-		  year: '2013'
-		  path: 'desenvolvedores-front-end-que-voce-deveria-acompanhar'
+		  path: 'o-que-um-bom-desenvolvedor-front-end-precisa-saber' 
 		]
 
 		# Projetos list

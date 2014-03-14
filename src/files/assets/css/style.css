@@ -492,7 +492,7 @@ h5,
 h6 {
   margin: 44px 0 14.666666666666666px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 22px;
   color: #333333;
   text-rendering: optimizelegibility;
