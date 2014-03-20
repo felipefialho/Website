@@ -118,23 +118,11 @@ docpadConfig = {
 		  year: '2013'
 		  path: 'tutorial-caixa-de-compartilhar-em-puro-css'
 		,
-		  name: 'O grupo Grunt Brasil no Facebook'
-		  description: 'Estar em um grupo para discutir assuntos de interesse mútuo é sempre muito legal e contribui MUITO para o desenvolvimento, por essa razão o grupo Grunt Brasil no Facebook foi criado.'
-		  date: '12/08/2013'
-		  year: '2013'
-		  path: 'o-grupo-grunt-brasil-no-facebook'
-		,
 		  name: 'Um conto sobre componentização e quebra de paradigmas'
 		  description: 'Melhorar processos é parte essencial do nosso trabalho, mas em algum momento percebemos que só melhorar pode não ser o suficiente, as vezes é preciso quebrar paradigmas.'
 		  date: '29/07/2013'
 		  year: '2013'
 		  path: 'um-conto-sobre-componentizacao-e-quebra-de-paradigmas'
-		,
-		  name: 'Dica: Tire férias'
-		  description: 'Os amigos que me acompanham devem ter observado que sumi de repente. E tenho um motivo bem nobre para isso: Estava de férias.'
-		  date: '25/07/2013'
-		  year: '2013'
-		  path: 'dica-tire-ferias'
 		,
 		  name: 'Sobre organização de componentes com pré-processadores'
 		  description: 'No último post dei uma passada pelo Grunt e mostrei como ele pode ajudar a otimizar suas tarefas. Se você usa pré-processadores a organização dos componentes é essencial.'
@@ -164,7 +152,7 @@ docpadConfig = {
 		  description: 'Não tive formação como programador, sempre fui focado no HTML e CSS, apesar de claro, saber fazer integração e trabalhar no ambiente Back-End, além de me virar com JQuery.'
 		  date: '29/04/2013'
 		  year: '2013'
-		  path: 'o-que-um-bom-desenvolvedor-front-end-precisa-saber' 
+		  path: 'o-que-um-bom-desenvolvedor-front-end-precisa-saber'
 		]
 
 		# Projetos list
