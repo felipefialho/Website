@@ -157,6 +157,14 @@ docpadConfig = {
 
 		# Projetos list
 		projetos: [
+		  # Pure CSS Components
+		  name: "CSS Components"
+		  thumb: "/assets/img/projetos/css-components.jpg"
+		  participation: "Repositório de components usando apenas CSS, sem Javascript"
+		  participationEn: "A repository of components development in CSS only, no Javascript."
+		  demo: "http://www.felipefialho.com/css-components/",
+		  link: "https://github.com/LFeh/css-components/"
+		,
 		  # CheSS.js
 		  name: "CheSS.js"
 		  thumb: "/assets/img/projetos/chess.jpg"
@@ -227,14 +235,7 @@ docpadConfig = {
 		  participation: "Projeto com configurações básica para rodar o Grunt."
 		  participationEn: "My Grunt Boilerplate"
 		  link: "https://github.com/LFeh/grunt-boilerplate"
-		,
-		  # Nav in CSS
-		  name: "Navigation - Pure CSS"
-		  thumb: "/assets/img/projetos/nav-css3.jpg"
-		  participation: "Sub-Navegação usando apenas CSS."
-		  participationEn: "Navigation in pure CSS, contains submenu and delay using only CSS."
-		  demo: "http://codepen.io/LFeh/details/BLpcG"
-		,
+		, 
 		  # Cartman
 		  name: "Pure CSS3 - Eric Cartman"
 		  thumb: "/assets/img/projetos/cartman-css3.jpg"
