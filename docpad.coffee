@@ -76,6 +76,12 @@ docpadConfig = {
 
 		# Blog posts
 		posts: [
+		  name: 'É possível utilizar componentes desenvolvidos apenas com CSS?'
+		  description: 'Após o lançamento do Pure CSS Components, escrevo as minhas impressões sobre o quanto é possível utilizarmos componentes desenvolvidos apenas com CSS.'
+		  date: '15/04/2014'
+		  year: '2014'
+		  path: 'e-possivel-utilizar-componentes-desenvolvidos-apenas-com-css'
+		,
 		  name: 'CSS Modular com Mobile First'
 		  description: 'Mobile First vai muito além de código, é um pensamento que precisa existir desde o ínicio do projeto. mas nesse artigo vou abordar apenas codificação e maneiras de deixar o workflow mais agradavel.'
 		  date: '10/03/2014'
