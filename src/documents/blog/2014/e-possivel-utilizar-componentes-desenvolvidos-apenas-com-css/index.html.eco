@@ -7,7 +7,7 @@ path: "../../../"
 pathBlog: "../../"
 ---
 
-<p class="lead">Após o lançamento do <a href="http://www.felipefialho.com/css-components">Pure CSS Components</a>, escrevo as minhas impressões sobre o quanto é possível utilizarmos componentes desenvolvidos apenas com CSS.</p>
+<p class="lead">Após o lançamento do <a href="http://www.felipefialho.com/css-components">Pure CSS Components</a>, escrevo as minhas impressões sobre o quanto é possível utilizar componentes desenvolvidos apenas com CSS.</p>
 
 <h3>Sobre o projeto</h3>
 
@@ -24,5 +24,7 @@ pathBlog: "../../"
 <p>Alguns anos atrás isso era possível apenas através de interações como :hover, e de maneira bastante limitada.</p>
 
 <h4>O :target</h4>
+
+<p></p>
 
 <p class="end">Abraços e até a próxima ;)</p>
