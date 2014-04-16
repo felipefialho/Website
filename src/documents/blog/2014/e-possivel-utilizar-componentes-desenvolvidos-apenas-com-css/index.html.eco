@@ -25,6 +25,10 @@ pathBlog: "../../"
 
 <h4>O :target</h4>
 
-<p></p>
+<p>Não vou me alongar explicando o funcionamento, existem ótimos artigos sobre isso, entre eles do sempre fantástico <a href="http://css-tricks.com/on-target/">CSS-Tricks</a>.</p>
+
+<p>Pensando em escalabilidade, com certeza seria a minha técnica favorita para esse tipo de desenvolvimento.</p>
+
+
 
 <p class="end">Abraços e até a próxima ;)</p>
