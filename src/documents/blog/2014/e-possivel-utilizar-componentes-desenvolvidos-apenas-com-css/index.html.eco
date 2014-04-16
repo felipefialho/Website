@@ -17,7 +17,7 @@ pathBlog: "../../"
 
 <h3>As possíveis técnicas</h3>
 
-<p>Basicamente tudo que é possível envolvendo interações no CSS, envolvem duas técnicas: <code>:target</code> e <code>input hidden</code>.</p>
+<p>Todos os componentes foram desenvolvidos usando duas técnicas: <code>:target</code> e <code>input hidden</code>.</p>
 
 <p>Isso porque, através dessas técnicas conseguimos de fato fornecer um estado para um elemento alvo. Ou seja, conseguimos saber qual é o elemento que está "ativo" e fornecer qualquer interação que a nossa imaginação seja capaz de pensar (e que os navegadores atuais suportem :p).</p> 
 

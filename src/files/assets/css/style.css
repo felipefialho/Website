@@ -40,7 +40,7 @@
 .input-block-level {
   display: block;
   width: 100%;
-  min-height: 32px;
+  min-height: 40px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -74,9 +74,9 @@ a:active {
 body {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 22px;
-  color: #333333;
+  font-size: 20px;
+  line-height: 30px;
+  color: #222222;
   background-color: #ffffff;
 }
 a {
@@ -206,7 +206,7 @@ a:focus {
 .row-fluid [class*="span"] {
   display: block;
   width: 100%;
-  min-height: 32px;
+  min-height: 40px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -442,18 +442,18 @@ a:focus {
   font-style: normal;
 }
 p {
-  margin: 0 0 11px;
+  margin: 0 0 15px;
 }
 .lead {
-  margin-bottom: 22px;
-  font-size: 22.4px;
+  margin-bottom: 30px;
+  font-size: 28px;
   font-weight: 200;
-  line-height: 30.799999999999997px;
+  line-height: 42px;
 }
 .end {
-  font-size: 17.6px;
+  font-size: 22px;
   font-weight: 200;
-  margin: 30.799999999999997px 0;
+  margin: 42px 0;
 }
 a:hover,
 a:focus {
@@ -490,10 +490,10 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 44px 0 14.666666666666666px;
+  margin: 60px 0 20px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
-  line-height: 22px;
+  line-height: 30px;
   color: #333333;
   text-rendering: optimizelegibility;
 }
@@ -513,48 +513,36 @@ h1 a {
 h1,
 h2,
 h3 {
-  line-height: 44px;
+  line-height: 60px;
 }
 h1 {
-  font-size: 44px;
+  font-size: 50px;
 }
 h2 {
-  font-size: 36px;
+  font-size: 45px;
 }
 h3 {
-  font-size: 24px;
+  font-size: 30px;
 }
 h4 {
-  font-size: 20px;
+  font-size: 25px;
 }
 h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 13.6px;
-}
-h1 small {
-  font-size: 28px;
-}
-h2 small {
   font-size: 20px;
 }
-h3 small {
-  font-size: 16px;
-}
-h4 small {
-  font-size: 16px;
+h6 {
+  font-size: 17px;
 }
 .page-header {
   font-family: 'ostrich_sansblack';
-  padding-bottom: 10px;
-  margin: 22px 0 33px;
+  padding-bottom: 14px;
+  margin: 30px 0 45px;
   border-bottom: 1px solid #eeeeee;
 }
 ul,
 ol {
   padding: 0;
-  margin: 0 0 11px 25px;
+  margin: 0 0 15px 25px;
 }
 ul ul,
 ul ol,
@@ -563,7 +551,7 @@ ol ul {
   margin-bottom: 0;
 }
 li {
-  line-height: 22px;
+  line-height: 30px;
 }
 ul.unstyled,
 ol.unstyled {
@@ -591,7 +579,7 @@ code {
   border-radius: 3px;
   background: #f8f3e6;
   display: block;
-  margin-bottom: 11px;
+  margin-bottom: 15px;
   padding: 10px;
 }
 code pre {
@@ -603,7 +591,7 @@ p code {
   padding: 2px;
 }
 hr {
-  margin: 22px 0;
+  margin: 30px 0;
   border: 0;
   border-bottom: 1px solid #ffffff;
 }
@@ -778,7 +766,7 @@ hr {
   float: right;
   font-size: 16px;
   font-weight: bold;
-  line-height: 22px;
+  line-height: 30px;
   color: #ffffff;
   text-shadow: 0 1px 0 #ffffff;
   opacity: 1;
@@ -935,7 +923,7 @@ button.close {
   filter: alpha(opacity=60);
 }
 .home {
-  margin: 22px 0 44px;
+  margin: 30px 0 60px;
 }
 .blog-list {
   list-style: none;
@@ -1189,7 +1177,7 @@ button.close {
   .row-fluid [class*="span"] {
     display: block;
     width: 100%;
-    min-height: 32px;
+    min-height: 40px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -1538,7 +1526,7 @@ button.close {
   .row-fluid [class*="span"] {
     display: block;
     width: 100%;
-    min-height: 32px;
+    min-height: 40px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
