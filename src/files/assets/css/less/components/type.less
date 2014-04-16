@@ -69,7 +69,7 @@ cite    { font-style: normal; }
 // -------------------------
 
 h1, h2, h3, h4, h5, h6 {
-  margin: @baseLineHeight*2 0 (@baseLineHeight / 1.5);
+  margin: @baseLineHeight 0 (@baseLineHeight / 2);
   font-family: @headingsFontFamily;
   font-weight: normal;
   line-height: @baseLineHeight;
@@ -90,7 +90,10 @@ h1{
 
 h1,
 h2,
-h3 { line-height: @baseLineHeight * 2; }
+h3 { 
+  line-height: @baseLineHeight * 2; 
+  margin: @baseLineHeight*2 0 (@baseLineHeight / 1.5);
+}
 
 h1 { font-size: @baseFontSize * 2.50; }  
 h2 { font-size: @baseFontSize * 2.25; } 
