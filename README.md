@@ -1,4 +1,4 @@
-# Felipe Fialho Website
+Felipe Fialho - Personal Website
 ============
 
 [View project](http://www.felipefialho.com/) 
