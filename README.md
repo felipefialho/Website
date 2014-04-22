@@ -1,13 +1,16 @@
-# [Felipe Fialho Website](http://www.felipefialho.com/) 
+# Felipe Fialho Website
+============
 
-## Getting Started
+[View project](http://www.felipefialho.com/) 
+
+### Getting Started
 
 1. [Install DocPad](https://github.com/bevry/docpad)
 
-1. Clone the project and run the server
+1. Fork the project and run the server
 
 	``` bash
-	git clone https://github.com/LFeh/Website.git
+	git clone https://github.com/you/Website.git
 	
 	cd LFeh/Website
 	npm install
@@ -18,21 +21,19 @@
 
 1. Start hacking away by modifying the `src` directory
 
-## For Watch
+### For Watch
 
-1.
-	``` 
-	grunt w
-	```
+``` 
+grunt w
+```
 
-## For Build
+### For Build
 
-1.
-	``` 
-	docpad generate & grunt build
-	```
+``` 
+docpad generate & grunt build
+```
 
-## License
+### License
  
 [MIT License](http://felipefialho.mit-license.org/) © Luiz Felipe Tartarotti Fialho
 
