@@ -19,16 +19,283 @@ pathBlog: "../../"
 
 <p>Todos os componentes foram desenvolvidos usando duas técnicas: <code>:target</code> e <code>input hidden</code>.</p>
 
-<p>Isso porque, através dessas técnicas conseguimos de fato fornecer um estado para um elemento alvo. Ou seja, conseguimos saber qual é o elemento que está "ativo" e fornecer qualquer interação que a nossa imaginação seja capaz de pensar (e que os navegadores atuais suportem :p).</p> 
+<p>Isso porque, através dessas técnicas conseguimos de fato fornecer um estado para um elemento alvo. Ou seja, conseguimos saber qual é o elemento que está "ativo" e fornecer qualquer interação que podemos imaginar (e que os navegadores atuais suportem :p).</p>
 
-<p>Alguns anos atrás isso era possível apenas através de interações como :hover, e de maneira bastante limitada.</p>
+<h3>Componentes</h3>
 
-<h4>O :target</h4>
+<h4>Carrossel</h4>
 
-<p>Não vou me alongar explicando o funcionamento, existem ótimos artigos sobre isso, entre eles do sempre fantástico <a href="http://css-tricks.com/on-target/">CSS-Tricks</a>.</p>
+<p><a href="http://www.felipefialho.com/css-components/#component-carousel">Ver componente</a>.</p>
 
-<p>Pensando em escalabilidade, com certeza seria a minha técnica favorita para esse tipo de desenvolvimento.</p>
+<p>Vamos observar o HTML:</p>
 
+<p><pre><code>&lt;!-- Carousel --&gt;
+&lt;div class="carousel"&gt;
+  &lt;div class="carousel-inner"&gt;
+    &lt;input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden checked&gt;
+    &lt;div class="carousel-item"&gt;
+      ...
+    &lt;/div&gt;
+    &lt;input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden&gt;
+    &lt;div class="carousel-item"&gt;
+      ...
+    &lt;/div&gt;
+    &lt;input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden&gt;
+    &lt;div class="carousel-item"&gt;
+      ...
+    &lt;/div&gt;
+    &lt;label for="carousel-3" class="carousel-control prev control-1"&gt;‹&lt;/label&gt;
+    &lt;label for="carousel-2" class="carousel-control next control-1"&gt;›&lt;/label&gt;
+    &lt;label for="carousel-1" class="carousel-control prev control-2"&gt;‹&lt;/label&gt;
+    &lt;label for="carousel-3" class="carousel-control next control-2"&gt;›&lt;/label&gt;
+    &lt;label for="carousel-2" class="carousel-control prev control-3"&gt;‹&lt;/label&gt;
+    &lt;label for="carousel-1" class="carousel-control next control-3"&gt;›&lt;/label&gt;
+    &lt;ol class="carousel-indicators"&gt;
+      &lt;li&gt;&lt;label for="carousel-1" class="carousel-bullet"&gt;•&lt;/label&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;label for="carousel-2" class="carousel-bullet"&gt;•&lt;/label&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;label for="carousel-3" class="carousel-bullet"&gt;•&lt;/label&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre> </p>
 
+<p>Existe um <code>&lt;input class="carousel-open" type="radio" hidden &gt;</code> antes de cada item. Também existe alguns <code>&lt;label&gt;</code> com o <code>for</code> indicando para o item que desejamos ter como alvo. Esse é o truque.</p>
+
+<p>E agora o CSS passo a passo:</p>
+
+<p>
+<pre><code>.carousel-inner {
+  position: relative;
+  overflow: hidden;
+}</code></pre>
+</p>
+
+<p>O <code>overflow: hidden</code> para nada ficar fora do bloco e o <code>position: relative</code> para os filhos ficaram absolutos em relação a ele.</p>
+
+<p>
+<pre><code>.carousel-item {
+  position: absolute;
+  .opacity(0);
+  .transition(opacity .6s ease-out);
+}</code></pre>
+</p>
+
+<p>Deixamos todos os itens invisiveis através da opacidade em 0. E é defininida uma animação de 6 segundos durante a opacidade. O <code>position: absolute</code> serve para os itens ficarem posicionados sem influenciar no tamanho do container.</p>
+
+<p>
+<pre><code>.carousel-open:checked + .carousel-item {
+  position: static;
+  .opacity(100);
+}</code></pre>
+</p>
+
+<p>Atribuimos que quando o <code>.carousel-item</code> for o irmão imediato <code>+</code> do <code>.carousel-open</code> (no caso um <code>&lt;input radio hidden&gt;</code>) que estiver checkado, ficará visível e vai ficar com o <code>position: static</code>, e assim terá um tamanho que vai influenciar o container.</p>
+
+<p>
+<pre><code>.carousel-control {
+  display: none;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {display: block;}
+</code></pre>
+</p>
+
+<p>Esse pedaço de código é para que os controles (as setas) funcionem da maneira esperada. Por padrão elas ficam com <code>display: none</code> e passam a ter <code>display: block</code> quando o irmão <code>~</code> especifico estiver checkado.</p>
+
+<p>No HTML, definimos três pares de <code>label</code> que servirão como controles (no caso um carrossel com três itens), cada um deles habilita um item, e esses vão habilitar o par de <code>label</code> necessária.</p>
+
+<p>
+<pre><code>.carousel-bullet {
+  color: #fff;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+  color: @color-primary;
+}</code></pre>
+</p>
+
+<p>Esse pedaço é para ativar o indicador. Básicamente, quando o item ativo for irmão do par de controle especifico, e esse também for irmão do indicador que desejamos alcançar (exemplo <code>li:nth-child(x)</code>)... ele também ficará ativo.</p>
+
+<h4>Collapse</h4>
+
+<p><a href="http://www.felipefialho.com/css-components/#component-collapse">Ver componente</a>.</p>
+
+<p>O HTML:</p>
+
+<p>
+<pre><code>&lt;!-- Collapse --&gt;
+&lt;div class="collapse"&gt;
+  &lt;label class="collapse-open" for="collapse-1"&gt;Lorem ipsum dolor sit amet&lt;/label&gt;
+  &lt;input class="collapse-open" type="checkbox" id="collapse-1" aria-hidden="true" hidden /&gt;
+  &lt;div class="collapse-content"&gt;
+    &lt;div class="collapse-inner"&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</p>
+
+<p>Também vamos usar <code>&lt;input hidden /&gt;</code>, mas nesse caso vamos usar um <code>type="checkbox"</code>.</p>
+
+<p>E se precisar que o Collapse funcione como um "accordion", basta usar <code>type="radio"</code> e o mesmo <code>name=""</code> para todos do grupo.</p>
+
+<p>E o CSS:</p>
+
+<p>
+<pre><code>.collapse-painel {
+  display: none;
+}
+
+.collapse-open:checked ~ .collapse-painel {
+  display: block;
+}
+</code></pre>
+</p>
+
+<p>Esse é bem simples, por padrão todos os <code>.collapse-painel</code> vão ser <code>display: none</code> e quando o elemento <code>.collapse-open</code> estiver checkado, o <code>.collapse-painel</code> irmão <code>~</code> vai assumir <code>display: block</code>.</p>
+
+<h4>Dropdown</h4>
+
+<p><a href="http://www.felipefialho.com/css-components/#component-dropdown">Ver componente</a>.</p>
+
+<p>O HTML:</p>
+
+<p>
+<pre><code>&lt;!-- Dropdown --&gt;
+&lt;div class="dropdown"&gt;
+  &lt;label for="dropdown-1" class="btn btn-dropdown"&gt;One Dropdown&lt;/label&gt;
+  &lt;input class="dropdown-open" type="checkbox" id="dropdown-1" aria-hidden="true" hidden /&gt;
+  &lt;div class="dropdown-inner"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</p>
+
+<p>O funcionamento é muito parecido com o Collapse, um <code>&lt;input hidden /&gt;</code>, com <code>type="checkbox"</code>.</p>
+
+<p>E o CSS:</p>
+
+<p>
+<pre><code>.dropdown-inner {
+  position: absolute;
+  .opacity(0);
+  .transition(opacity .1s);
+  visibility: hidden;
+}</code></pre>
+</p>
+
+<p>O dropdown terá <code>position: absolute</code> e por padrão vai ter <code>.opacity(0)</code> e <code>visibility: hidden</code> para ficar escondido. O motivo de usar <code>visibility: hidden</code> e não <code>display: none</code> é porque dessa forma conseguimos adicionar efeito de transição, aplicado com <code>.transition(opacity .1s);</code>.</p>
+
+<p>
+<pre><code>.dropdown-hover:hover .dropdown-inner,
+.dropdown-open:checked ~ .dropdown-inner {
+  .opacity(100);
+  visibility: visible;
+}</code></pre>
+</p>
+
+<p>Quando o <code>.dropdown-hover</code> ou <code>.dropdown-open</code> estiverem com status <code>:hover ou :checked</code>, o <code>.dropdown-inner</code> irmão <code>~</code> vai ficar visível.</p>
+
+<h3>Modal</h3>
+
+<p><a href="http://www.felipefialho.com/css-components/#component-modal">Ver componente</a>.</p>
+
+<p>O HTML:</p>
+
+<p>
+<pre><code>&lt;a href="#modal-one" class="btn">Example&lt;/a&gt;
+
+&lt;!-- Modal --&gt;
+&lt;div class="modal" id="modal-one" aria-hidden="true"&gt;
+  &lt;div class="modal-dialog"&gt;
+    &lt;div class="modal-header"&gt;
+      ...
+      &lt;a class="btn-close" href="#" aria-hidden="true"&gt;×&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class="modal-body"&gt;
+      ...
+    &lt;/div&gt;
+    &lt;div class="modal-footer"&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</p>
+
+<p>Também poderia ser usado a técnica do <code>&lt;input hidden /&gt;</code>, mas dessa vez vamos usar o <code>:target</code>. Temos portanto uma estrutura padrão de Modal. Com o botão fazendo referencia ao <code>id</code> do modal que desejamos ativar.</p>
+
+<p>O CSS:</p>
+
+<p>
+<pre><code>.modal {
+
+  // This is modal bg
+  &:before {
+    content: "";
+    display: none;
+    background: rgba(0,0,0,.6);
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 1001;
+  }
+
+  &:target {
+
+    // Active animate in modal
+    &:before {
+      display: block;
+    }
+    .modal-dialog {
+      .translate(0, 0);
+      top: 20%;
+    }
+
+  }
+
+}</code></pre>
+</p>
+
+<p>O <code>:before</code> cria o background do modal (o fundo escuro), dessa forma não precisamos criar nenhum elemento adicional, por padrão ele tem <code>display: none</code>.</p>
+
+<p>Através do <code>:target</code> informamos que o background (<code>:before</code>) terá <code>display: block</code> e o elemento <code>.modal-dialog</code> terá o translate zerado e <code>top: 20%</code>.</p>
+
+<p>
+<pre><code>
+// Mixin for transition/transform
+.transition-transform(@transition) {
+  -webkit-transition: -webkit-transform @transition;
+     -moz-transition: -moz-transform @transition;
+       -o-transition: -o-transform @transition;
+          transition: transform @transition;
+}
+
+// Modal dialog
+.modal-dialog {
+  margin-left: -300px;
+  position: fixed;
+  left: 50%;
+  top: -100%;
+  .translate(0, -500%);
+  .transition-transform(~"0.3s ease-out");
+  width: 80%;
+  max-width: 600px;
+  z-index: 1111;
+}</code></pre>
+</p>
+
+<p>Deixamos com <code>.translate(0, -500%)</code>, assim ele fica fora da área visível, para a animação usamos <code>.transition-transform(~"0.3s ease-out")</code>, que está definido em um mixin. O <code>top</code> inicial fica definido com <code>-100%</code>.</p>
+
+<h3>Tab</h3>
+
+<p><a href="http://www.felipefialho.com/css-components/#component-tab">Ver componente</a>.</p>
+
+<p>O HTML:</p>
+
+<p>
+<pre><code></code></pre>
+</p>
 
 <p class="end">Abraços e até a próxima ;)</p>

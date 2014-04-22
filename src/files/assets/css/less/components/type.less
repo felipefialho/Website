@@ -90,18 +90,18 @@ h1{
 
 h1,
 h2,
-h3 { 
-  line-height: @baseLineHeight * 2; 
+h3 {
+  line-height: @baseLineHeight * 2;
   margin: @baseLineHeight*2 0 (@baseLineHeight / 1.5);
 }
 
-h1 { font-size: @baseFontSize * 2.50; }  
-h2 { font-size: @baseFontSize * 2.25; } 
-h3 { font-size: @baseFontSize * 1.50; }  
-h4 { font-size: @baseFontSize * 1.25; } 
+h1 { font-size: @baseFontSize * 2.50; }
+h2 { font-size: @baseFontSize * 2.25; }
+h3 { font-size: @baseFontSize * 1.75; }
+h4 { font-size: @baseFontSize * 1.25; }
 h5 { font-size: @baseFontSize; }
-h6 { font-size: @baseFontSize * 0.85; } 
- 
+h6 { font-size: @baseFontSize * 0.85; }
+
 
 // Page header
 // -------------------------
@@ -159,8 +159,10 @@ code{
   .border-radius(3px);
   background: lighten(@gold, 60%);
   display: block;
+  font-size: 14px;
   margin-bottom: @baseLineHeight / 2;
   padding: 10px;
+  word-break: break-word;
 
   pre{
     margin: 0;
