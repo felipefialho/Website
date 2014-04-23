@@ -494,7 +494,7 @@ h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: 22px;
-  color: #555555;
+  color: #333333;
   text-rendering: optimizelegibility;
 }
 h1 small,
@@ -1768,14 +1768,14 @@ button.close {
     margin-right: 5px;
     color: #ffffff;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-    background-color: #0e0e0e;
-    background-image: -moz-linear-gradient(top, #151515, #040404);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#151515), to(#040404));
-    background-image: -webkit-linear-gradient(top, #151515, #040404);
-    background-image: -o-linear-gradient(top, #151515, #040404);
-    background-image: linear-gradient(to bottom, #151515, #040404);
+    background-color: #191919;
+    background-image: -moz-linear-gradient(top, #262626, #040404);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#262626), to(#040404));
+    background-image: -webkit-linear-gradient(top, #262626, #040404);
+    background-image: -o-linear-gradient(top, #262626, #040404);
+    background-image: linear-gradient(to bottom, #262626, #040404);
     background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff151515', endColorstr='#ff040404', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff262626', endColorstr='#ff040404', GradientType=0);
     border-color: #040404 #040404 #000000;
     border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
     *background-color: #040404;

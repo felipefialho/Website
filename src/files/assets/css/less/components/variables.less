@@ -56,7 +56,7 @@
 
 @headingsFontFamily:    @sansFontFamily; // empty to use BS default, @baseFontFamily
 @headingsFontWeight:    normal;    // instead of browser default, bold
-@headingsColor:         @gray; // empty to use BS default, @textColor
+@headingsColor:         @grayDark; // empty to use BS default, @textColor
 
 
 // Component sizing
@@ -88,79 +88,11 @@
 
 // COMPONENT VARIABLES
 // --------------------------------------------------
-
-
-// Z-index master list
-// -------------------------
-// Used for a bird's eye view of components dependent on the z-axis
-// Try to avoid customizing these :)
-@zindexDropdown:          1000;
-@zindexPopover:           1010;
-@zindexTooltip:           1030;
-@zindexFixedNavbar:       1030;
-@zindexModalBackdrop:     1040;
-@zindexModal:             1050;
-
-
-// Sprite icons path
-// -------------------------
-@iconSpritePath:          "../img/glyphicons-halflings.png";
-@iconWhiteSpritePath:     "../img/glyphicons-halflings-white.png";
-
-
-// Input placeholder text color
-// -------------------------
-@placeholderText:         @grayLight;
-
-
+ 
 // Hr border color
 // -------------------------
 @hrBorder:                @grayLighter;
-
-
-// Wells
-// -------------------------
-@wellBackground:                  #f5f5f5;
-
-
-// Navbar
-// -------------------------
-@navbarCollapseWidth:             768px;
-@navbarCollapseDesktopWidth:      @navbarCollapseWidth + 1;
-
-@navbarHeight:                    40px;
-@navbarBackgroundHighlight:       #ffffff;
-@navbarBackground:                darken(@navbarBackgroundHighlight, 5%);
-@navbarBorder:                    darken(@navbarBackground, 12%);
-
-@navbarText:                      #777;
-@navbarLinkColor:                 #777;
-@navbarLinkColorHover:            @grayDark;
-@navbarLinkColorActive:           @gray;
-@navbarLinkBackgroundHover:       transparent;
-@navbarLinkBackgroundActive:      darken(@navbarBackground, 5%);
-
-@navbarBrandColor:                @navbarLinkColor;
-
-// Inverted navbar
-@navbarInverseBackground:                #111111;
-@navbarInverseBackgroundHighlight:       #222222;
-@navbarInverseBorder:                    #252525;
-
-@navbarInverseText:                      @grayLight;
-@navbarInverseLinkColor:                 @grayLight;
-@navbarInverseLinkColorHover:            @white;
-@navbarInverseLinkColorActive:           @navbarInverseLinkColorHover;
-@navbarInverseLinkBackgroundHover:       transparent;
-@navbarInverseLinkBackgroundActive:      @navbarInverseBackground;
-
-@navbarInverseSearchBackground:          lighten(@navbarInverseBackground, 25%);
-@navbarInverseSearchBackgroundFocus:     @white;
-@navbarInverseSearchBorder:              @navbarInverseBackground;
-@navbarInverseSearchPlaceholderColor:    #ccc;
-
-@navbarInverseBrandColor:                @navbarInverseLinkColor;
-
+ 
 
 // GRID
 // --------------------------------------------------
@@ -196,35 +128,10 @@
 // 768px-979px
 @fluidGridColumnWidth768:      percentage(@gridColumnWidth768/@gridRowWidth768);
 @fluidGridGutterWidth768:      percentage(@gridGutterWidth768/@gridRowWidth768);
-
-//
-// Variables Extension
-// --------------------------------------------------
-
-// Typography
-// -------------------------
-@defaultMargin:        15px;
-
+ 
 // COMPONENT VARIABLES
 // --------------------------------------------------
-
-// Buttons
-// -------------------------
-@btnLoadingBackground:  #F5F5F5;
-
-// Modals
-// -------------------------
-@modalBigWidth:       	940px;
-@modalSmallWidth:       300px;
-
-// All Path
-// ----------------------
-@imgPath:         "../img/";
-
-// Sprite icons path
-// -------------------------
-@icoSpritePath:         "@{imgPath}ico/ico-sprite.png";
-
+ 
 // Icons Font path
 // -------------------------
 @iconFontFamily:        "icomoon";
