@@ -37,6 +37,15 @@ docpadConfig = {
 				Front-End Developer. Personal website with focused in Web Development, Front-End Developers and personal projects.
 				"""
 
+      # The website keywords (for SEO)
+      keywords: """
+        Desenvolvedor Front-End, HTML, CSS, Javascript, Tableless, Bootstrap, Desenvolvimento Web, Front-End Developer, HTML5, CSS3, Jquery, Front-End, Front-End Engineer, LESS, CSS Components
+        """
+
+      # The website keywords (for SEO) - English
+      keywords_en: """
+        HTML, CSS, Javascript, Tableless, Bootstrap, Web Development, Front-End Developer, HTML5, CSS3, Jquery, Front-End, Front-End Engineer, LESS, CSS Components
+        """
 			# The website's styles
 			styles: [
 				'/assets/css/style.css'
@@ -241,7 +250,7 @@ docpadConfig = {
 		  participation: "Projeto com configurações básica para rodar o Grunt."
 		  participationEn: "My Grunt Boilerplate"
 		  link: "https://github.com/LFeh/grunt-boilerplate"
-		, 
+		,
 		  # Cartman
 		  name: "Pure CSS3 - Eric Cartman"
 		  thumb: "/assets/img/projetos/cartman-css3.jpg"
@@ -434,6 +443,10 @@ docpadConfig = {
 			# Merge the document keywords with the site keywords
 			@site.keywords.concat(@document.keywords or []).join(', ')
 
+    # Get the prepared site/document keywords
+    getPreparedKeywordsEn: ->
+      # Merge the document keywords with the site keywords
+      @site.keywords_en.concat(@document.keywords_en or []).join(', ')
 
 		# Get the prepared relative file
 		getRelativeFile: ->
