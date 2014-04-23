@@ -78,7 +78,7 @@ docpadConfig = {
 		posts: [
 		  name: 'É possível utilizar componentes desenvolvidos apenas com CSS?'
 		  description: 'Após o lançamento do Pure CSS Components, escrevo as minhas impressões sobre a possibilidade de usar componentes desenvolvidos apenas com CSS.'
-		  date: '15/04/2014'
+		  date: '22/04/2014'
 		  year: '2014'
 		  path: 'e-possivel-utilizar-componentes-desenvolvidos-apenas-com-css'
 		,
