@@ -405,7 +405,7 @@ pathBlog: "../../"
 
 <p><img src="/assets/img/blog/etc/gt-metrix-plus.jpg" alt="Resultado Otimizado"></p>
   
-<p>Como podem observar, o resultado ao usar o CSS Components foi satisfatório. Mas o que trouxe mais resultados foi essa pequena otimização. retirando a imagem de "fork" e melhorando o carregando dos ícones carregando direto no CSS e evitando mais requisições.</p>
+<p>Como podem observar, o resultado ao usar o CSS Components foi satisfatório. Mas o que trouxe mais resultados foi essa pequena otimização, retirando a imagem de "fork" e melhorando o carregamento dos ícones adicionando direto no CSS, evitando assim mais requisições.</p>
 
 <p>Isso mostra que qualquer ganho de performance é importante, mas alguns ajustes que muitas vezes não lembramos de fazer, podem ser mais decisivos na otimização.</p>
 
