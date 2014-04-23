@@ -681,19 +681,21 @@ hr {
   -o-transform: translate(0, 0);
   transform: translate(0, 0);
   bottom: 5%;
-  top: 10%;
+  top: 5%;
 }
 .modal .close {
   color: #fff;
-  font-size: 20px;
-  position: absolute;
-  right: 0;
-  top: -40px;
+  font-size: 40px;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 1200;
 }
 .modal-dialog {
   background: #fefefe;
   border: #fefefe solid 5px;
   margin-left: -550px;
+  position: fixed;
   left: 50%;
   top: -100%;
   -webkit-transform: translate(0, -500%);
@@ -708,14 +710,12 @@ hr {
   z-index: 1111;
   width: 80%;
   max-width: 1100px;
+  overflow-y: auto;
 }
 .modal-dialog img {
   display: block;
   margin: 0 auto;
   max-width: 100%;
-}
-.modal-body {
-  overflow-y: auto;
 }
 .close {
   float: right;
