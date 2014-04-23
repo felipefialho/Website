@@ -680,6 +680,7 @@ hr {
   -ms-transform: translate(0, 0);
   -o-transform: translate(0, 0);
   transform: translate(0, 0);
+  bottom: 5%;
   top: 10%;
 }
 .modal .close {
@@ -693,7 +694,6 @@ hr {
   background: #fefefe;
   border: #fefefe solid 5px;
   margin-left: -550px;
-  position: absolute;
   left: 50%;
   top: -100%;
   -webkit-transform: translate(0, -500%);
@@ -713,6 +713,9 @@ hr {
   display: block;
   margin: 0 auto;
   max-width: 100%;
+}
+.modal-body {
+  overflow-y: auto;
 }
 .close {
   float: right;
