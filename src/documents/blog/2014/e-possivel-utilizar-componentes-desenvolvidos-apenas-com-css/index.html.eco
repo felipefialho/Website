@@ -58,7 +58,11 @@ pathBlog: "../../"
   &lt;/div&gt;
 &lt;/div&gt;</code></pre> </p>
 
-<p>Existe um <code>&lt;input class="carousel-open" type="radio" hidden &gt;</code> antes de cada item. Também existe alguns <code>&lt;label&gt;</code> com o <code>for</code> indicando para o item que desejamos ter como alvo. Esse é o truque.</p>
+<p>Existe um <code>&lt;input class="carousel-open" type="radio" hidden &gt;</code> antes de cada item.</p>
+
+<p>Usamos ainda pares de <code>&lt;label&gt;</code> com o <code>for</code> apontando para o item que desejamos ter como alvo. Esse é o truque.</p>
+
+<p>Para os bullets de indicadores, também usamos <code>&lt;label&gt;</code> com o <code>for</code> apotando para o item alvo.</p>
 
 <p>E agora o CSS passo a passo:</p>
 
@@ -199,7 +203,7 @@ pathBlog: "../../"
 
 <p>Quando o <code>.dropdown-hover</code> ou <code>.dropdown-open</code> estiverem com status <code>:hover ou :checked</code>, o <code>.dropdown-inner</code> irmão <code>~</code> vai ficar visível.</p>
 
-<h3>Modal</h3>
+<h4>Modal</h4>
 
 <p><a href="http://www.felipefialho.com/css-components/#component-modal">Ver componente</a>.</p>
 
@@ -225,7 +229,7 @@ pathBlog: "../../"
 &lt;/div&gt;</code></pre>
 </p>
 
-<p>Também poderia ser usado a técnica do <code>&lt;input hidden /&gt;</code>, mas dessa vez vamos usar o <code>:target</code>. Temos portanto uma estrutura padrão de Modal. Com o botão fazendo referencia ao <code>id</code> do modal que desejamos ativar.</p>
+<p>Também poderia ser usado a técnica do <code>&lt;input hidden /&gt;</code>, mas dessa vez vamos usar o <code>:target</code>. Temos portanto uma estrutura padrão de Modal com o botão fazendo referencia ao <code>id</code> do modal que desejamos ativar.</p>
 
 <p>O CSS:</p>
 
@@ -288,14 +292,105 @@ pathBlog: "../../"
 
 <p>Deixamos com <code>.translate(0, -500%)</code>, assim ele fica fora da área visível, para a animação usamos <code>.transition-transform(~"0.3s ease-out")</code>, que está definido em um mixin. O <code>top</code> inicial fica definido com <code>-100%</code>.</p>
 
-<h3>Tab</h3>
+<h4>Tab</h4>
 
 <p><a href="http://www.felipefialho.com/css-components/#component-tab">Ver componente</a>.</p>
 
 <p>O HTML:</p>
 
 <p>
-<pre><code></code></pre>
+<pre><code>&lt;!-- Tab --&gt;
+&lt;div class="tab"&gt;
+
+  &lt;!-- Tab Painel --&gt;
+  &lt;div class="tab-painel"&gt;
+    &lt;input class="tab-open" id="tab-1" name="tab-wrap-1" type="radio" aria-hidden="true" hidden checked&gt;
+    &lt;label class="tab-nav" for="tab-1"&gt;Tab 1&lt;/label&gt;
+    &lt;div class="tab-inner"&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="tab-painel"&gt;
+    &lt;input class="tab-open" id="tab-2" name="tab-wrap-1" type="radio" aria-hidden="true" hidden&gt;
+    &lt;label class="tab-nav" for="tab-2"&gt;Tab 2&lt;/label&gt;
+    &lt;div class="tab-inner"&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="tab-painel"&gt;
+    &lt;input class="tab-open" id="tab-3" name="tab-wrap-1" type="radio" aria-hidden="true" hidden /&gt;
+    &lt;label class="tab-nav" for="tab-3"&gt;Tab 3&lt;/label&gt;
+    &lt;div class="tab-inner"&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
 </p>
+
+<p>Mais um caso de uso do <code>&lt;input hidden /&gt;</code> do tipo <code>radio</code>.</p>
+
+<p>A maior diferença dessa estrutura para a usada normalmente para tabs, é não ter um elemento de agrupamento para o menu. Precisamos utilizar um <code>&lt;label&gt;</code> com a classe <code>.tab-nav</code>, entre o <code>&lt;input hidden /&gt;</code> e o <code>.tab-inner</code></p>
+
+<p>O CSS:</p>
+
+<p>
+<pre><code>.tab{
+  position: relative;
+}
+
+.tab-painel{
+  display: inline-block;
+  min-height: 150px;
+}</code></pre>
+</p>
+
+<p>Adicionamos <code>position: relative</code> na <code>.tab</code> para que os elementos absolutos se posicionem a partir dele. No <code>.tab-painel</code> colocamos um tamanho minimo e <code>display: inline-block</code> para que fique lado-a-lado.</p>
+
+<p>
+<pre><code>.tab-nav {
+  border: @gray-light solid 1px;
+  cursor: pointer;
+  display: inline-block;
+  padding: (@space / 2) @space;
+  margin-right: @space;
+}
+
+.tab-nav:hover,
+.tab-open:checked ~ .tab-nav {
+  background-color: @gray-lighter;
+}</code></pre>
+</p>
+
+<p>Aqui damos algumas caracteristicas visuais simples para a <code>.tab-nav</code>.</p>
+
+<p>
+<pre><code>.tab-inner {
+  .opacity(0);
+  margin-top: @space;
+  position: absolute; left: 0;
+  .transition(opacity .1s);
+  visibility: hidden;
+}
+
+.tab-open:checked ~ .tab-inner{
+  .opacity(100);
+  visibility: visible;
+}</code></pre>
+</p>
+
+<p>Definimos que a <code>.tab-inner</code> por padrão seja invisível e absoluta. Em seguida definimos que ela ficará visível quando o <code>.tab-open</code> irmão estiver como <code>:checked</code>.</p>
+
+<h3>Teste real</h3>
+
+<p>E a melhor maneira de testar, sem dúvidas é aplicando em um projeto real. Para isso escolhi meu site.</p>
+
+<p>Aqui um resultado de teste no <a href="gtmetrix.com">GTMetrix</a> antes da alteração.</p>
+
+<p>Fui radical e removi todo o Javascript do projeto. Estou usando o CSS Componentes de Modal e Collapse.</p>
+
+<p>Como plus, otimizei o carregamento dos icones, fiz algumas melhorias no CSS e retirei a imagem de fork.</p>
 
 <p class="end">Abraços e até a próxima ;)</p>
