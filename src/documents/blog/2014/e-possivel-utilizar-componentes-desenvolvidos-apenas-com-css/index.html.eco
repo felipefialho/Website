@@ -11,7 +11,7 @@ pathBlog: "../../"
 
 <h3>Sobre o projeto</h3>
 
-<p>Sou apaixonado por qualquer coisa desenvolvida usando apenas CSS. Isso começou em meados de 2012, quando tive contato com o <a href="http://bernarddeluna.com/project/pure-css3-homer/">Homer</a> do Bernard de Luna, no mesmo dia desenvolvi o <a href="http://codepen.io/LFeh/details/qzDCJ">Cartman</a> e não parei mais, fiz <a href="http://codepen.io/LFeh/">outras brincadeiras com CSS</a>, mas principalmente comecei a buscar no CSS, soluções utilizaveis para os projetos.</p>
+<p>Sou apaixonado por qualquer coisa desenvolvida usando apenas CSS. Isso começou em meados de 2012, quando tive contato com o <a href="http://bernarddeluna.com/project/pure-css3-homer/">Homer</a> do Bernard de Luna, no mesmo dia desenvolvi o <a href="http://codepen.io/LFeh/details/qzDCJ">Cartman</a> e não parei mais, fiz <a href="http://codepen.io/LFeh/">outras brincadeiras com CSS</a>, mas principalmente comecei a buscar no CSS, soluções utilizáveis para os projetos.</p>
 
 <p>Após desenvolver alguns componentes separadamente, imaginei que seria muito mais interessante deixar tudo em um local só.</p>
 
@@ -19,7 +19,7 @@ pathBlog: "../../"
 
 <p>Todos os componentes foram desenvolvidos usando duas técnicas: <code>:target</code> e <code>input hidden</code>.</p>
 
-<p>Isso porque, através dessas técnicas conseguimos de fato fornecer um estado para um elemento alvo. Ou seja, conseguimos saber qual é o elemento que está "ativo" e fornecer qualquer interação que podemos imaginar (e que os navegadores atuais suportem :p).</p>
+<p>Isso porque, através dessas técnicas conseguimos de fato fornecer um estado para um elemento alvo. Ou seja, conseguimos saber qual elemento está "ativo" e fornecer qualquer interação que podemos imaginar (e que os navegadores atuais suportem :p).</p>
 
 <h3>Componentes</h3>
 
@@ -60,7 +60,7 @@ pathBlog: "../../"
 
 <p>Existe um <code>&lt;input class="carousel-open" type="radio" hidden &gt;</code> antes de cada item.</p>
 
-<p>Usamos ainda pares de <code>&lt;label&gt;</code> com o <code>for</code> apontando para o item que desejamos ter como alvo. Esse é o truque.</p>
+<p>Usamos ainda pares de <code>&lt;label&gt;</code> com o <code>for</code> apontando para o item alvo. Esse é o truque.</p>
 
 <p>Para os bullets de indicadores, também usamos <code>&lt;label&gt;</code> com o <code>for</code> apotando para o item alvo.</p>
 
@@ -73,7 +73,7 @@ pathBlog: "../../"
 }</code></pre>
 </p>
 
-<p>O <code>overflow: hidden</code> para nada ficar fora do bloco e o <code>position: relative</code> para os filhos ficaram absolutos em relação a ele.</p>
+<p>O <code>overflow: hidden</code> para nada aparecer fora do bloco e o <code>position: relative</code> para os filhos ficarem absolutos em relação a ele.</p>
 
 <p>
 <pre><code>.carousel-item {
@@ -83,7 +83,7 @@ pathBlog: "../../"
 }</code></pre>
 </p>
 
-<p>Deixamos todos os itens invisiveis através da opacidade em 0. E é defininida uma animação de 6 segundos durante a opacidade. O <code>position: absolute</code> serve para os itens ficarem posicionados sem influenciar no tamanho do container.</p>
+<p>Deixamos todos os itens invisíveis através da opacidade 0. É definida uma animação de 6 segundos durante a mudança de opacidade. O <code>position: absolute</code> serve para os itens ficarem posicionados sem influenciar no tamanho do container.</p>
 
 <p>
 <pre><code>.carousel-open:checked + .carousel-item {
@@ -92,7 +92,7 @@ pathBlog: "../../"
 }</code></pre>
 </p>
 
-<p>Atribuimos que quando o <code>.carousel-item</code> for o irmão imediato <code>+</code> do <code>.carousel-open</code> (no caso um <code>&lt;input radio hidden&gt;</code>) que estiver checkado, ficará visível e vai ficar com o <code>position: static</code>, e assim terá um tamanho que vai influenciar o container.</p>
+<p>Atribuímos que quando o <code>.carousel-item</code> for o irmão imediato <code>+</code> do <code>.carousel-open</code> (no caso um <code>&lt;input radio hidden&gt;</code>) que estiver checkado, ficará visível e vai ficar com o <code>position: static</code>, e assim terá um tamanho que vai influenciar o container.</p>
 
 <p>
 <pre><code>.carousel-control {
@@ -121,7 +121,7 @@ pathBlog: "../../"
 }</code></pre>
 </p>
 
-<p>Esse pedaço é para ativar o indicador. Básicamente, quando o item ativo for irmão do par de controle especifico, e esse também for irmão do indicador que desejamos alcançar (exemplo <code>li:nth-child(x)</code>)... ele também ficará ativo.</p>
+<p>Aqui ativamos  o indicador. Basicamente, quando o item ativo for irmão do par de controle especifico, e esse também for irmão do indicador que desejamos alcançar (exemplo <code>li:nth-child(x)</code>)... ele também ficará ativo.</p>
 
 <h4>Collapse</h4>
 
@@ -364,7 +364,7 @@ pathBlog: "../../"
 }</code></pre>
 </p>
 
-<p>Aqui damos algumas caracteristicas visuais simples para a <code>.tab-nav</code>.</p>
+<p>Aqui damos algumas características visuais simples para a <code>.tab-nav</code>.</p>
 
 <p>
 <pre><code>.tab-inner {
@@ -385,12 +385,34 @@ pathBlog: "../../"
 
 <h3>Teste real</h3>
 
-<p>E a melhor maneira de testar, sem dúvidas é aplicando em um projeto real. Para isso escolhi meu site.</p>
+<p>E a melhor maneira de testar, é aplicando em um projeto real. Para isso escolhi meu site.</p>
+
+<hr>
 
 <p>Aqui um resultado de teste no <a href="gtmetrix.com">GTMetrix</a> antes da alteração.</p>
 
-<p>Fui radical e removi todo o Javascript do projeto. Estou usando o CSS Componentes de Modal e Collapse.</p>
+<p><img src="/assets/img/blog/etc/gt-metrix-old.jpg" alt="Resultado com Javascript"></p>
 
-<p>Como plus, otimizei o carregamento dos icones, fiz algumas melhorias no CSS e retirei a imagem de fork.</p>
+<hr>
 
-<p class="end">Abraços e até a próxima ;)</p>
+<p>Fui radical e removi todo o Javascript do projeto. Passei a usar o CSS Componentes de Modal e Collapse.</p>
+
+<p><img src="/assets/img/blog/etc/gt-metrix-new.jpg" alt="Resultado sem Javascript"></p>
+
+<hr>
+
+<p>Como plus, otimizei o carregamento dos icones e retirei a imagem de "fork".</p>
+
+<p><img src="/assets/img/blog/etc/gt-metrix-new.jpg" alt="Resultado Otimizado"></p>
+  
+<p>Como podem observar, o resultado ao usar o CSS Components foi satisfatório. Mas o que trouxe mais resultados foi essa pequena otimização. retirando a imagem de "fork" e melhorando o carregando dos ícones carregando direto no CSS e evitando mais requisições.</p>
+
+<p>Isso mostra que qualquer ganho de performance é importante, mas alguns ajustes que muitas vezes não lembramos de fazer, podem ser mais decisivos na otimização.</p>
+
+<h3>Conclusão</h3>
+
+<p>Afirmo que <b>SIM</b>, é possível utilizar componentes apenas em CSS, especialmente em projetos menores. E não duvido que isso possa ser uma tendência daqui para frente.</p> 
+
+<p>O Javascript se consolida cada vez mais para várias funções que não usávamos antigamente, e vejo boas possibilidades do CSS ter um papel cada vez mais importante na manipulação de interações.</p>
+
+<p class="end">Espero que tenham gostado :D</p>
