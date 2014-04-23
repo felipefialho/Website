@@ -403,7 +403,7 @@ pathBlog: "../../"
 
 <p>Como plus, otimizei o carregamento dos icones e retirei a imagem de "fork".</p>
 
-<p><img src="/assets/img/blog/etc/gt-metrix-new.jpg" alt="Resultado Otimizado"></p>
+<p><img src="/assets/img/blog/etc/gt-metrix-plus.jpg" alt="Resultado Otimizado"></p>
   
 <p>Como podem observar, o resultado ao usar o CSS Components foi satisfatório. Mas o que trouxe mais resultados foi essa pequena otimização. retirando a imagem de "fork" e melhorando o carregando dos ícones carregando direto no CSS e evitando mais requisições.</p>
 
