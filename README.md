@@ -1,37 +1,45 @@
-# [Felipe Fialho Website](http://www.felipefialho.com/) 
+My Website
+============
+
+[View project](http://www.felipefialho.com/) 
+
+## Contributing
+
+Please read this [Coding Style](https://github.com/LFeh/coding-style/) for [Issues](https://github.com/LFeh/Website/issues) and coding standards.
+
+All changes must be made in `/src` folder. The CSS should be modified using the **LESS** preprocessor.
 
 ## Getting Started
 
-1. [Install DocPad](https://github.com/bevry/docpad)
+  ```bash
+ 
+  # Getting Started
+  # ---------------
 
-1. Clone the project and run the server
+  # 1. Fork this repository and clone it into the current directory
+  git clone https://github.com/<your-username>/Website.git
 
-	``` bash
-	git clone https://github.com/LFeh/Website.git
-	
-	cd LFeh/Website
-	npm install
-	docpad run
-	```
+  # 2. Navigate to the newly cloned directory
+  cd Website
 
-1. [Open http://localhost:9778/](http://localhost:9778/)
+  # 3. Install the dependencies
+  npm install
 
-1. Start hacking away by modifying the `src` directory
 
-## For Watch
+  # Development
+  # -----------
 
-1.
-	``` 
-	grunt w
-	```
+  # Run project
+  docpad run 
 
-## For Build
+  # For watching your .less files changes and compile CSS
+  grunt w
 
-1.
-	``` 
-	docpad generate & grunt build
-	```
+  # Build the project for deploy
+  docpad generate & grunt build
 
+  ```
+  
 ## License
  
 [MIT License](http://felipefialho.mit-license.org/) © Luiz Felipe Tartarotti Fialho

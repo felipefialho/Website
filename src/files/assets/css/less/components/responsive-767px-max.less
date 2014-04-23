@@ -53,19 +53,7 @@
   .row-fluid [class*="offset"]:first-child {
     margin-left: 0;
   }
-
-  // Modals
-  .modal {
-    position: fixed;
-    top:   20px;
-    left:  20px;
-    right: 20px;
-    width: auto;
-    margin: 0;
-    &.fade  { top: -100px; }
-    &.fade.in { top: 20px; }
-  }
-
+ 
   // Nav Side
   .nav-side{
     position: static;
@@ -101,6 +89,17 @@
     margin-top: 3px;
   }
 
+  .nav-collapse {
+    border-top: @gray solid 1px;
+    display: none;
+    text-align: center;
+  }
+
+  .collapse-open:checked ~ .nav-collapse {
+    display: block;
+  }
+ 
+
   // Photo
   .photo{
     display: none;
@@ -127,27 +126,4 @@
   }
 
 }
-
-// UP TO LANDSCAPE PHONE
-// ---------------------
-
-@media (max-width: 480px) {
-
-  // Smooth out the collapsing/expanding nav
-  .nav-collapse {
-    -webkit-transform: translate3d(0, 0, 0); // activate the GPU
-  }
-
-  // Modals
-  .modal {
-    top:   10px;
-    left:  10px;
-    right: 10px;
-  }
-  .modal-header .close {
-    padding: 10px;
-    margin: -10px;
-  }
-
-
-}
+ 

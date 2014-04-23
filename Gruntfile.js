@@ -6,22 +6,7 @@ module.exports = function( grunt ) {
     dist: 'out/'
   };
 
-  // Set scripts
-  var scripts = [
-
-    // Jquery
-    '<%= config.dev %>**/jquery-2.1.0.min.js',
-
-      // Plugins bootstrap
-    '<%= config.dev %>**/bootstrap-transition.js', // Transitions (required for any animation)
-    '<%= config.dev %>**/bootstrap-modal.js', // Modals
-    '<%= config.dev %>**/bootstrap-collapse.js', // Collapse
-
-    // General starting
-    'src/**/_general.js'
-  ];
-
-  grunt.initConfig({
+grunt.initConfig({
 
   // Config path
   config: PathConfig,
@@ -85,19 +70,7 @@ module.exports = function( grunt ) {
      }
     }
   },
-
-  // Uglify
-  uglify: {
-    options: {
-      mangle : false
-    },
-    dev: {
-      files : {
-        '<%= config.dev %>files/assets/js/scripts.min.js': scripts
-      }
-    }
-  },
-
+ 
   // Watch
   watch : {
      options: {
@@ -108,14 +81,6 @@ module.exports = function( grunt ) {
       '<%= config.dev %>**/*.less'
       ],
       tasks : ['less:dev']
-    },
-    js: {
-      files : [
-      '<%= config.dev %>**/js/*.js',
-      '!<%= config.dev %>**/js/scripts.min.js',
-      'Gruntfile.js'
-      ],
-      tasks : ['uglify:dev']
     }
   },
 
@@ -139,8 +104,7 @@ module.exports = function( grunt ) {
 grunt.loadNpmTasks('grunt-contrib-clean');
 grunt.loadNpmTasks('grunt-contrib-htmlmin');
 grunt.loadNpmTasks('grunt-contrib-imagemin');
-grunt.loadNpmTasks('grunt-contrib-less');
-grunt.loadNpmTasks('grunt-contrib-uglify');
+grunt.loadNpmTasks('grunt-contrib-less'); 
 grunt.loadNpmTasks('grunt-contrib-watch');
 
 // Tasks runnings

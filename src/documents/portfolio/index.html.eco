@@ -31,9 +31,9 @@ path: "../../"
 				</ul>	
 			</div>	
 		</div>	
-		<div id="modal-<%= portfolio.idName %>" class="modal modal-big fade" tabindex="-1" role="dialog" aria-labelledby="modal-<%= portfolio.idName %>" aria-hidden="true">
-			<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="icon-close" aria-hidden="true"></span></button>
-			<div class="modal-body">
+		<div id="modal-<%= portfolio.idName %>" class="modal" tabindex="-1" role="dialog" aria-labelledby="modal-<%= portfolio.idName %>" aria-hidden="true">
+			<div class="modal-dialog">
+				<a href="#" class="close"><span class="icon-close" aria-hidden="true"></span></a>
 				<img src="<%= @getRelativeFile() %><%= portfolio.imgModal %>" alt="<%= portfolio.name %>">
 			</div>
 		</div>
