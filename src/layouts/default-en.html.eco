@@ -15,7 +15,7 @@
 	<!-- Site Properities -->
 	<title><%= @getPreparedTitleEn() %></title>
 	<meta name="description" content="<%= @getPreparedDescriptionEn() %>" />
-	<meta name="keywords" content="<%= @getPreparedKeywords() %>" />
+	<meta name="keywords" content="Front-End Developer, HTML, CSS, Javascript, Tableless, Bootstrap, Web Development, HTML5, CSS3, Jquery, Front-End, Front-End Engineer, LESS, CSS Components" />
 
 	<!-- Meta -->
 	<%- @getBlock('meta').toHTML() %>
@@ -54,8 +54,8 @@
 				<%- @content %>
 			</article>
 
-		</section> 
-	</div> 
+		</section>
+	</div>
 
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

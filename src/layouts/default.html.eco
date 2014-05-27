@@ -15,7 +15,7 @@
 	<!-- Site Properities -->
 	<title><%= @getPreparedTitle() %></title>
 	<meta name="description" content="<%= @getPreparedDescription() %>" />
-	<meta name="keywords" content="<%= @getPreparedKeywords() %>" />
+	<meta name="keywords" content="Desenvolvedor Front-End, Front-End, Desenvolvimento Front-End, HTML, CSS, Javascript, Tableless, Bootstrap, Desenvolvimento Web, Front-End Developer, HTML5, CSS3, Jquery, Front-End, Front-End Engineer, LESS, CSS Components" />
 
 	<!-- Meta -->
 	<%- @getBlock('meta').toHTML() %>
@@ -53,7 +53,7 @@
 			<article class="main" role="main">
 				<%- @content %>
 			</article>
-		</section> 
+		</section>
 	</div>
 
 	<script>

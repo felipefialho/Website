@@ -37,15 +37,6 @@ docpadConfig = {
 				Front-End Developer. Personal website with focused in Web Development, Front-End Developers and personal projects.
 				"""
 
-      # The website keywords (for SEO)
-      keywords: """
-        Desenvolvedor Front-End, HTML, CSS, Javascript, Tableless, Bootstrap, Desenvolvimento Web, Front-End Developer, HTML5, CSS3, Jquery, Front-End, Front-End Engineer, LESS, CSS Components
-        """
-
-      # The website keywords (for SEO) - English
-      keywords_en: """
-        HTML, CSS, Javascript, Tableless, Bootstrap, Web Development, Front-End Developer, HTML5, CSS3, Jquery, Front-End, Front-End Engineer, LESS, CSS Components
-        """
 			# The website's styles
 			styles: [
 				'/assets/css/style.css'
@@ -437,16 +428,6 @@ docpadConfig = {
 		getPreparedDescriptionEn: ->
 			# if we have a document description, then we should use that, otherwise use the site's description
 			@document.description_en or @site.description_en
-
-		# Get the prepared site/document keywords
-		getPreparedKeywords: ->
-			# Merge the document keywords with the site keywords
-			@site.keywords.concat(@document.keywords or []).join(', ')
-
-    # Get the prepared site/document keywords
-    getPreparedKeywordsEn: ->
-      # Merge the document keywords with the site keywords
-      @site.keywords_en.concat(@document.keywords_en or []).join(', ')
 
 		# Get the prepared relative file
 		getRelativeFile: ->
