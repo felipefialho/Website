@@ -11,7 +11,7 @@ pathBlog: "../../"
 
 <h3>Label x Placeholder</h3>
 
-<p>O <code>&lt;label&gt;</code> deve ser utilizado como rótulo de um campo de formulário e deve ser sempre utilizado. Já o <code>&lt;placeholder&gt;</code> passa informações complementares sobre o campo antes do usuário digitar e seu uso é opicional.</p>
+<p>O <code>&lt;label&gt;</code> deve ser utilizado como rótulo de um campo de formulário e deve ser sempre utilizado. Já o <code>&lt;placeholder&gt;</code> passa informações complementares sobre o campo antes do usuário digitar e seu uso é opcional.</p>
 
 <p>O problema é que tem sido muito comum encontrar formulários que utilizam apenas o <code>&lt;placeholder&gt;</code>.</p>
 
