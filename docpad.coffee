@@ -76,7 +76,7 @@ docpadConfig = {
 
 		# Blog posts
 		posts: [
-      name: 'Não use Placeholder no lugar da Label!'
+      name: 'Não use Placeholder no lugar da Label'
       description: 'O placeholder ajuda muito com informações complementares do campo de formulário, mas não deveria ser utilizado para substituir o label.</code>.'
       date: '02/06/2014'
       year: '2014'
