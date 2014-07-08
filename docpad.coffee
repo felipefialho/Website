@@ -76,8 +76,14 @@ docpadConfig = {
 
 		# Blog posts
 		posts: [
+      name: 'Sobre Data Atributes e Javascript'
+      description: 'Nos últimos projetos comecei a testar o uso do [data-*] do HTML5 como seletor no Javascript. Agora vou listar algumas coisas que observei com essa prática.'
+      date: '08/07/2014'
+      year: '2014'
+      path: 'sobre-data-atributes-e-javascript'
+    ,
       name: 'Não use Placeholder no lugar da Label'
-      description: 'O placeholder ajuda muito com informações complementares do campo de formulário, mas não deveria ser utilizado para substituir o label.</code>.'
+      description: 'O placeholder ajuda muito com informações complementares do campo de formulário, mas não deveria ser utilizado para substituir o label.'
       date: '02/06/2014'
       year: '2014'
       path: 'nao-use-placeholder-no-lugar-da-label'
