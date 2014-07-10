@@ -23,7 +23,7 @@ pathBlog: "../../"
 
 <p>Ao invés de acessar o elemento via Javascript através de <code>.classe</code> ou <code>#id</code>, podemos usar os <code>[data-attributes]</code> do HTML5.</p>
 
-<p>Por exemplo (em jQuery) para iniciar uma interação de “swipe touch” em um menu, podemos chamar via <code>.classe</code>:</p>
+<p>Por exemplo (em jQuery) para iniciar uma interação de “swipe” em um menu, podemos chamar via <code>.classe</code>:</p>
 
 <code>swipeTouchMenuList('.nav-aside');</code>
 
@@ -46,22 +46,25 @@ interação em “swipe” em telas Touch. Então chamamos a função, atribuind
     <code>swipeTouchMenuList('.nav-aside');</code>
     </li>
     <li>
-      <p>Porém, em uma das páginas. O menu apresenta o mesmo estilo, mas não deveria apresentar essa funcionalidade de swipe. Podemos atribuir a interação a um #id e adicionar o id nos elementos que devem apresentar esse comportamento.</p>
+      <p>Porém, em uma das páginas. O menu apresenta o mesmo estilo, mas não deveria ter essa funcionalidade de swipe. Poderíamos atribuir a interação a um #id e adicionar o id nos elementos que devem apresentar esse comportamento.</p>
       <code>swipeTouchMenuList('#nav-touch'); </code>
     </li>
     <li>
-      <p>Para complicar mais, esse menu aparece duas vezes em outra página, porém como sabemos, não podemos repetir um #id na mesma página. E fazer a chamada para cada #id separadamente também não é uma solução adequada. Poderíamos usar uma classe sem estilo, que serviria somente para a chamada no Javascript, algo como:</p>
+      <p>Para complicar mais, esse menu aparece duas vezes em outra página, porém como sabemos, não podemos repetir um #id na mesma página. E fazer a chamada para cada #id separadamente também não é uma solução adequada.</p>
+      <p>Poderíamos então usar uma classe sem estilo, que serviria somente para a chamada no Javascript, algo como:</p>
       <code>swipeTouchMenuList('.js.nav-touch);</code>
-      <p>Essa é uma solução viável, mas manter as classes apenas para estilização no CSS. parece ser uma  solução mais elegante </p>
+      <p>Essa é uma solução viável e funcional, mas manter as classes apenas para estilização no CSS seria mais elegante.</p>
     </li>
     <li>
-      <p>Então finalmente, podemos usar o [data-*] para isso. swipeTouchMenuList('[data-toggle="nav-touch"]'); Dessa forma, basta adicionar [data-toggle="nav-touch"] ao elemento que deve apresentar esse comportamento.</p>
+      <p>Então finalmente, podemos usar o [data-*] para isso. </p>
+      <code>swipeTouchMenuList('[data-toggle="nav-touch"]');</code>
+      <p>Dessa forma, basta adicionar [data-toggle="nav-touch"] ao elemento que deve apresentar esse comportamento.</p>
     </li>
 </ol>
 
 <h4>Através de CSS...</h4>
 
-<p>E claro, também é possível manipular os Data Atributes através de CSS, portanto, podemos adicionar animações ou algum estilo, somente para a classe que apresenta essa função:</p>
+<p>E claro, também é possível manipular os Data Atributes através de CSS, portanto, podemos adicionar animações ou algum estilo específico:</p>
 
 <code><pre>.nav-aside[data-toggle="nav-touch"] {
   ...
@@ -82,7 +85,9 @@ interação em “swipe” em telas Touch. Então chamamos a função, atribuind
 
 <p>Existe certo problema com relação a performance. Uma diferença negativa de 88% com relação aos seletores <code>.classe</code> não é algo que deve ser ignorado.</p>
 
-<p>Porém, como todos os projetos, vale uma analise prévia. Acredito que apenas em aplicações realmente grandes essa diferença seria notada. Portanto minha indicação seria de usar sem medo em projetos menores, e realizar testes para verificar o impacto na performance em projetos gigantes.</p>
+<p>Porém, como todos os projetos, vale uma analise prévia. Acredito que apenas em aplicações realmente grandes essa diferença seria notada.</p>
+
+<p>Portanto minha indicação seria de usar sem medo em projetos menores, e realizar testes para verificar o impacto na performance em projetos maiores.</p>
 
 
 
