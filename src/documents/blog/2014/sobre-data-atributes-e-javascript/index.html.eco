@@ -31,7 +31,7 @@ pathBlog: "../../"
 
 <code>swipeTouchMenuList('#nav-touch');</code>
 
-<p>Mas a ideia é fazer a chamada via <code>[data-*]</code>:</p>
+<p>Mas a ideia aqui é fazer a chamada via <code>[data-*]</code>:</p>
 
 <code>swipeTouchMenuList('[data-toggle="nav-touch"]');</code>
 
@@ -67,6 +67,22 @@ interação em “swipe” em telas Touch. Então chamamos a função, atribuind
   ...
 }</pre></code>
 
+<h3>Na prática!</h3>
+
+<p>Para mostrar em funcionamento, criei uma base de código bem rápida (peço que desconsiderem a qualidade do mesmo :p) e imaginei o seguinte cenário:</p>
+
+<ol>
+  <li>Uma página que vai apresentar dois menus idênticos visualmente</li>
+  <li>Um deles servirá como filtro para tags usando um plugin de "tabs"</li>
+  <li>O outro será um menu comum com link para outras páginas</li>
+</ol>
+
+<p>Em funcionamento:</p>
+
+<iframe width="100%" height="300" src="http://jsfiddle.net/LFeh/5Qr7b/2/embedded/result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+<p>Ou seja, para ativar o plugin de "tabs", simplesmente usei <code>[data-toggle="tab"]</code>, evitando assim atrelar o plugin na classe de estilo <code>.nav</code> ou adicionar uma classe extra apenas para chamar a função.</p>
+
 <h3>E a performance?</h3>
 
 <p>Fazendo um pequeno teste no <a href="http://jsperf.com/long-selectors-vs-data/17">jsPerf</a>, podemos observar que:</p>
@@ -78,11 +94,11 @@ interação em “swipe” em telas Touch. Então chamamos a função, atribuind
 
 <h3>Conclusão</h3>
 
-<p>Usar o <code>[data-*]</code> para separar de vez estilização e comportamento é uma solução bastante elegante e funcional a primeira vista. Se bem usada, acredito ser possível ter um ganho de escalabilidade nos componentes.</p>
+<p>Usar o <code>[data-*]</code> para separar estilização e comportamento é uma solução bastante elegante e funcional. Se bem utilizada, acredito em um ganho importante de escalabilidade nos componentes.</p>
 
-<p>Existe certo problema com relação a performance. Uma diferença negativa de 88% com relação aos seletores <code>.classe</code> não é algo que deve ser ignorado.</p>
+<p>Porém existem problemas com relação a performance. Uma diferença negativa de 88% com relação aos seletores <code>.classe</code> não é algo que deve ser ignorado.</p>
 
-<p>Porém, como todos os projetos, vale uma analise prévia. Acredito que apenas em aplicações realmente grandes essa diferença seria notada. Portanto minha indicação seria de usar sem medo em projetos menores, e realizar testes para verificar o impacto na performance em projetos gigantes.</p>
+<p>Entretando, como em todos os projetos, vale uma analise prévia. Acredito que apenas em aplicações realmente grandes essa diferença seria notada. Portanto minha indicação seria de usar sem medo em projetos menores, e realizar testes para verificar o impacto na performance de projetos maiores.</p>
 
 
 

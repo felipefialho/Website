@@ -588,7 +588,8 @@ code {
 code pre {
   margin: 0;
 }
-p code {
+p > code,
+li > code {
   border: #eeeeee solid 1px;
   display: inline;
   padding: 2px;
