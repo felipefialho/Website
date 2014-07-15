@@ -101,7 +101,7 @@ interação em “swipe” em telas Touch. Então chamamos a função, atribuind
 
 <p>Porém existem problemas com relação a performance. Uma diferença negativa de 88% com relação aos seletores <code>.classe</code> não é algo que deve ser ignorado.</p>
 
-<p>Como em todos os projetos, vale uma analise prévia. Acredito que apenas em aplicações realmente grandes essa diferença seria notada. Portanto minha indicação seria de usar sem medo em projetos menores, e realizar testes para verificar o impacto na performance de projetos maiores.</p>
+<p>Como em todos os projetos, vale uma análise prévia. Acredito que apenas em aplicações realmente grandes essa diferença seria notada. Portanto minha indicação seria de usar sem medo em projetos menores, e realizar testes para verificar o impacto na performance de projetos maiores.</p>
 
 
 
