@@ -76,6 +76,12 @@ docpadConfig = {
 
 		# Blog posts
 		posts: [
+      name: 'E 5 anos atrás eu me tornava o menino do HTML...'
+      description: 'Parece que foi ontem, mas faz 5 anos que oficialmente escrevi a primeira linha de código e dava meus primeiros passos em uma profissão que se quer existia.. ou existia?'
+      date: '21/07/2014'
+      year: '2014'
+      path: '5-anos-atras-eu-me-tornava-o-menino-do-html'
+    ,
       name: 'Sobre Data Atributes e Javascript'
       description: 'Nos últimos projetos comecei a testar o uso do [data-*] do HTML5 como seletor no Javascript. Agora vou listar algumas coisas que observei com essa prática.'
       date: '08/07/2014'
