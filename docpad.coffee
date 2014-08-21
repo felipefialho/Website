@@ -76,6 +76,12 @@ docpadConfig = {
 
 		# Blog posts
 		posts: [
+      name: 'Estamos realmente interessados em formar bons profissionais?'
+      description: 'Esse texto não é técnico, e também não é direcionado apenas para Desenvolvedores Front-End, é um desabafo de quem também teve dificuldades para iniciar a carreira.'
+      date: '20/08/2014'
+      year: '2014'
+      path: 'estamos-realmente-interessados-em-formar-bons-profissionais'
+    ,
       name: 'E 5 anos atrás eu me tornava o menino do HTML...'
       description: 'Parece que foi ontem, mas faz 5 anos que oficialmente escrevi a primeira linha de código e dava meus primeiros passos em uma profissão que se quer existia.. ou existia?'
       date: '21/07/2014'
