@@ -13,17 +13,17 @@ pathBlog: "../../"
 
 <h3>Começou a faculdade, e agora está empolgado para arrumar um estágio?</h3>
 
-<p>É um passo natural para quem começa a cursar uma faculdade, o estágio deveria ser um momento na qual o futuro profissional pode colocar em prática e testar em cenários reais toda a teoria que aprendeu até então. </p>
+<p>É um passo natural para quem começa a cursar uma faculdade, o estágio deveria ser um momento no qual o futuro profissional pode colocar em prática e testar em cenários reais toda a teoria que aprendeu até então.</p>
 
 <p>Paralelamente, o estagiário deve contribuir para a empresa, realizando tarefas mais simples, na qual profissionais mais experientes geralmente não tem mais paciência e nem tempo para realizar.</p>
 
 <p>Dessa forma, o estagiário consegue estar do lado de profissionais mais experientes e evoluir rapidamente. A tendência é que após alguns meses já esteja realizando tarefas mais complexas e consiga uma efetivação ou no mínimo, uma bagagem profissional para o próximo desafio.</p>
 
-<p>Esse é o cenário ideal, e onde bons profissionais começariam a ser formados.</p>
+<p>Esse é o cenário ideal e onde bons profissionais começariam a ser formados.</p>
 
-<h3>Então começa a pesquisa por vagas...</h3>
+<h3>Então você começa a pesquisa por vagas…</h3>
 
-<p>E surgem <a href="http://www.infojobs.com.br/vaga-de-estagiario-web-designer-loja-virtual-em-sao-paulo__4083102.aspx">vagas como essa</a>, que é o suficiente para desanimar qualquer aspirante, e de atrapalhar possíveis novos talentos.</p>
+<p>E surgem <a href="http://www.infojobs.com.br/vaga-de-estagiario-web-designer-loja-virtual-em-sao-paulo__4083102.aspx">vagas como essa</a>, que são o suficiente para desanimar qualquer aspirante e de atrapalhar possíveis novos talentos.</p>
 
 <code>
 <pre>Salário
@@ -48,7 +48,7 @@ Exigências
 • Sistemas Operacionais: Solaris, NT 4.0, UNIX, Windows, VMS, NetBSD, IBM OS, FreeBSD, JavaOS, Mac OS, Linux
 • Outros programas: Servidores de E-mail, Selenium, SAP, Software de Contabilidade, Servidores Web, Servidores Proxy, Edição de Som, CRM, AutoCAD, Microsoft Project, ERP, Edição de Video</pre></code>
 
-<p>Falando especificamente dessa <strike>piada bizarrice</strike> vaga, me parece claro que a pessoa responsável foi pegando tudo o que encontrava na internet relacionado a “informática” e adicionou nas exigências. Obviamente não faz sentido algum.</p>
+<p>Falando especificamente dessa <strike>piada bizarra</strike> vaga, me parece claro que a pessoa responsável foi pegando tudo o que encontrava na internet relacionado a “informática” e adicionou nas exigências. Obviamente não faz sentido algum.</p>
 
 <p>Porém esse cenário extremo infelizmente não é uma exceção, é realmente comum encontrar vagas de estágio com exigências técnicas parecidas com essa, ou então com aquele famoso “migué”:</p>
 
@@ -63,31 +63,31 @@ Exigências
 
 <p>Se a empresa quiser um profissional em inicio de carreira, mas com um nível de experiência maior, deveria buscar um perfil <b>JUNIOR</b>. Existem diferentes perfis profissionais exatamente para facilitar as coisas.</p>
 
-<p>Imaginem se essa necessidade de experiência se torne um padrão para cargos de estágio. Como novas pessoas vão ingressar no mercado de trabalho? </p>
+<p>Imaginem se essa necessidade de experiência se torne um padrão para cargos de estágio. Como novas pessoas vão ingressar no mercado de trabalho?</p>
 
-<h3>Profissionais mais experientes podem contribuir para melhorar esse cenário...</h3>
+<h3>Profissionais mais experientes podem contribuir para melhorar esse cenário…</h3>
 
-<p>Se você é um profissional mais experiente, e trabalha em uma empresa que está buscando um estagiário para sua área, é importante tentar evitar que oportunidades surreais, como aquela citada lá em cima, façam parte do mural da sua empresa.  </p>
+<p>Se você é um profissional mais experiente e trabalha em uma empresa que está buscando um estagiário para sua área, é importante tentar evitar que oportunidades surreais, como aquela citada lá em cima, façam parte do mural da sua empresa.</p>
 
-<p>Caso não seja você o encarregado de gerenciar o processo de seleção, explique para os responsáveis quais skills são realmente necessárias e qual o perfil de profissional poderia contribuir mais para a equipe. </p>
+<p>Caso você não seja o encarregado de gerenciar o processo de seleção, explique para os responsáveis quais skills são realmente necessárias e qual o perfil de profissional poderia contribuir mais para a equipe.</p>
 
 <p>Mostre ainda que não faz sentido exigir coisas como “tempo de experiencia” para vagas de estágio.</p>
 
 <h3>Mas se você está começando, não use essas dificuldades como muleta!</h3>
 
-<p>Existem milhares de materiais para você estudar, muitos grupos para participar, centenas de iniciativas open-source para contribuir...</p>
+<p>Existem milhares de materiais para você estudar, muitos grupos para participar, centenas de iniciativas open-source para contribuir…</p>
 
-<p>Não tem desculpas para ficar parado, naturalmente projetos open-source e estudos, por si só não te darão vivencia profissional, mas podem ser decisivos para você estar mais pronto quando a oportunidade chegar... e de qualquer forma, caso queira ser um profissional diferenciado, terá que estudar a vida toda :)</p>
+<p>Não tem desculpas para ficar parado, naturalmente projetos open-source e estudos, por si só não te darão vivencia profissional, mas podem ser decisivos para você estar mais pronto quando a oportunidade chegar… e de qualquer forma, caso queira ser um profissional diferenciado, terá que estudar a vida toda :)</p>
 
-<p>Mas como sei que essa questão de <strong>Teoria x Prática</strong> é uma inquietação comum para desenvolvedores em inicio de carreira, criei um <a href="https://gist.github.com/LFeh/ef4a174ad76220619714">Gist chamado “Aproximando seus estudos de cenários mais reais”</a>, que tem como objetivo listar alguns tópicos comuns e possíveis soluções. Vale a pena dar uma olhada ;)</p>
+<p>Mas como sei que essa questão de <strong>Teoria x Prática</strong> é uma inquietação comum para desenvolvedores em início de carreira, criei um <a href="https://gist.github.com/LFeh/ef4a174ad76220619714">Gist chamado “Aproximando seus estudos de cenários mais reais”</a>, que tem como objetivo listar alguns tópicos comuns e possíveis soluções. Vale a pena dar uma olhada ;)</p>
 
-<h3>Finalizando...</h3>
+<h3>Finalizando…</h3>
 
 <p>A formação de bons profissionais é decisiva para o futuro de qualquer profissão.</p>
 
 <p>E quando profissionais mais bem preparados surgem no mercado, a tendencia é um aumento de qualidade e uma valorização natural, já que profissionais mais antigos também terão que se reciclar constantemente.</p>
 
 
-<p class="end">Eae... Vamos ajudar nisso?</p>
+<p class="end">Eae… Vamos ajudar nisso?</p>
 
 
