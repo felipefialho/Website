@@ -78,7 +78,7 @@ docpadConfig = {
 		posts: [
       name: 'Estamos realmente interessados em formar bons profissionais?'
       description: 'Esse texto não é técnico, e também não é direcionado apenas para Desenvolvedores Front-End, é um desabafo de quem também teve dificuldades para iniciar a carreira.'
-      date: '20/08/2014'
+      date: '25/08/2014'
       year: '2014'
       path: 'estamos-realmente-interessados-em-formar-bons-profissionais'
     ,
