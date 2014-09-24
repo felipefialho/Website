@@ -6,11 +6,11 @@ path: "../../"
 
 <h1 class="page-header"><%= @labels['blog'] %></h1>
 
-<div class="blog" itemscope itemtype="http://schema.org/BlogPosting">
+<div class="blog">
 	<ul class="blog-list">
  	<% for posts in @posts : %>
-      <li class="blog-item">
-        <a href="<%= posts.year %>/<%= posts.path %>/">
+      <li class="blog-item" itemscope itemtype="http://schema.org/BlogPosting">
+        <a href="<%= posts.year %>/<%= posts.path %>/" itemprop="url">
 	      	<span class="date"itemprop="datePublished"><%= posts.date %></span>
 	      	<h4 class="tit" itemprop="headline"><%= posts.name %></h4>
 	      	<p class="description" itemprop="articleBody"><%= posts.description %></p>

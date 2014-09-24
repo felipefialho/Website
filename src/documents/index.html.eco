@@ -23,14 +23,14 @@ layout: "default"
 
 	<h2 class="page-header">Rolando no blog...</h2>
 
-	<ul class="blog-list" itemscope itemtype="http://schema.org/BlogPosting">
+	<ul class="blog-list">
 		<% i= 0 %>
 	 	<% for posts in @posts : %>
 	 		<% i++ %>
 	 		<% if i <= 2 : %>
-				<li class="blog-item">
-				<a href="blog/<%= posts.year %>/<%= posts.path %>/">
-				  	<span class="date"><%= posts.date %></span>
+				<li class="blog-item" itemscope itemtype="http://schema.org/BlogPosting">
+				<a href="blog/<%= posts.year %>/<%= posts.path %>/" itemprop="url">
+				  	<span class="date" itemprop="datePublished"><%= posts.date %></span>
 				  	<h4 class="tit" itemprop="headline"><%= posts.name %></h4>
 				  	<p class="description" itemprop="articleBody"><%= posts.description %></p>
 				</a>
