@@ -33,14 +33,14 @@
 		<aside class="span3">
 			<div class="navbar nav-side">
 				<!-- HEADER -->
-				<header>
+				<header itemscope itemtype="http://schema.org/Person">
 					<div class="photo">
 						<img src="/assets/img/default/luiz-felipe-tartarotti-fialho.png" alt="Cartoon de Luiz Felipe Tartarotti Fialho" height="151" width="100">
 					</div>
 					<h1 class="logo">
-						<a href="/">Felipe Fialho</a>
+						<a href="/" itemprop="name">Felipe Fialho</a>
 					</h1>
-					<h4 itemprop="title">Desenvolvedor Front-End</h4>
+					<h4 itemprop="jobTitle">Desenvolvedor Front-End</h4>
 				</header>
 				<!-- END HEADER -->
 				<!-- NAV -->

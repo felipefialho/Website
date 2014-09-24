@@ -3,11 +3,11 @@ title: ""
 layout: "default"
 ---
 
-<div class="home" itemscope itemtype="http://data-vocabulary.org/Person">
+<div class="home" itemscope itemtype="http://schema.org/Person">
 
 	<p class="lead">Olá amigos, tudo bem?</p>
 
-	<p>Sou <em itemprop="name">Luiz Felipe Tartarotti Fialho</em>, tenho <strike>23 anos</strike> 24 anos e trabalho como <strong itemprop="title">Desenvolvedor Front-End</strong> desde 2009.</p>
+	<p>Sou <em itemprop="name">Luiz Felipe Tartarotti Fialho</em>, tenho <strike>23 anos</strike> 24 anos e trabalho como <strong itemprop="jobTitle">Desenvolvedor Front-End</strong> desde 2009.</p>
 
 	<p>Atualmente trabalho na <a href="http://www.trendi.com.br/" itemprop="affiliation">Trend-i</a> (desde 2011). Participei de vários projetos legais, entre eles criei um <a href="http://www.trendi.com.br/framework/login.php">Framework</a> bastante robusto usando o <a href="http://twitter.github.io/bootstrap/index.html">Bootstrap</a> como base.</p>
 
@@ -23,7 +23,7 @@ layout: "default"
 
 	<h2 class="page-header">Rolando no blog...</h2>
 
-	<ul class="blog-list">
+	<ul class="blog-list" itemscope itemtype="http://schema.org/BlogPosting" itemprop="headline">
 		<% i= 0 %>
 	 	<% for posts in @posts : %>
 	 		<% i++ %>
@@ -31,8 +31,8 @@ layout: "default"
 				<li class="blog-item">
 				<a href="blog/<%= posts.year %>/<%= posts.path %>/">
 				  	<span class="date"><%= posts.date %></span>
-				  	<h4 class="tit"><%= posts.name %></h4>
-				  	<p class="description"><%= posts.description %></p>
+				  	<h4 class="tit" itemprop="headline"><%= posts.name %></h4>
+				  	<p class="description" itemprop="articleBody"><%= posts.description %></p>
 				</a>
 				</li>
 			<% end %>

@@ -3,11 +3,11 @@ title: ""
 layout: "default-en"
 ---
 
-<div class="home" itemscope itemtype="http://data-vocabulary.org/Person">
+<div class="home" itemscope itemtype="http://schema.org/Person">
 
 	<p class="lead">Hey Friend, how are you?</p>
 
-	<p>My name is <em itemprop="name">Luiz Felipe Tartarotti Fialho</em>, I'm <strike>23 years</strike> 24 years old and I work as <strong itemprop="title">Front-End Developer</strong> since 2009. Currently, I work at <a href="http://www.trendi.com.br/" itemprop="affiliation">Trend-i</a> (since 2011).</p>
+	<p>My name is <em itemprop="name">Luiz Felipe Tartarotti Fialho</em>, I'm <strike>23 years</strike> 24 years old and I work as <strong itemprop="jobTitle">Front-End Developer</strong> since 2009. Currently, I work at <a href="http://www.trendi.com.br/" itemprop="affiliation">Trend-i</a> (since 2011).</p>
 
 	<p>I created this website because this is a nice way to have fun as a designer, and here I can also test "static generators" and demonstrate my work</p>
 
