@@ -7,7 +7,7 @@ layout: "default"
 
   <span class="date" itemprop="datePublished"><%= @document.datePost %></span>
   <h2 itemprop="headline"><%= @document.title %></h2>
-  <span class="author">Por: <a href="https://twitter.com/lfeh" itemprop="author"><%= @site.author %></a></span>
+  <span class="author">Por: <a href="https://plus.google.com/101721187531748531230?rel=author" itemprop="author"><%= @site.author %></a></span>
 
   <div class="post-container">
 

@@ -35,10 +35,10 @@
 				<!-- HEADER -->
 				<header itemscope itemtype="http://schema.org/Person">
 					<div class="photo">
-						<img src="/assets/img/default/luiz-felipe-tartarotti-fialho.png" alt="Cartoon of Luiz Felipe Tartarotti Fialho" height="151" width="100">
+						<img src="/assets/img/default/luiz-felipe-tartarotti-fialho.png" alt="Cartoon of Luiz Felipe Tartarotti Fialho" itemprop="image" height="151" width="100">
 					</div>
 					<h1 class="logo">
-						<a href="/en/" itemprop="name">Felipe Fialho</a>
+						<a href="/en/" itemprop="additionalName">Felipe Fialho</a>
 					</h1>
 					<h4 itemprop="jobTitle">Front-End Developer</h4>
 				</header>

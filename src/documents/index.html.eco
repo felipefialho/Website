@@ -23,7 +23,7 @@ layout: "default"
 
 	<h2 class="page-header">Rolando no blog...</h2>
 
-	<ul class="blog-list" itemscope itemtype="http://schema.org/BlogPosting" itemprop="headline">
+	<ul class="blog-list" itemscope itemtype="http://schema.org/BlogPosting">
 		<% i= 0 %>
 	 	<% for posts in @posts : %>
 	 		<% i++ %>
