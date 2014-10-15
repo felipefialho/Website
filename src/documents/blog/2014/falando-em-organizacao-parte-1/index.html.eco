@@ -37,7 +37,7 @@ pathBlog: "../../"
 
 <h3>Automatizador de Tarefas</h3>
 
-<h4>Qual task builder utilizar? Grunt ou Gulp?</h4>
+<h4>Qual automatizador de tarefas utilizar? Grunt ou Gulp?</h4>
 
 <p>O Gulp se saiu muito bem nos testes que realizei, a diferença de velocidade com relação ao Grunt é absurda.</p>
 
