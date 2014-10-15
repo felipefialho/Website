@@ -1,0 +1,102 @@
+---
+title: "Falando em organização... - Parte I"
+datePost: 15/10/2014
+layout: "post"
+relativeOutDirPath: 'posts'
+path: "../../../"
+pathBlog: "../../"
+---
+
+<p class="lead">"O Universo, é um lugar desconcertantemente grande, um fato que, para continuar levando uma vida tranquila, a maioria das pessoas tende a ignorar."</p>
+
+<p>Já escrevi alguns artigos que mostram um pouco da metodologia que eu estava utilizando, são eles:</p>
+
+<ul>
+  <li><a href="http://www.felipefialho.com/blog/2013/sobre-organizacao-de-componentes-com-pre-processadores/">Sobre organização de componentes com pré-processadores</a></li>
+  <li><a href="http://www.felipefialho.com/blog/2013/um-conto-sobre-componentizacao-e-quebra-de-paradigmas/">Um conto sobre componentização e quebra de paradigmas</a></li>
+  <li><a href="http://www.felipefialho.com/blog/2014/utilizando-o-bootstrap-de-forma-consistente/">Utilizando o Bootstrap de forma consistente</a></li>
+</ul>
+
+<p>O fluxo de trabalho atual funcionou muito bem nos últimos 3 semestres (1 ano e meio), durante esse período fiz diversas modificações pontuais. Mas através da experiência adquirida nesse período, constatei possibilidade de melhorias profundas que poderiam trazer algumas vantagens no dia-a-dia:</p>
+
+<ul>
+  <li>Velocidade de desenvolvimento</li>
+  <li>Qualidade do código</li>
+  <li>Escalabilidade</li>
+  <li>Componentização</li>
+  <li>Performance</li>
+</ul>
+
+<h3>Mas… calma!</h3>
+
+<p>É impressionante o número de ferramentas que surgem todo dia nesse louco mundo front-end. Portanto, precisamos ter cautela.</p>
+
+<p>A palavra equilíbrio funciona muito bem aqui. Não saia rejeitando todas as novidades ou você vai ter dificuldades para acompanhar a evolução do mercado, mas também não mude seu fluxo de trabalho toda vez que surgir uma ferramenta que você achou interessante.</p>
+
+<p>Teste e estude bem todas as ferramentas que você considera que podem agregar no seu dia-a-dia, mas seja cauteloso antes de aplica-las em um projeto real.</p>
+
+<h3>Automatizador de Tarefas</h3>
+
+<h4>Qual task builder utilizar? Grunt ou Gulp?</h4>
+
+<p>O Gulp se saiu muito bem nos testes que realizei, a diferença de velocidade com relação ao Grunt é absurda.</p>
+
+<p>Mas ainda acho o Grunt mais adequado aos projetos que desenvolvo, portanto continuo usando o Grunt de forma "oficial", o que não impede a utilização do Gulp em algum projeto específico.</p>
+
+<h3>Gerenciador de Dependências</h3>
+
+<h4>O uso de um gerenciador de dependências poderia facilitar a atualização e manutenção dos plugins?</h4>
+
+<p>Após alguns testes observei que o Bower se tornaria um importante aliado.</p>
+
+<p>Todas as dependências externas utilizadas ficam registradas em um arquivo .json, dessa forma fica mais fácil ver quais estão sendo utilizadas no projeto. E facilita a atualização, exclusão e inclusão novas que você precisar.</p>
+
+<p>O Bower se mostrou uma importante ferramenta na busca de organização e escalabilidade.</p>
+
+<h3>Organização dos arquivos JavaScript</h3>
+
+<p>Ao usar o Bower, uma pasta chamada <code>bower_dependencies</code> é adicionada na raiz do projeto, e lá ficam todas as dependências externas.</p>
+
+<h4>Sobre as pastas</h4>
+
+<ul>
+  <li>Os arquivos de dependências externas, são chamados diretamente da pasta <code>bower_dependencies</code> que está na raiz.</li>
+  <li>Scripts desenvolvidos para suprir as necessidades do projeto, ficam dentro de uma pasta de desenvolvimento, por exemplo, <code>assets/js</code></li>
+</ul>
+
+<h4>Sobre o 'Gruntfile'</h4>
+
+<ul>
+  <li>O plugin <a href="https://github.com/gruntjs/grunt-contrib-concat">Concat</a> é usado para concatenar os scripts de dependencias externas, afinal, a ideia é que eles fiquem inalterados.</li>
+  <li>Esse arquivo concatenado é injetado dentro da pasta de desenvolvimento do JavaScript (ex, <code>assets/js</code>).</li>
+  <li>Os scripts dentro desta pasta podem ser alterados a qualquer momento. Portanto observo através do <a href="https://github.com/gruntjs/grunt-contrib-watch">Watch</a> qualquer alteração feita neles.</li>
+  <li>E então os scripts serão minificados em tempo real pelo <a href="https://github.com/gruntjs/grunt-contrib-uglify">Uglify</a></li>
+</ul>
+
+<h4>Integração com o Bower</h4>
+
+<p>Lembram das dependências externas que serão concatenadas?</p>
+
+<p>Também coloco o <a href="https://github.com/gruntjs/grunt-contrib-watch">Watch</a> para observar meu Gruntfile, portanto toda vez que adiciono ou removo alguma dependência no array do <a href="https://github.com/gruntjs/grunt-contrib-concat">Concat</a> e salvo o Gruntfile, é gerado um novo arquivo com as dependências atualizadas.</p>
+
+<h3>O polêmico Boostrap</h3>
+
+<p>O Bootstrap está cada vez mais mamilos e no centro de discussões. Continuo achando que se <a href="http://www.felipefialho.com/blog/2014/utilizando-o-bootstrap-de-forma-consistente/">utilizado de forma consciente</a>, pode ajudar bastante, especialmente no início do desenvolvimento.</p>
+
+<p>Passei a deixar nos projetos apenas o que utilizo de fato:</p>
+
+<ul>
+  <li>Os mixins</li>
+  <li>Sistema de grid</li>
+  <li>Scripts (Carrossel, Collapse, Modal…) conforme necessário.</li>
+</ul>
+
+<p>Os mixins acabo utilizando sempre (com mais alguns que criei baseados nas necessidades dos projetos que desenvolvo). O sistema de grid e os scripts, eu posso optar por utilizar ou não. A ideia é o fluxo se adaptar à minha necessidade, e não ao contrário.</p>
+
+<h3>Organização do CSS</h3>
+
+<p>Me aproximei de vez ao Atomic CSS. Não sei se estou usando a metodologia da forma que ela foi pensada, mas me senti muito confortável com a organização atual.</p>
+
+<p>E é disso que vou falar na 'Parte II' desse artigo. Vou desconstruir a organização e metodologia do CSS que estou utilizando.</p>
+
+<p class="end">;)</p>
