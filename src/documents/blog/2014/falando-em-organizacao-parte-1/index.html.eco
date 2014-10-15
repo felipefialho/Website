@@ -68,9 +68,9 @@ pathBlog: "../../"
 
 <ul>
   <li>O plugin <a href="https://github.com/gruntjs/grunt-contrib-concat">Concat</a> é usado para concatenar os scripts de dependencias externas, afinal, a ideia é que eles fiquem inalterados.</li>
-  <li>Esse arquivo concatenado é injetado dentro da pasta de desenvolvimento do JavaScript (ex, <code>assets/js</code>).</li>
-  <li>Os scripts dentro desta pasta podem ser alterados a qualquer momento. Portanto observo através do <a href="https://github.com/gruntjs/grunt-contrib-watch">Watch</a> qualquer alteração feita neles.</li>
-  <li>E então os scripts serão minificados em tempo real pelo <a href="https://github.com/gruntjs/grunt-contrib-uglify">Uglify</a></li>
+  <li>Esse arquivo concatenado é injetado dentro da pasta de desenvolvimento do JavaScript (ex, <code>assets/js</code>) e não deve ser alterado.</li>
+  <li>Os scripts de desenvolvimento que estão dentro desta pasta podem ser alterados a qualquer momento. Portanto observo através do <a href="https://github.com/gruntjs/grunt-contrib-watch">Watch</a> qualquer alteração feita neles.</li>
+  <li>E então todos os scripts serão minificados em tempo real pelo <a href="https://github.com/gruntjs/grunt-contrib-uglify">Uglify</a></li>
 </ul>
 
 <h4>Integração com o Bower</h4>
@@ -88,14 +88,22 @@ pathBlog: "../../"
 <ul>
   <li>Os mixins</li>
   <li>Sistema de grid</li>
-  <li>Scripts (Carrossel, Collapse, Modal…) conforme necessário.</li>
+  <li>Componentes JavaScript (Carrossel, Collapse, Modal…) conforme necessário.</li>
 </ul>
 
-<p>Os mixins acabo utilizando sempre (com mais alguns que criei baseados nas necessidades dos projetos que desenvolvo). O sistema de grid e os scripts, eu posso optar por utilizar ou não. A ideia é o fluxo se adaptar à minha necessidade, e não ao contrário.</p>
+<p>Os mixins acabo utilizando sempre (com mais alguns que criei baseados nas necessidades dos projetos que desenvolvo).</p>
+
+<p>O sistema de grid e os componentes JavaScript, eu posso optar por utilizar ou não. A ideia é que as dependências se adaptem à minha necessidade, e não ao contrário.</p>
+
+<p>Lembrando que na versão 3+ do Boostrap ficou muito fácil de utilizar os grids de forma semântica e sem precisar colocar classes para sujar o HTML, tudo é feito diretamente no CSS.</p>
+
+<p>Quanto aos componentes JavaScript, é muito fácil customiza-los e alterar seu comportamento padrão, acho que trazem boa integração com outras bibliotecas e funcionam muito bem.</p>
+
+<p>Atualmente essa é a participação do Boostrap nos meus projetos.</p>
 
 <h3>Organização do CSS</h3>
 
-<p>Me aproximei de vez ao Atomic CSS. Não sei se estou usando a metodologia da forma que ela foi pensada, mas me senti muito confortável com a organização atual.</p>
+<p>Me aproximei de vez do <a href="http://patternlab.io/">Atomic CSS</a>. Não sei se estou usando a metodologia da forma que ela foi pensada, mas me senti muito confortável com a organização atual.</p>
 
 <p>E é disso que vou falar na 'Parte II' desse artigo. Vou desconstruir a organização e metodologia do CSS que estou utilizando.</p>
 
