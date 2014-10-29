@@ -9,7 +9,9 @@ layout: "default"
 
 	<p>Sou <em itemprop="name">Luiz Felipe Tartarotti Fialho</em>, tenho <strike>23 anos</strike> 24 anos e trabalho como <strong itemprop="jobTitle">Desenvolvedor Front-End</strong> desde 2009.</p>
 
-	<p>Atualmente trabalho na <a href="http://www.trendi.com.br/" itemprop="affiliation">Trend-i</a> (desde 2011). Participei de vários projetos legais, entre eles criei um <a href="http://www.trendi.com.br/framework/login.php">Framework</a> bastante robusto usando o <a href="http://twitter.github.io/bootstrap/index.html">Bootstrap</a> como base.</p>
+	<p>Atualmente trabalho na <a href="http://www.trendi.com.br/" itemprop="affiliation">Trend-i</a> (desde 2011). Sou um dos organizadores do <a href="http://www.meetup.com/CSS-SP/">Meetup CSS SP</a> e do <a href="http://cssconfbrasil.com.br/">CSS Conf Brasil</a>.</p>
+
+  <p>Entre os projetos que mais gostei de desenvolver estão o <a href="http://www.felipefialho.com/css-components/">CSS Components</a> e o <a href="http://www.felipefialho.com/piano/">Piano Keyboard.</a></p>
 
 	<p>Criei esse espaço, primeiro para brincar de designer, segundo para testar geradores estáticos e por último, e não menos importante... ter um lugar bacana para expressar minha opinião, dar dicas, etc.</p>
 
