@@ -40,7 +40,3 @@ All changes must be made in `/src` folder. The CSS should be modified using the 
 
   ```
   
-## License
- 
-[MIT License](http://felipefialho.mit-license.org/) © Luiz Felipe Tartarotti Fialho
-
