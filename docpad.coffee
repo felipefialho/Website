@@ -29,12 +29,12 @@ docpadConfig = {
 
 			# The website description (for SEO)
 			description: """
-				Desenvolvedor Front-End. Site para Desenvolvedores Front-End, com dicas do mercado web, tutoriais e projetos na qual participei.
+				Site para Desenvolvedores Front-End, com dicas do mercado web, tutoriais e projetos na qual participei.
 				"""
 
 			# The website description (for SEO) - English
 			description_en: """
-				Front-End Developer. Personal website with focused in Web Development, Front-End Developers and personal projects.
+				Personal website with focused in Web Development, Front-End Developers and personal projects.
 				"""
 
 			# The website's styles
