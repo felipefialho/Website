@@ -76,6 +76,12 @@ docpadConfig = {
 
 		# Blog posts
 		posts: [
+      name: 'Falando em organização... CSS'
+      description: 'Dando continuidade a série sobre minha organização e fluxo de trabalho atual, vou contar um pouco sobre como tenho trabalhado o CSS.'
+      date: '13/11/2014'
+      year: '2014'
+      path: 'falando-em-organizacao-css'
+    ,
       name: 'Falando em organização... - Parte I'
       description: '"O Universo, é um lugar desconcertantemente grande, um fato que, para continuar levando uma vida tranquila, a maioria das pessoas tende a ignorar."'
       date: '15/10/2014'
