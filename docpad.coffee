@@ -16,10 +16,10 @@ docpadConfig = {
 			url: "http://www.felipefialho.com"
 
 			# The default title of our website
-			title: "Luiz Felipe Tartarotti Fialho - Desenvolvedor Front-End"
+			title: "Felipe Fialho - Desenvolvedor Front-End"
 
 			# The default title of our website - English
-			title_en: "Luiz Felipe Tartarotti Fialho - Front-End Developer"
+			title_en: "Felipe Fialho - Front-End Developer"
 
 			# The default author of our website
 			author: "Luiz Felipe Tartarotti Fialho"
