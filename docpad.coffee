@@ -214,28 +214,14 @@ docpadConfig = {
 		  participationEn: "A modern and light chess game developed with HTML, CSS and Javascript."
 		  demo: "http://chessjs.trendi.com.br/chess",
 		  link: "https://github.com/chessjs/chess"
-		,
-		  # Modal - Pure CSS
-		  name: "Modal - Pure CSS"
-		  thumb: "/assets/img/projetos/modal-css.jpg"
-		  participation: "Exemplo de modal apenas com CSS, sem javascript."
-		  participationEn: "Example of modal in CSS only, no javascript."
-		  demo: "http://codepen.io/LFeh/details/oEula"
-		,
+		, 
 		  # A Clockwork Orange
 		  name: "A Clockwork Orange"
 		  thumb: "/assets/img/projetos/clockwork-orange.jpg"
 		  participation: "Pure CSS homenageando o filme Laranja Mecânica."
 		  participationEn: "My tribute in Pure CSS to this great movie."
 		  demo: "http://codepen.io/LFeh/details/kjlnJ"
-		,
-		  # Merry Christmas!
-		  name: "Pure CSS - Merry Christmas!"
-		  thumb: "/assets/img/projetos/merry-christmas.jpg"
-		  participation: "Pure CSS Especial de Natal"
-		  participationEn: "Christmas Special in Pure CSS"
-		  demo: "http://codepen.io/LFeh/details/EjcBK"
-		,
+		, 
 		  # Piano Keyboard
 		  name: "Piano Keyboard"
 		  thumb: "/assets/img/projetos/piano-keyboard.jpg"
@@ -256,21 +242,7 @@ docpadConfig = {
 		  participation: "Exemplo de 'Tabela Responsiva'"
 		  participationEn: "Example of 'Table Responsive' for better adjust in small sizes."
 		  demo: "http://codepen.io/LFeh/details/hsreD"
-		,
-		  # Progress
-		  name: "Button Progress"
-		  thumb: "/assets/img/projetos/button-progress.jpg"
-		  participation: "'Botão de Progresso' usando CSS Animate"
-		  participationEn: "Button Progress in CSS Animate"
-		  demo: "http://codepen.io/LFeh/details/KviDw"
-		,
-		  # Social Media - Pure CSS
-		  name: "Social Media - Pure CSS"
-		  thumb: "/assets/img/projetos/social-media-css3.jpg"
-		  participation: "Caixa de redes sociais usando apenas CSS"
-		  participationEn: "Elegant box of 'Social Networks' using only CSS"
-		  demo: "http://codepen.io/LFeh/details/ktixE"
-		,
+		, 
 		  # Grunt Boilerplate
 		  name: "Grunt Boilerplate"
 		  thumb: "/assets/img/projetos/grunt-base.jpg"
@@ -295,6 +267,39 @@ docpadConfig = {
 
 		# Portfolio list
 		portfolio: [
+      # Ivanovic
+      name: "Oxford - Corporate Sales"
+      idName: "corporate-sales"
+      thumb: "/assets/img/portfolio/site-corporate-sales-thumb.jpg" 
+      participation: "Desenvolvimento do HTML, CSS e Javascript."
+      participationEn: "Development of HTML, CSS and Javascript."
+      link: "http://oupmediainfo.com/"
+    ,
+      # Ivanovic
+      name: "Ivanovic"
+      idName: "ivanovic"
+      thumb: "/assets/img/portfolio/site-ivanovic-thumb.jpg" 
+      participation: "Desenvolvimento do HTML, CSS e Javascript."
+      participationEn: "Development of HTML, CSS and Javascript."
+      link: "http://ivanovicfundsllc.com/"
+    ,
+      # JPR 2015
+      name: "JPR 2015"
+      idName: "jpr-2015"
+      thumb: "/assets/img/portfolio/site-jpr-2015-thumb.jpg" 
+      participation: "Desenvolvimento do HTML, CSS e Javascript."
+      participationEn: "Development of HTML, CSS and Javascript."
+      link: "http://www.jpr2015.org.br/"
+    ,
+      # Trend-i
+      name: "Trend-i"
+      idName: "trendi"
+      thumb: "/assets/img/portfolio/site-trendi-thumb.jpg"
+      imgModal: "/assets/img/portfolio/site-trendi.jpg"
+      participation: "Desenvolvimento do HTML, CSS e Javascript."
+      participationEn: "Development of HTML, CSS and Javascript."
+      link: "http://www.trendi.com.br/"
+    , 
 		  # JPR 2014
 		  name: "JPR 2014"
 		  idName: "jpr-2014"
@@ -313,24 +318,6 @@ docpadConfig = {
 		  participationEn: "Development of HTML, CSS and Javascript."
 		  link: "http://www.recoverybrasil.com.br/"
 		,
-		  # Trend-i
-		  name: "Trend-i"
-		  idName: "trendi"
-		  thumb: "/assets/img/portfolio/site-trendi-thumb.jpg"
-		  imgModal: "/assets/img/portfolio/site-trendi.jpg"
-		  participation: "Desenvolvimento do HTML, CSS e Javascript."
-		  participationEn: "Development of HTML, CSS and Javascript."
-		  link: "http://www.trendi.com.br/"
-		,
-		  # BTG
-		  name: "BTG Pactual"
-		  idName: "btg"
-		  thumb: "/assets/img/portfolio/site-btg-thumb.jpg"
-		  imgModal: "/assets/img/portfolio/site-btg.jpg"
-		  participation: "Desenvolvimento do HTML, CSS e Javascript."
-		  participationEn: "Development of HTML, CSS and Javascript."
-		  link: "https://www.btgpactual.com/home/home.aspx"
-		,
 		  # Prime Jardim Europa
 		  name: "Prime Jardim Europa"
 		  idName: "prime-jardim"
@@ -339,98 +326,15 @@ docpadConfig = {
 		  participation: "Desenvolvimento do HTML, CSS e Javascript."
 		  participationEn: "Development of HTML, CSS and Javascript."
 		  link: "http://www.primejardimeuropa.com.br/"
-		,
-		  # Carrefour - Escolha Premiada
-		  name: "Escolha Premiada"
-		  idName: "carrefour-escolha"
-		  thumb: "/assets/img/portfolio/site-carrefour-thumb.jpg"
-		  imgModal: "/assets/img/portfolio/site-escolha-premiada.jpg"
-		  participation: "Desenvolvimento do HTML, CSS e Javascript."
-		  participationEn: "Development of HTML, CSS and Javascript."
-		  link: "http://www.escolhacartaocarrefour.com.br/"
-		,
-		  # Decathlon - Clube
-		  name: "Clube Decathlon"
-		  idName: "decathlon-clube"
-		  thumb: "/assets/img/portfolio/site-decathlon-thumb.jpg"
-		  imgModal: "/assets/img/portfolio/site-decathlon-clube.jpg"
-		  participation: "Desenvolvimento do HTML e CSS."
-		  participationEn: "Development of HTML and CSS"
-		,
-		  # Nutra e Viva
-		  name: "Nutra e Viva"
-		  idName: "nutra-viva"
-		  thumb: "/assets/img/portfolio/site-nutra-viva-thumb.jpg"
-		  imgModal: "/assets/img/portfolio/site-nutra-viva.jpg"
-		  participation: "Desenvolvimento do HTML e CSS."
-		  participationEn: "Development of HTML and CSS"
-		  link: "http://www.nutraeviva.com.br/Site/"
-		,
-		  # Fundação Estudar
-		  name: "Fundação Estudar"
-		  idName: "fundacao-estudar"
-		  thumb: "/assets/img/portfolio/site-fundacao-estudar-thumb.jpg"
-		  imgModal: "/assets/img/portfolio/site-fundacao-estudar.jpg"
-		  participation: "Desenvolvimento do HTML e CSS. Participação no Javascript."
-		  participationEn: "Development of HTML, CSS and participation in Javascript."
-		  link: "http://www.estudar.org.br/"
-		,
-		  # Decathlon - Esportes
-		  name: "Decathlon - Esportes"
-		  idName: "decathlon-esportes"
-		  thumb: "/assets/img/portfolio/site-decathlon-thumb.jpg"
-		  imgModal: "/assets/img/portfolio/site-decathlon-esportes.jpg"
-		  participation: "Desenvolvimento do HTML e CSS."
-		  participationEn: "Development of HTML and CSS"
-		,
-		  # Decathlon - Montanha
-		  name: "Decathlon - Montanha"
-		  idName: "decathlon-montanha"
-		  thumb: "/assets/img/portfolio/site-decathlon-thumb.jpg"
-		  imgModal: "/assets/img/portfolio/site-decathlon-montanha.jpg"
-		  participation: "Desenvolvimento do HTML e CSS."
-		  participationEn: "Development of HTML and CSS"
-		,
-		  # Carrefour - Compra Premiada
-		  name: "Compra Premiada"
-		  idName: "carrefour-compra"
-		  thumb: "/assets/img/portfolio/site-carrefour-thumb.jpg"
-		  imgModal: "/assets/img/portfolio/site-carrefour-compra.jpg"
-		  participation: "Desenvolvimento do HTML e CSS."
-		  participationEn: "Development of HTML and CSS"
-		  link: "http://www.carrefoursolucoes.com.br/50mil/"
-		,
-		  # Decathlon - Camping
-		  name: "Decathlon - Camping"
-		  idName: "decathlon-camping"
-		  thumb: "/assets/img/portfolio/site-decathlon-thumb.jpg"
-		  imgModal: "/assets/img/portfolio/site-decathlon-camping.jpg"
-		  participation: "Desenvolvimento do HTML e CSS."
-		  participationEn: "Development of HTML and CSS"
-		,
-		  # Prontocomprei
-		  name: "Prontocomprei"
-		  idName: "prontocomprei"
-		  thumb: "/assets/img/portfolio/site-pronto-comprei-thumb.jpg"
-		  imgModal: "/assets/img/portfolio/site-pronto-comprei.jpg"
-		  participation: "Desenvolvimento do HTML e CSS."
-		  participationEn: "Development of HTML and CSS"
-		,
-		  # Sensation
-		  name: "Skol Sensation"
-		  idName: "sensation"
-		  thumb: "/assets/img/portfolio/site-skol-sensation-thumb.jpg"
-		  imgModal: "/assets/img/portfolio/site-skol-sensation.jpg"
-		  participation: "Desenvolvimento do HTML e CSS. Participação no Javascript."
-		  participationEn: "Development of HTML, CSS and participation in Javascript."
-		,
-		  # Santander
-		  name: "Santander"
-		  idName: "santander"
-		  thumb: "/assets/img/portfolio/site-santander-thumb.jpg"
-		  imgModal: "/assets/img/portfolio/site-santander.jpg"
-		  participation: "Desenvolvimento do HTML e CSS. Participação no Javascript."
-		  participationEn: "Development of HTML, CSS and participation in Javascript."
+    , 
+      # BTG
+      name: "BTG Pactual"
+      idName: "btg"
+      thumb: "/assets/img/portfolio/site-btg-thumb.jpg"
+      imgModal: "/assets/img/portfolio/site-btg.jpg"
+      participation: "Desenvolvimento do HTML, CSS e Javascript."
+      participationEn: "Development of HTML, CSS and Javascript."
+      link: "https://www.btgpactual.com/home/home.aspx" 
 	  ]
 
 		# -----------------------------
