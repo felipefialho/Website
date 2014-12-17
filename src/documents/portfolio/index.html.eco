@@ -12,7 +12,7 @@ path: "../../"
 	<% for portfolio in @portfolio: %>
 	<!-- <%= portfolio.name %> -->
 	<div class="projetos-box span4">
-		<a href="<%= portfolio.link %>" class="box-mask">
+		<a href="<%= portfolio.link %>" target="_blank" class="box-mask">
 			<div class="box-img">
 				<img src="<%= portfolio.thumb %>" alt="<%= portfolio.name %>">
 			</div>	
