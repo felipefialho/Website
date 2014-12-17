@@ -276,7 +276,7 @@ docpadConfig = {
       link: "http://oupmediainfo.com/"
     ,
       # Ivanovic
-      name: "Ivanovic"
+      name: "Ivanovic LP"
       idName: "ivanovic"
       thumb: "/assets/img/portfolio/site-ivanovic-thumb.jpg" 
       participation: "Desenvolvimento do HTML, CSS e Javascript."
