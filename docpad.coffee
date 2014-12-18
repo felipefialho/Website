@@ -267,7 +267,7 @@ docpadConfig = {
 
 		# Portfolio list
 		portfolio: [
-      # Ivanovic
+      # Corporate Sales
       name: "Oxford - Corporate Sales"
       idName: "corporate-sales"
       thumb: "/assets/img/portfolio/site-corporate-sales-thumb.jpg" 
@@ -282,6 +282,14 @@ docpadConfig = {
       participation: "Desenvolvimento do HTML, CSS e Javascript."
       participationEn: "Development of HTML, CSS and Javascript."
       link: "http://ivanovicfundsllc.com/"
+    ,
+      # Two Story Tents
+      name: "Two Story Tents"
+      idName: "ivanovic"
+      thumb: "/assets/img/portfolio/site-tst-thumb.jpg" 
+      participation: "Desenvolvimento do HTML, CSS e Javascript."
+      participationEn: "Development of HTML, CSS and Javascript."
+      link: "http://www.twostorytents.com/"
     ,
       # JPR 2015
       name: "JPR 2015"
