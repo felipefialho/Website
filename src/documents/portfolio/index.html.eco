@@ -29,13 +29,7 @@ path: "../../"
 					<% end %>
 				</ul>	
 			</div>	
-		</div>	
-		<div id="modal-<%= portfolio.idName %>" class="modal" tabindex="-1" role="dialog" aria-labelledby="modal-<%= portfolio.idName %>" aria-hidden="true">
-			<a href="#" class="close"><span class="icon-close" aria-hidden="true"></span></a>
-			<div class="modal-dialog">
-				<img src="<%= @getRelativeFile() %><%= portfolio.imgModal %>" alt="<%= portfolio.name %>">
-			</div>
-		</div>
+		</div>	 
 	</div>
 	<% end %>
 
