@@ -267,36 +267,52 @@ docpadConfig = {
 
 		# Portfolio list
 		portfolio: [
+      # OBO
+      name: "Oxford Bibliographies"
+      idName: "obo"
+      thumb: "/assets/img/portfolio/obo.jpg" 
+      participation: "Desenvolvimento do HTML (Jade), CSS (LESS) e Javascript."
+      participationEn: "Development of HTML (Jade), CSS (LESS) and Javascript."
+      link: "http://oxbib-info.oupexplore.com/"
+    ,
+      # Filtro Structure
+      name: "Filtro Structure - 2014"
+      idName: "filtro-structure"
+      thumb: "/assets/img/portfolio/filtro-structure.jpg" 
+      participation: "Desenvolvimento do HTML (Jade), CSS (LESS) e Javascript."
+      participationEn: "Development of HTML (Jade), CSS (LESS) and Javascript."
+      link: "http://2014.filtro.us/"
+    ,
       # Corporate Sales
       name: "Oxford - Corporate Sales"
       idName: "corporate-sales"
       thumb: "/assets/img/portfolio/site-corporate-sales-thumb.jpg" 
-      participation: "Desenvolvimento do HTML, CSS e Javascript."
-      participationEn: "Development of HTML, CSS and Javascript."
+      participation: "Desenvolvimento do HTML (Jade), CSS (LESS) e Javascript."
+      participationEn: "Development of HTML (Jade), CSS (LESS) and Javascript."
       link: "http://oupmediainfo.com/"
     ,
       # Ivanovic
       name: "Ivanovic LP"
       idName: "ivanovic"
       thumb: "/assets/img/portfolio/site-ivanovic-thumb.jpg" 
-      participation: "Desenvolvimento do HTML, CSS e Javascript."
-      participationEn: "Development of HTML, CSS and Javascript."
+      participation: "Desenvolvimento do HTML, CSS (LESS) e Javascript."
+      participationEn: "Development of HTML, CSS (LESS) and Javascript."
       link: "http://ivanovicfundsllc.com/"
     ,
       # Two Story Tents
       name: "Two Story Tents"
       idName: "ivanovic"
       thumb: "/assets/img/portfolio/site-tst-thumb.jpg" 
-      participation: "Desenvolvimento do HTML, CSS e Javascript."
-      participationEn: "Development of HTML, CSS and Javascript."
+      participation: "Desenvolvimento do HTML, CSS (LESS) e Javascript."
+      participationEn: "Development of HTML, CSS (LESS) and Javascript."
       link: "http://www.twostorytents.com/"
     ,
       # JPR 2015
       name: "JPR 2015"
       idName: "jpr-2015"
       thumb: "/assets/img/portfolio/site-jpr-2015-thumb.jpg" 
-      participation: "Desenvolvimento do HTML, CSS e Javascript."
-      participationEn: "Development of HTML, CSS and Javascript."
+      participation: "Desenvolvimento do HTML, CSS (LESS) e Javascript."
+      participationEn: "Development of HTML, CSS (LESS) and Javascript."
       link: "http://www.jpr2015.org.br/"
     ,
       # Trend-i
@@ -304,8 +320,8 @@ docpadConfig = {
       idName: "trendi"
       thumb: "/assets/img/portfolio/site-trendi-thumb.jpg"
       imgModal: "/assets/img/portfolio/site-trendi.jpg"
-      participation: "Desenvolvimento do HTML, CSS e Javascript."
-      participationEn: "Development of HTML, CSS and Javascript."
+      participation: "Desenvolvimento do HTML, CSS (LESS) e Javascript."
+      participationEn: "Development of HTML, CSS (LESS) and Javascript."
       link: "http://www.trendi.com.br/"
     , 
 		  # JPR 2014
@@ -313,8 +329,8 @@ docpadConfig = {
 		  idName: "jpr-2014"
 		  thumb: "/assets/img/portfolio/site-jpr-2014-thumb.jpg"
 		  imgModal: "/assets/img/portfolio/site-jpr-2014.jpg"
-		  participation: "Desenvolvimento do HTML, CSS e Javascript."
-		  participationEn: "Development of HTML, CSS and Javascript."
+		  participation: "Desenvolvimento do HTML, CSS (LESS) e Javascript."
+		  participationEn: "Development of HTML, CSS (LESS) and Javascript."
 		  link: "http://www.spr.org.br/pt/jpr/2014/"
 		,
 		  # Recovery
@@ -322,8 +338,8 @@ docpadConfig = {
 		  idName: "recovery"
 		  thumb: "/assets/img/portfolio/site-recovery-brasil-thumb.jpg"
 		  imgModal: "/assets/img/portfolio/site-recovery-brasil.jpg"
-		  participation: "Desenvolvimento do HTML, CSS e Javascript."
-		  participationEn: "Development of HTML, CSS and Javascript."
+		  participation: "Desenvolvimento do HTML, CSS (LESS) e Javascript."
+		  participationEn: "Development of HTML, CSS (LESS) and Javascript."
 		  link: "http://www.recoverybrasil.com.br/"
 		,
 		  # Prime Jardim Europa
