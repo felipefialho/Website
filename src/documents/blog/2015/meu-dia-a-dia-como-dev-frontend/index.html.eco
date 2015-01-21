@@ -1,0 +1,106 @@
+---
+title: "Meu dia a dia como desenvolvedor Front-End"
+datePost: 20/01/2015
+layout: "post"
+relativeOutDirPath: 'posts'
+path: "../../../"
+pathBlog: "../../"
+---
+
+<p class="lead">Enfim o primeiro post de 2015. Vou contar um pouco sobre meu dia a dia como desenvolvedor Front-End, equipamentos, aplicativos, workflow...</p>
+
+<h3>Mas antes...</h3>
+
+<p>Muitos já devem ter visto, mas <a href="https://github.com/LFeh/1-post-por-dia">criei um repositório</a> para resolver um dos maiores problemas na hora de escrever um novo artigo: escolher um assunto/tema.</p>
+
+<p>Esse post foi feito em cima de <a href="https://github.com/LFeh/1-post-por-dia/issues/12">um pedido</a> do <a href="https://github.com/matheusmmo">Matheus Moraes</a>, e o assunto já teve postagens do <a href="http://willianjusten.com.br/meu-dia-a-dia-como-dev-frontend/">Willian Justen</a> e do <a href="http://blog.da2k.com.br/2015/01/15/como-ser-um-dev-frontend-usando-linux/">Fernando Daciuk</a>.</p>
+
+<h3>Local de trabalho</h3>
+
+<p>Esse ano comecei a trabalhar remoto. Portanto minha casa também virou meu local de trabalho, e esse é um ponto importante. É interessante ter um ambiente legal e confortável, e de preferência com lazer próximo para poder se distrair quando necessário.</p>
+
+<p>Considero apartamentos uma boa alternativa, já que normalmente oferecem coisas como piscina e academia. Além de ter uma coisa fundamental para relaxar a mente quando necessário: Uma sacada.</p>
+ 
+<p class="img-box">
+  <img src="/assets/img/blog/etc/sacada-do-predio.jpg" alt="Foto de uma sacada">
+</p>
+
+<h3>Equipamentos</h3>
+
+<p>Uma bancada para os seus equipamentos é uma solução barata e que funciona muito bem. Também é legal manter por perto um caderninho para anotações rápidas.</p>
+
+<p class="img-box">
+  <img src="/assets/img/blog/etc/workstation.jpg" alt="Local de trabalho, com 1 monitor, 1 notebook e uma TV">
+</p> 
+
+<p>Um sistema operacional robusto e confiável é muito importante. Por isso eu uso Windows :). Tirando a parte do "robusto e confiável" eu realmente uso Windows, como podem confirmar na foto acima. Sendo mais preciso <b>Windows 8.1</b>.</p>
+
+<p>Meu notebook é um <b>DELL</b> com a seguinte configuração:</p> 
+
+<ul>
+  <li>Monitor 15,6' com Touch Display, IPS</li> 
+  <li>Resolução Full HD (1920 x 1080)</li>
+  <li>Processador Intel Core i7</li>
+  <li>16GB de memória</li>
+  <li>Placa de vídeo AMD Radeon M265 2GB DDR3</li>
+  <li>1 TB de HD + 8GB SSD</li>
+</ul>
+
+<p>É uma configuração robusta que tem me atendido muito bem.</p>
+
+<p>Além disso, tenho um monitor de 23' IPS da LG como tela secundária. Nada como deixar o <b>Sublime</b> na tela principal, e o projeto atualizando na tela secundária em tempo real através do <b>Browser Sync</b>.</p>
+
+<p>E claro... tenho um gato, eles são fontes inesgotáveis de entretenimento e diversão. <span aria-hidden="true" class="icon-happy"></span></p>
+
+<div class="img-box">
+  <img src="/assets/img/blog/etc/agnes.jpg" alt="Foto da Agnes (um gato) deitada">
+</div> 
+
+<h3>Aplicativos</h3>
+
+<p>Basicamente os aplicativos que utilizo para trabalhar são: </p>
+
+<ul>
+  <li><b>Sublime Text 2</b></li>
+  <li><b>Google Chrome</b> como browser principal</li>
+  <li><b>Dev Tools</b> para debug</li>
+  <li><b>Console2</b> para o terminal</li>
+  <li><b>Photoshop</b> como editor de imagens/layout</li>
+</ul>
+
+<p>Como aplicativos de suporte:</p> 
+
+<ul>
+  <li><b>Dropbox</b> para troca de arquivos</li>
+  <li><b>Evernote</b> para organização pessoal</li> 
+  <li><a href="https://sifterapp.com/">Sifter</a> como <em>issue tracking</em></li>
+  <li><a href="https://www.toggl.com/">Toggl</a> para marcação geral de tempo</li>
+  <li><a href="https://www.getharvest.com/">Harvest</a> para marcação especifica de tempo</li>
+  <li><a href="http://tomato-timer.com/#">Tomato Timer</a> para calculo de Pomodoros</li>
+  <li><a href="http://grooveshark.com/">Grooveshark</a> como player de música</li>
+</ul>
+
+<h3>Workflow</h3>
+
+<p>Podem ter uma noção melhor do meu workflow técnico lendo os posts abaixo:</p>
+ 
+<ul>
+  <li><a href="http://www.felipefialho.com/blog/2014/falando-em-organizacao-parte-1/">Falando em organização - Parte I</a></li>
+  <li><a href="http://www.felipefialho.com/blog/2014/falando-em-organizacao-css/">Falando em organização CSS</a></li>
+</ul>
+
+<p>Atualmente utilizo no meu workflow:</p>
+
+<ul>
+  <li><b>LESS</b> ou <b>Stylus</b> como pré-processador CSS</li>
+  <li><b>JADE</b> como template engine</li>
+  <li><b>AngularJS</b> como JavaScript framework</li>
+  <li><b>Git</b> para versiomento</li>
+  <li><b>Grunt</b> como <em>task-builder</em></li>
+</ul>
+
+<p>Importante lembrar que ferramentas, aplicativos e todas essas maravilhas modernas, são apenas facilitadores para que possamos entregar o melhor trabalho possível. Se apegue mais ao conceito, e menos nas ferramentas, porque normalmente, elas são passageiras.</p>
+
+<p class="end">E é isso! :D</p>
+
+

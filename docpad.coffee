@@ -76,6 +76,12 @@ docpadConfig = {
 
 		# Blog posts
 		posts: [
+      name: 'Meu dia a dia como desenvolvedor Front-End'
+      description: 'Enfim o primeiro post de 2015. Vou contar um pouco sobre meu dia a dia como desenvolvedor Front-End, equipamentos, aplicativos, workflow...'
+      date: '20/01/2015'
+      year: '2015'
+      path: 'meu-dia-a-dia-como-dev-frontend'
+    ,
       name: 'Falando em organização... CSS'
       description: 'Dando continuidade a série sobre minha organização e fluxo de trabalho atual, vou contar um pouco sobre como tenho trabalhado o CSS.'
       date: '13/11/2014'
