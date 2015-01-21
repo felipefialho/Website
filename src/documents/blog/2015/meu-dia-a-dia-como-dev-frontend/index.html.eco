@@ -61,18 +61,18 @@ pathBlog: "../../"
 <p>Basicamente os aplicativos que utilizo para trabalhar são: </p>
 
 <ul>
-  <li><b>Sublime Text 2</b></li>
-  <li><b>Google Chrome</b> como browser principal</li>
-  <li><b>Dev Tools</b> para debug</li>
-  <li><b>Console2</b> para o terminal</li>
+  <li><a href="http://www.sublimetext.com/2">Sublime Text 2</b></li>
+  <li><a href="http://www.google.com.br/chrome/">Google Chrome</b> como browser principal</li>
+  <li><a href="https://developer.chrome.com/devtools">Dev Tools</a> para deaug</li>
+  <li><a href="http://sourceforge.net/projects/console/">Console2</a> para o terminal</li>
   <li><b>Photoshop</b> como editor de imagens/layout</li>
 </ul>
 
 <p>Como aplicativos de suporte:</p> 
 
 <ul>
-  <li><b>Dropbox</b> para troca de arquivos</li>
-  <li><b>Evernote</b> para organização pessoal</li> 
+  <li><a href="https://www.dropbox.com/">Dropbox</a> para troca de arquivos</li>
+  <li><a href="https://evernote.com/intl/pt-br/">Evernote</a> para organização pessoal</li> 
   <li><a href="https://sifterapp.com/">Sifter</a> como <em>issue tracking</em></li>
   <li><a href="https://www.toggl.com/">Toggl</a> para marcação geral de tempo</li>
   <li><a href="https://www.getharvest.com/">Harvest</a> para marcação especifica de tempo</li>
