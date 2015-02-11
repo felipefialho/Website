@@ -273,6 +273,14 @@ docpadConfig = {
 
 		# Portfolio list
 		portfolio: [
+      # AASC
+      name: "African American Studies Center"
+      idName: "aasc"
+      thumb: "/assets/img/portfolio/aasc.jpg" 
+      participation: "Desenvolvimento do HTML (Jade), CSS (LESS) e Javascript."
+      participationEn: "Development of HTML (Jade), CSS (LESS) and Javascript (Angular)."
+      link: "http://aasc.oupexplore.com/"
+    ,
       # OBO
       name: "Oxford Bibliographies"
       idName: "obo"
