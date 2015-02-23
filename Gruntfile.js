@@ -55,13 +55,11 @@ grunt.initConfig({
     compile: {
       options: { 
         urlfunc: 'data-uri'  
-      },
-      dev: {
-        files: {
-          '<%= config.dev %>files/assets/css/style.css': '<%= config.dev %>files/assets/stylus/style.styl'
-        }
-      }
-    }
+      }, 
+      files: {
+        '<%= config.dev %>files/assets/css/style.css': '<%= config.dev %>files/assets/stylus/style.styl'
+      } 
+  }
   },
     
   // Watch
@@ -70,7 +68,7 @@ grunt.initConfig({
       files : [
       '<%= config.dev %>**/*.styl'
       ],
-      tasks : ['stylus:dev']
+      tasks : ['stylus']
     }
   },
 
