@@ -14,11 +14,8 @@ grunt.initConfig({
   // Clean files
   clean: {
     dist: [
-      "<%= config.dist %>/files/",
-      "<%= config.dist %>/**/bootstrap/",
-      "<%= config.dist %>/**/jquery/",
-      "<%= config.dist %>/**/_general.js",
-      "<%= config.dist %>/**/less/"
+      '<%= config.dist %>/files/',   
+      '<%= config.dist %>/**/stylus/'
     ]
   },
 
@@ -53,34 +50,27 @@ grunt.initConfig({
     }
   },
 
-  // Less
-  less: {
-    dist: {
-      options: {
-        compress: true,
-        cleancss: true
+  // Stylus
+  stylus: {
+    compile: {
+      options: { 
+        urlfunc: 'data-uri'  
       },
-      files: {
-        "<%= config.dist %>assets/css/style.css": "<%= config.dev %>files/assets/css/less/style.less"
+      dev: {
+        files: {
+          '<%= config.dev %>files/assets/css/style.css': '<%= config.dev %>files/assets/stylus/style.styl'
+        }
       }
-    },
-    dev: {
-     files: {
-       "<%= config.dev %>files/assets/css/style.css": "<%= config.dev %>files/assets/css/less/style.less"
-     }
     }
   },
- 
+    
   // Watch
-  watch : {
-     options: {
-      debounceDelay: 500,
-    },
+  watch : { 
     less: {
       files : [
-      '<%= config.dev %>**/*.less'
+      '<%= config.dev %>**/*.styl'
       ],
-      tasks : ['less:dev']
+      tasks : ['stylus:dev']
     }
   },
 
@@ -104,11 +94,11 @@ grunt.initConfig({
 grunt.loadNpmTasks('grunt-contrib-clean');
 grunt.loadNpmTasks('grunt-contrib-htmlmin');
 grunt.loadNpmTasks('grunt-contrib-imagemin');
-grunt.loadNpmTasks('grunt-contrib-less'); 
+grunt.loadNpmTasks('grunt-contrib-stylus'); 
 grunt.loadNpmTasks('grunt-contrib-watch');
 
 // Tasks runnings
-grunt.registerTask( 'build', ['htmlmin:dist', 'imagemin:dist', 'less:dist', 'clean:dist'] );
+grunt.registerTask( 'build', ['htmlmin:dist', 'imagemin:dist', 'stylus', 'clean:dist'] );
 
 // Watch
 grunt.registerTask( 'w', [ 'watch' ] );
