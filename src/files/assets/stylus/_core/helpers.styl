@@ -18,3 +18,18 @@ center($arg = "")
   else
     left: 50%
     transform: translateX(-50%)
+
+ 
+// Clearfix
+// --------------------------------
+
+clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
