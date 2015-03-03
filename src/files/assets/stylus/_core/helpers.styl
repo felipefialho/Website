@@ -3,6 +3,8 @@
 //
 // 1. Center, horizontal and vertical
 // 2. Clearfix 
+// 3. Reset list styles
+// 4. Screen Reader Only
 //
 // ===============================================================
 
@@ -29,13 +31,37 @@ center($arg = "")
 // 2. Clearfix
 // --------------------------------
 
-clearfix() {
+clearfix()
   &:before,
-  &:after {
+  &:after
     content: " "; // 1
     display: table; // 2
-  }
-  &:after {
+
+  &:after
     clear: both;
-  }
-}
+
+
+
+//
+// 3. Reset list styles
+// --------------------------------------------------
+
+list-unstyled()
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+
+
+//
+// 4. Screen Reader Only
+// --------------------------------------------------
+
+.sr-only
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
