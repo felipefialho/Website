@@ -4,8 +4,8 @@
 // 1. Center, horizontal and vertical
 // 2. Clearfix 
 // 3. Reset list styles
-// 4. Screen Reader Only
-// 5. Hidden
+// 4. Hidden
+// 5. Hidden on small screens
 //
 // ===============================================================
 
@@ -41,8 +41,7 @@ clearfix()
   &:after
     clear: both;
 
-
-
+ 
 //
 // 3. Reset list styles
 // --------------------------------------------------
@@ -52,27 +51,21 @@ list-unstyled()
   padding-left: 0;
   list-style: none;
 
-
+ 
 //
-// 4. Screen Reader Only
+// 4. Hidden
 // --------------------------------------------------
 
-.sr-only
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0,0,0,0);
-  border: 0;
-
-
-//
-// 5. Hidden
-// --------------------------------------------------
-
-.hidden 
+hidden()
   visibility: hidden;
   font-size: 0;
   display: none; 
+
+
+//
+// 5. Hidden on small screens
+// --------------------------------------------------
+
+hidden-xs()
+  @media (max-width: $screen-xs-max)
+    display: none;  
