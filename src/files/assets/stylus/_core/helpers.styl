@@ -1,0 +1,20 @@
+//  
+// Mixins
+// ===============================================================
+
+// Center, horizontal and vertical
+// -----------------------------------
+
+center($arg = "")
+  position: absolute
+  
+  if ($arg == top)
+    top: 50%
+    transform: translateY(-50%)
+  else if ($arg == full)
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+  else
+    left: 50%
+    transform: translateX(-50%)

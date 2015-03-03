@@ -1,0 +1,36 @@
+//  
+// Functions
+// ===============================================================
+
+// Set PX to REM () 
+// HTML font-size: 62.5%;
+// -----------------------------------
+
+pxtorem($prop, $value)
+  {$prop} //unit($value, px)
+  {$prop} unit(($value * 0.1), rem)
+  
+ 
+// Set line-height and bold
+// --------------------------------------------------
+
+// font-size
+fontSize($size = 14)
+  pxtorem('font-size', $size)
+
+// line-height
+lineHeight($size = 20)
+  pxtorem('line-height', $size)
+
+setfont($font-size, $font-weight = "") 
+  fontSize($font-size)
+  
+  if ($font-weight != "")
+    font-weight: $font-weight
+  
+  if ($font-size <= 30)
+    lineHeight($font-size * 1.25)
+  else if ($font-size > 30)
+    lineHeight($font-size * 1.15)
+  if ($font-size > 50)
+    lineHeight($font-size * 1.05)
