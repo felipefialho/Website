@@ -35,11 +35,11 @@ center($arg = "")
 clearfix()
   &:before,
   &:after
-    content: " "; // 1
-    display: table; // 2
+    content: " " 
+    display: table 
 
   &:after
-    clear: both;
+    clear: both 
 
  
 //
@@ -47,9 +47,9 @@ clearfix()
 // --------------------------------------------------
 
 list-unstyled()
-  margin-bottom: 0;
-  padding-left: 0;
-  list-style: none;
+  margin-bottom: 0
+  padding-left: 0
+  list-style: none
 
  
 //
@@ -57,9 +57,9 @@ list-unstyled()
 // --------------------------------------------------
 
 hidden()
-  visibility: hidden;
-  font-size: 0;
-  display: none; 
+  visibility: hidden
+  font-size: 0
+  display: none 
 
 
 //
@@ -68,4 +68,4 @@ hidden()
 
 hidden-xs()
   @media (max-width: $screen-xs-max)
-    display: none;  
+    display: none  
