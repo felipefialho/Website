@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt" class="no-js">
+<html lang="pt">
 <head>
 	<!-- Standard Meta -->
 	<meta charset="utf-8" />
@@ -27,13 +27,12 @@
 	<link rel="shortcut icon" href="/assets/img/icons/favicon2.ico" />
 </head>
 <body>
-	<div class="row-fluid">
+	<div class="wrap">
 
-		<!-- SIDE -->
-		<aside class="span3">
-			<div class="navbar nav-side">
+    <!-- NAV -->
+		<nav class="navbar"> 
 				<!-- HEADER -->
-				<header itemscope itemtype="http://schema.org/Person">
+				<header class="header" itemscope itemtype="http://schema.org/Person">
 					<div class="photo">
 						<img src="/assets/img/default/luiz-felipe-tartarotti-fialho.png" alt="Cartoon de Luiz Felipe Tartarotti Fialho" itemprop="image" height="151" width="100">
 					</div>
@@ -42,18 +41,16 @@
 					</h1>
 					<h4 itemprop="jobTitle">Desenvolvedor Front-End</h4>
 				</header>
-				<!-- END HEADER -->
-				<!-- NAV -->
+				<!-- /HEADER -->
 				<%-@partial('nav.html.eco', @)%>
-				<!-- END NAV -->
-			</div>
-		</aside>
-		<!-- END SIDE -->
-		<section class="wrap span9">
-			<article class="main" role="main">
+		</nav>
+    <!-- /NAV --> 
+		<!-- /SIDE -->
+		<main class="main" role="main">
+			<div class="container">
 				<%- @content %>
-			</article>
-		</section>
+			</div>
+		</main>
 	</div>
 
 	<script>
