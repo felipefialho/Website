@@ -1,9 +1,5 @@
 
-			<label for="collapse-menu" class="btn btn-navbar">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</label>
+			<label for="collapse-menu" class="navbar-btn">&#9776;</label>
 
 			<!-- NAVIGATION -->
       <input class="collapse-open" type="checkbox" id="collapse-menu" aria-hidden="true" hidden>
@@ -11,8 +7,8 @@
 				<hr>
 				<ul class="nav nav-pills nav-stacked" role="navigation">
 					 <% for section in @sectionsEn : %>
-				      <li class="nav-list-item">
-				        <a href="<%= @getRelativeFile() %><%= section %>/"><%= @labelsEn[section] %></a>
+				      <li class="nav-item">
+				        <a class="nav-link" href="<%= @getRelativeFile() %><%= section %>/"><%= @labelsEn[section] %></a>
 				      </li>
 				    <% end %>
 				</ul>

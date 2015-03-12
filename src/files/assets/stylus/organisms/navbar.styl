@@ -6,6 +6,7 @@
   background: $gray-darker
   font-family: 'ostrich_sansblack'
   padding: $space
+  position: relative
   
   @media (min-width: $screen-sm)
     position: fixed
@@ -13,7 +14,7 @@
     left   : 0 
     bottom : 0
     text-align: center
-    max-width: 300px;
+    max-width: 300px 
     width: 20%
   
   // Resets
@@ -47,3 +48,40 @@
   
 h4 
   color: $gray
+  
+
+// Nav Collapse
+// -------------------------------------------------- 
+
+.nav-collapse  
+  @media (max-width: $screen-xs-max)
+    border-top: @gray solid 1px 
+    display: none 
+    margin-top: $space-sm
+    text-align: center  
+
+.collapse-open:checked ~ .nav-collapse 
+  @media (max-width: $screen-xs-max)
+    display: block  
+    
+
+// Navbar Button
+// -------------------------------------------------- 
+
+.navbar-btn
+  @extends $visible-xs 
+  font-size: 30px
+  color: #fff 
+  position: absolute
+  top: 25px
+  right $space 
+  
+
+// Nav 
+// -------------------------------------------------- 
+
+.nav 
+  a 
+    display: block
+    padding $space-sm 
+    setfont($fontSize * 1.5)

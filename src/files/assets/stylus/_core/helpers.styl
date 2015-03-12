@@ -5,8 +5,9 @@
 // 2. Clearfix 
 // 3. Reset list styles
 // 4. Hidden
-// 5. Hidden on small screens
-// 6. Visible on screeens
+// 5. Hidden on mobile
+// 6. Visible on mobile
+// 7. Visible on small screeens
 //
 // ===============================================================
 
@@ -48,8 +49,8 @@ $clearfix
 // --------------------------------------------------
 
 $list-unstyled 
-  margin-bottom: 0
-  padding-left: 0
+  margin: 0
+  padding: 0
   list-style: none
 
  
@@ -64,7 +65,7 @@ $hidden
 
 
 //
-// 5. Hidden on small screens
+// 5. Hidden on mobile
 // --------------------------------------------------
 
 $hidden-xs 
@@ -73,7 +74,16 @@ $hidden-xs
     
 
 //
-// 6. Visible on screeens
+// 6. Visible on mobile
+// --------------------------------------------------
+
+$visible-xs 
+  @media (min-width: $screen-sm)
+    display: none  
+
+
+//
+// 7. Visible on small screeens
 // --------------------------------------------------
 
 $visible-sm 
