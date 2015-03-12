@@ -3,6 +3,7 @@
 //
 // 1. Set PX to REM () 
 // 2. Set line-height and bold ()
+// 3. Font face ()
 //
 // ===============================================================
 
@@ -40,3 +41,28 @@ setfont($font-size, $font-weight = "")
     lineHeight($font-size * 1.15)
   if ($font-size > 50)
     lineHeight($font-size * 1.05)
+  
+
+//
+// 3. Font face ()
+// --------------------------------------------------
+ 
+font-url(file)
+  return '../fonts/' + file
+ 
+webfont(family, file, hack-chrome-windows = false, weight = 'normal')
+  @font-face
+    font-family: family
+    src: url(font-url(file + '.eot'))
+    src: url(font-url(file + '.eot?#iefix')) format('embedded-opentype'),
+        url(font-url(file + '.woff')) format('woff'), 
+        url(font-url(file + '.ttf')) format('truetype'), 
+        url(font-url(file + '.svg#'+ family)) format('svg')
+    font-weight: weight
+    font-style: normal
+    
+  if hack-chrome-windows
+    @media screen and (-webkit-min-device-pixel-ratio:0)
+      @font-face
+        font-family: family
+        src: url(font-url(file + '.svg#'+ family)) format('svg')
