@@ -16,11 +16,31 @@
     max-width: 300px;
     width: 20%
   
+  // Resets
+  // --------------------------------------------------
+    
   ul 
     list-unstyled()
     
   a 
     color: #fff
     
-  .logo 
-    @extends $h2 
+  // Photo
+  // --------------------------------------------------
+  
+  .photo 
+    margin-bottom: $space-sm
+    opacity: 0.4
+    transition: opacity .3s
+    
+  &:hover .photo 
+    opacity: 1
+    
+// Logo
+// --------------------------------------------------
+  
+.logo 
+  @extends $h2 
+  
+h4 
+  color: $gray
