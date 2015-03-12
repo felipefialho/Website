@@ -28,14 +28,13 @@
   // Photo
   // --------------------------------------------------
   
-  .photo 
-    display: none
-    margin-bottom: $space-sm
-    opacity: 0.4
-    transition: opacity .3s 
+  .photo
+    @extends $visible-sm   
 
     @media (min-width: $screen-sm)
-      display: block
+      margin-bottom: $space-sm
+      opacity: 0.4
+      transition: opacity .3s 
     
   &:hover .photo 
     opacity: 1
