@@ -28,33 +28,31 @@
 </head>
 <body>
 	<div class="row-fluid">
+ 
+    <!-- NAV -->
+    <nav class="navbar"> 
+        <!-- HEADER -->
+        <header class="header" itemscope itemtype="http://schema.org/Person">
+          <div class="photo">
+            <img src="/assets/img/default/luiz-felipe-tartarotti-fialho.png" alt="Cartoon of Luiz Felipe Tartarotti Fialho" itemprop="image" height="151" width="100">
+          </div>
+          <h1 class="logo">
+            <a href="/en/" itemprop="additionalName">Felipe Fialho</a>
+          </h1>
+          <h4 itemprop="jobTitle">Desenvolvedor Front-End</h4>
+        </header>
+        <!-- /HEADER -->
+        <%-@partial('nav-en.html.eco', @)%>
+    </nav>
+    <!-- /NAV -->  
 
-		<!-- SIDE -->
-		<aside class="span3">
-			<div class="navbar nav-side">
-				<!-- HEADER -->
-				<header itemscope itemtype="http://schema.org/Person">
-					<div class="photo">
-						<img src="/assets/img/default/luiz-felipe-tartarotti-fialho.png" alt="Cartoon of Luiz Felipe Tartarotti Fialho" itemprop="image" height="151" width="100">
-					</div>
-					<h1 class="logo">
-						<a href="/en/" itemprop="additionalName">Felipe Fialho</a>
-					</h1>
-					<h4 itemprop="jobTitle">Front-End Developer</h4>
-				</header>
-				<!-- END HEADER -->
-				<!-- NAV -->
-				<%-@partial('nav-en.html.eco', @)%>
-				<!-- END NAV -->
-			</div>
-		</aside>
-		<!-- END SIDE -->
-		<section class="wrap span9">
-			<article class="main" role="main">
-				<%- @content %>
-			</article>
-
-		</section>
+    <!-- MAIN -->
+    <main class="main" role="main">
+      <div class="container">
+        <%- @content %>
+      </div>
+    </main>
+    <!-- /MAIN -->
 	</div>
 
 	<script>
