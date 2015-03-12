@@ -20,7 +20,7 @@
   // --------------------------------------------------
     
   ul 
-    list-unstyled()
+    @extends $list-unstyled
     
   a 
     color: #fff
@@ -29,9 +29,13 @@
   // --------------------------------------------------
   
   .photo 
+    display: none
     margin-bottom: $space-sm
     opacity: 0.4
-    transition: opacity .3s
+    transition: opacity .3s 
+
+    @media (min-width: $screen-sm)
+      display: block
     
   &:hover .photo 
     opacity: 1

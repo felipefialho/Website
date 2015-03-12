@@ -6,6 +6,7 @@
 // 3. Reset list styles
 // 4. Hidden
 // 5. Hidden on small screens
+// 6. Visible on screeens
 //
 // ===============================================================
 
@@ -32,7 +33,7 @@ center($arg = "")
 // 2. Clearfix
 // --------------------------------
 
-clearfix()
+$clearfix 
   &:before,
   &:after
     content: " " 
@@ -46,7 +47,7 @@ clearfix()
 // 3. Reset list styles
 // --------------------------------------------------
 
-list-unstyled()
+$list-unstyled 
   margin-bottom: 0
   padding-left: 0
   list-style: none
@@ -56,7 +57,7 @@ list-unstyled()
 // 4. Hidden
 // --------------------------------------------------
 
-hidden()
+$hidden 
   visibility: hidden
   font-size: 0
   display: none 
@@ -66,6 +67,17 @@ hidden()
 // 5. Hidden on small screens
 // --------------------------------------------------
 
-hidden-xs()
+$hidden-xs 
   @media (max-width: $screen-xs-max)
     display: none  
+    
+
+//
+// 6. Visible on screeens
+// --------------------------------------------------
+
+$visible-sm 
+  display: none  
+  
+  @media (min-width: $screen-sm-min)
+    display: block 
