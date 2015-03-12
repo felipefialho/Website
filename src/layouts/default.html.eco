@@ -44,14 +44,15 @@
 				<!-- /HEADER -->
 				<%-@partial('nav.html.eco', @)%>
 		</nav>
-    <!-- /NAV --> 
-    
-		<!-- /SIDE -->
-		<main class="main" role="main">
-			<div class="container">
-				<%- @content %>
-			</div>
-		</main>
+    <!-- /NAV -->  
+
+    <!-- MAIN -->
+    <main class="main" role="main">
+      <div class="container">
+        <%- @content %>
+      </div>
+    </main>
+    <!-- /MAIN -->
 	</div>
 
 	<script>

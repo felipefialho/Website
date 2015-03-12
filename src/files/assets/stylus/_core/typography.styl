@@ -1,55 +1,52 @@
 //
 // Typography
 // --------------------------------------------------
- 
+  
+// Uppercase
+// --------------------------------------------------
+
+$setUppercase 
+  text-transform: uppercase
+  letter-spacing: 1.2px
+   
 // Headings
 // --------------------------------------------------
 
-h1() 
+$h1 
   setfont($fontSize * 2.5)
  
 
-h2() 
+$h2 
   setfont($fontSize * 2)
  
 
-h3() 
+$h3 
   setfont($fontSize * 1.5)
  
 
-h4() 
+$h4 
   setfont($fontSize * 1.2)
  
 
-h5() 
+$h5 
   setfont($fontSize)
  
 
-h6() 
+$h6 
   setfont($fontSize * 0.8)
-  setUppercase();
+  @extends $setUppercase
  
 
 // Paragraphs
 // --------------------------------------------------
 
 // Default
-p1() 
+$p1
   setfont($fontSize)
  
 
 // Small
-p2()  
+$p2 
   setfont($fontSize * 0.8)
  
-
-// Lists
-// --------------------------------------------------
-
-setUppercase()
-  text-transform: uppercase
-  letter-spacing: 1.2px
-  
-
-
  
