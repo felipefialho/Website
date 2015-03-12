@@ -39,15 +39,9 @@
     
   &:hover .photo 
     opacity: 1
-    
-// Logo
-// --------------------------------------------------
-  
-.logo 
-  @extends $h2 
-  
-h4 
-  color: $gray
+   
+  h4 
+    color: $gray
   
 
 // Nav Collapse
@@ -55,10 +49,9 @@ h4
 
 .nav-collapse  
   @media (max-width: $screen-xs-max)
-    border-top: @gray solid 1px 
+    border-top: $gray solid 1px 
     display: none 
-    margin-top: $space-sm
-    text-align: center  
+    margin-top: $space-sm 
 
 .collapse-open:checked ~ .nav-collapse 
   @media (max-width: $screen-xs-max)
@@ -80,8 +73,11 @@ h4
 // Nav 
 // -------------------------------------------------- 
 
-.nav 
-  a 
-    display: block
-    padding $space-sm 
-    setfont($fontSize * 1.5)
+.nav-link 
+  display: block
+  padding $space-sm 
+  setfont($fontSize * 1.3)
+  
+  @media (max-width: $screen-xs-max)
+    border-bottom: $gray solid 1px 
+

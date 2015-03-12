@@ -45,14 +45,12 @@
               <span class="icon-linkedin" aria-hidden="true"></span>
             </a>
           </li>
-          <li class="hide"><a href="https://plus.google.com/101721187531748531230?rel=author">Google +</a></li>
+          <li><a href="https://plus.google.com/101721187531748531230?rel=author">Google +</a></li>
         </ul>
         <!-- END OF SOCIAL MEDIA --> 
 				<hr>
 				<!-- TRANSLATE -->
-				<ul class="translate inline">
-					<li><a href="/">Ver em Português</a></li>
-				</ul>
+				<a class="translate" href="/">Ver em Português</a> 
 				<!-- END OF TRANSLATE -->
 
 			</nav>

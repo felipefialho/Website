@@ -43,13 +43,11 @@
               <span class="icon-linkedin" aria-hidden="true"></span>
             </a>
           </li>
-					<li class="hide"><a href="https://plus.google.com/101721187531748531230?rel=author">Google +</a></li>
+					<li><a href="https://plus.google.com/101721187531748531230?rel=author">Google +</a></li>
 				</ul>
 				<!-- END OF SOCIAL MEDIA --> 
-				<!-- TRANSLATE -->
-				<ul class="translate">
-					<li><a href="/en/">View in English</a></li>
-				</ul>
+				<!-- TRANSLATE --> 
+				<a href="/en/" class="translate">View in English</a> 
 				<!-- END OF TRANSLATE -->
 			</nav>
 			<!-- END NAVIGATION -->
