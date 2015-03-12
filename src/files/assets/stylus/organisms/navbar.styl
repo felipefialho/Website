@@ -8,7 +8,7 @@
   padding $space
   position relative
   
-  @media (min-width: $screen-sm)
+  @media (min-width $screen-sm)
     position fixed
     top     0
     left    0 
@@ -33,7 +33,7 @@
   .photo
     @extends $visible-sm   
 
-    @media (min-width: $screen-sm)
+    @media (min-width $screen-sm)
       margin-bottom $space-sm
       opacity 0.4
       transition opacity .3s 
@@ -49,13 +49,13 @@
 // -------------------------------------------------- 
 
 .nav-collapse  
-  @media (max-width: $screen-xs-max)
+  @media (max-width $screen-xs-max)
     border-top $gray solid 1px 
     display none 
     margin-top $space-sm 
 
 .collapse-open:checked ~ .nav-collapse 
-  @media (max-width: $screen-xs-max)
+  @media (max-width $screen-xs-max)
     display: block  
     
 
@@ -75,7 +75,7 @@
 // -------------------------------------------------- 
 
 .nav
-  @media (min-width: $screen-sm)
+  @media (min-width $screen-sm)
     border-bottom $gray solid 1px 
     border-top    $gray solid 1px
     margin-top $space 
@@ -86,6 +86,6 @@
   padding $space-sm 
   setfont($fontSize * 1.3)
   
-  @media (max-width: $screen-xs-max)
+  @media (max-width $screen-xs-max)
     border-bottom: $gray solid 1px 
 

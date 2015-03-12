@@ -16,18 +16,18 @@
 // -----------------------------------
 
 center($arg = "")
-  position: absolute
+  position absolute
   
   if ($arg == top)
-    top: 50%
-    transform: translateY(-50%)
+    top 50%
+    transform translateY(-50%)
   else if ($arg == full)
-    top: 50%
-    left: 50%
-    transform: translate(-50%,-50%)
+    top 50%
+    left 50%
+    transform translate(-50%,-50%)
   else
-    left: 50%
-    transform: translateX(-50%)
+    left 50%
+    transform translateX(-50%)
 
 
 //
@@ -35,13 +35,13 @@ center($arg = "")
 // --------------------------------
 
 $clearfix 
-  &:before,
-  &:after
-    content: " " 
-    display: table 
+  &before,
+  &after
+    content " " 
+    display table 
 
-  &:after
-    clear: both 
+  &after
+    clear both 
 
  
 //
@@ -49,9 +49,9 @@ $clearfix
 // --------------------------------------------------
 
 $list-unstyled 
-  margin-bottom: 0
-  padding-left: 0
-  list-style: none
+  margin-bottom 0
+  padding-left 0
+  list-style none
 
  
 //
@@ -59,9 +59,9 @@ $list-unstyled
 // --------------------------------------------------
 
 $hidden 
-  visibility: hidden
-  font-size: 0
-  display: none 
+  visibility hidden
+  font-size 0
+  display none 
 
 
 //
@@ -69,8 +69,8 @@ $hidden
 // --------------------------------------------------
 
 $hidden-xs 
-  @media (max-width: $screen-xs-max)
-    display: none  
+  @media (max-width $screen-xs-max)
+    display none  
     
 
 //
@@ -78,8 +78,8 @@ $hidden-xs
 // --------------------------------------------------
 
 $visible-xs 
-  @media (min-width: $screen-sm)
-    display: none  
+  @media (min-width $screen-sm)
+    display none  
 
 
 //
@@ -87,7 +87,7 @@ $visible-xs
 // --------------------------------------------------
 
 $visible-sm 
-  display: none  
+  display none  
   
-  @media (min-width: $screen-sm)
-    display: block 
+  @media (min-width $screen-sm)
+    display block 
