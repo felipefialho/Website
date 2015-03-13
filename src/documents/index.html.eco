@@ -31,7 +31,7 @@ layout: "default"
 	 		<% i++ %>
 	 		<% if i <= 2 : %>
 				<li class="blog-item" itemscope itemtype="http://schema.org/BlogPosting">
-				<a href="blog/<%= posts.year %>/<%= posts.path %>/" itemprop="url">
+				<a class="blog-link" href="blog/<%= posts.year %>/<%= posts.path %>/" itemprop="url">
 				  	<span class="date" itemprop="datePublished"><%= posts.date %></span>
 				  	<h4 class="tit" itemprop="headline"><%= posts.name %></h4>
 				  	<p class="description" itemprop="articleBody"><%= posts.description %></p>
@@ -41,6 +41,6 @@ layout: "default"
 		<% end %>
 	</ul>
 
-	<a href="blog/">Gostou? Veja mais do blog...</a>
+	<a class="view-more" href="blog/">Gostou? Veja mais do blog...</a>
 
 </div>

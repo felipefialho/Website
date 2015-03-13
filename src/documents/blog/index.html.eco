@@ -10,7 +10,7 @@ path: "../../"
 	<ul class="blog-list">
  	<% for posts in @posts : %>
       <li class="blog-item" itemscope itemtype="http://schema.org/BlogPosting">
-        <a href="<%= posts.year %>/<%= posts.path %>/" itemprop="url">
+        <a class="blog-link" href="<%= posts.year %>/<%= posts.path %>/" itemprop="url">
 	      	<span class="date"itemprop="datePublished"><%= posts.date %></span>
 	      	<h4 class="tit" itemprop="headline"><%= posts.name %></h4>
 	      	<p class="description" itemprop="articleBody"><%= posts.description %></p>
