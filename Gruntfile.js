@@ -92,7 +92,7 @@ grunt.initConfig({
       files : [
       '<%= config.dev %>**/*.styl'
       ],
-      tasks : ['stylus']
+      tasks : ['stylus:compile']
     }
   },
  
