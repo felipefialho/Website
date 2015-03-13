@@ -17,6 +17,6 @@ layout: "default-en"
 
 	<p>This website was developed with <a href="http://docpad.org/">Docpad</a>, the code it is shared in <a href="https://github.com/LFeh/Website">Github</a>.</p>
 
-	<p class="big-icon txt-center"><span aria-hidden="true" class="icon-happy"></span></p>
+	<p class="lead"><span aria-hidden="true" class="icon-happy"></span></p>
 
 </div>
