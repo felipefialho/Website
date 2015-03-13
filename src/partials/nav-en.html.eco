@@ -3,16 +3,14 @@
 
 			<!-- NAVIGATION -->
       <input class="collapse-open" type="checkbox" id="collapse-menu" aria-hidden="true" hidden>
-			<nav class="nav-collapse">
-				<hr>
+			<nav class="nav-collapse"> 
 				<ul class="nav nav-pills nav-stacked" role="navigation">
 					 <% for section in @sectionsEn : %>
 				      <li class="nav-item">
 				        <a class="nav-link" href="<%= @getRelativeFile() %><%= section %>/"><%= @labelsEn[section] %></a>
 				      </li>
 				    <% end %>
-				</ul>
-				<hr>
+				</ul> 
         <!-- SOCIAL MEDIA -->
         <ul class="social-media">
           <li>
@@ -47,8 +45,7 @@
           </li>
           <li><a href="https://plus.google.com/101721187531748531230?rel=author">Google +</a></li>
         </ul>
-        <!-- END OF SOCIAL MEDIA --> 
-				<hr>
+        <!-- END OF SOCIAL MEDIA -->  
 				<!-- TRANSLATE -->
 				<a class="translate" href="/">Ver em Português</a> 
 				<!-- END OF TRANSLATE -->

@@ -39,7 +39,7 @@
           <h1 class="logo">
             <a href="/en/" itemprop="additionalName">Felipe Fialho</a>
           </h1>
-          <h4 itemprop="jobTitle">Desenvolvedor Front-End</h4>
+          <h4 itemprop="jobTitle">Front-End Developer</h4>
         </header>
         <!-- /HEADER -->
         <%-@partial('nav-en.html.eco', @)%>
