@@ -9,9 +9,11 @@ module.exports = function( grunt ) {
 grunt.initConfig({
 
   // Config path
+  // ---------------------------------
   config: PathConfig,
 
   // Clean files
+  // ---------------------------------
   clean: {
     dist: [
       '<%= config.dist %>/files/',   
@@ -20,6 +22,7 @@ grunt.initConfig({
   },
 
   // HTMLmin
+  // ---------------------------------
   htmlmin: {
     dist: {
       options: {
@@ -35,7 +38,8 @@ grunt.initConfig({
     }
  },
 
-  // imageMin
+  // ImageMin
+  // ---------------------------------
   imagemin: {
     dist: {
       options: {
@@ -51,6 +55,7 @@ grunt.initConfig({
   },
 
   // Stylus
+  // ---------------------------------
   stylus: {
     compile: {
       options: { 
@@ -59,10 +64,24 @@ grunt.initConfig({
       files: {
         '<%= config.dev %>files/assets/css/style.css': '<%= config.dev %>files/assets/stylus/style.styl'
       } 
-  }
+    }
   },
-    
+
+  // Task: Agroup Media Querie
+  // ---------------------------------
+  cmq: {
+    options: {
+      log: true
+    },
+    dev: {
+      files: {
+        '<%= css_src %>': ['<%= config.dist %>/assets/css/style.css']
+      }
+    }
+  },
+
   // Watch
+  // ---------------------------------
   watch : { 
     less: {
       files : [
@@ -71,34 +90,24 @@ grunt.initConfig({
       tasks : ['stylus']
     }
   },
-
-  // GZip Assets
-  compress: {
-    gzip: {
-      options: {
-        mode: 'gzip'
-      },
-      expand: true,
-      cwd: '<%= config.dist %>assets/',
-      src: ['**/*.css', '**/*.js'],
-      dest: '<%= config.dist %>/assets/'
-    }
-  },
-
-
+ 
 });
 
 // Grunt plugins
+// ---------------------------------
 grunt.loadNpmTasks('grunt-contrib-clean');
 grunt.loadNpmTasks('grunt-contrib-htmlmin');
 grunt.loadNpmTasks('grunt-contrib-imagemin');
 grunt.loadNpmTasks('grunt-contrib-stylus'); 
 grunt.loadNpmTasks('grunt-contrib-watch');
+grunt.loadNpmTasks('grunt-combine-media-queries');
 
 // Tasks runnings
-grunt.registerTask( 'build', ['htmlmin:dist', 'imagemin:dist', 'stylus', 'clean:dist'] );
+// ---------------------------------
+grunt.registerTask( 'build', ['htmlmin:dist', 'imagemin:dist', 'stylus', 'cmq', 'clean:dist'] );
 
 // Watch
+// ---------------------------------
 grunt.registerTask( 'w', [ 'watch' ] );
 
 };

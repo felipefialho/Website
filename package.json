@@ -27,6 +27,7 @@
     "grunt-contrib-stylus": "^0.20.0",
     "grunt-contrib-uglify": "^0.2.7",
     "grunt-contrib-watch": "^0.6.1",
+    "grunt-combine-media-queries": "~1.0.19",
     "grunt-processhtml": "~0.3.0"
   }
 }
