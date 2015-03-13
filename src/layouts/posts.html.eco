@@ -2,46 +2,43 @@
 layout: "default"
 ---
 
-<section itemscope itemtype="https://schema.org/Blog">
-  <h1 class="page-header"><a href="<%= @document.pathBlog %>"><%= @labels['blog'] %></a></h1>
+<section class="blog" itemscope itemtype="https://schema.org/Blog">
+  <h1 class="page-header"><%= @labels['blog'] %></h1>
 
   <span class="date" itemprop="datePublished"><%= @document.datePost %></span>
-  <h2 itemprop="headline"><%= @document.title %></h2>
+
   <span class="author">Por: <a href="https://plus.google.com/101721187531748531230?rel=author" itemprop="author"><%= @site.author %></a></span>
 
-  <div class="post-container">
-
-  	<div class="share-block">
-  		<!-- AddThis Button BEGIN -->
-  		<div class="addthis_toolbox addthis_default_style">
-  			<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-  			<a class="addthis_button_tweet"></a>
-  			<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
-  		</div>
-  		<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-  		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51124ac82d52f270"></script>
-  		<!-- AddThis Button END -->
-
-  	</div>
-
-  	<article class="post" itemprop="blogPost">
-  		<%- @content %>
-  	</article>
-
-  	<div class="share-block">
-  		<!-- AddThis Button BEGIN -->
-  		<div class="addthis_toolbox addthis_default_style">
-  			<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-  			<a class="addthis_button_tweet"></a>
-  			<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
-  		</div>
-  		<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-  		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51124ac82d52f270"></script>
-  		<!-- AddThis Button END -->
-  	</div>
-
+  <div class="share-block">
+    <!-- AddThis Button BEGIN -->
+    <div class="addthis_toolbox addthis_default_style">
+      <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+      <a class="addthis_button_tweet"></a>
+      <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    </div>
+    <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51124ac82d52f270"></script>
+    <!-- AddThis Button END --> 
   </div>
 
+  <h2 itemprop="headline"><%= @document.title %></h2>
+ 
+	<article class="post" itemprop="blogPost">
+		<%- @content %>
+	</article>
+
+	<div class="share-block">
+		<!-- AddThis Button BEGIN -->
+		<div class="addthis_toolbox addthis_default_style">
+			<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+			<a class="addthis_button_tweet"></a>
+			<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+		</div>
+		<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51124ac82d52f270"></script>
+		<!-- AddThis Button END -->
+	</div>
+ 
   <div class="comments" itemprop="comment">
   	<%-@partial('disqus.html.eco', @)%>
   </div>

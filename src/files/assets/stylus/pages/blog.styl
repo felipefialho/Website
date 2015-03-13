@@ -15,9 +15,11 @@
   h2  
     @extends $h2
     margin-bottom $space
+    margin-top $space-md
     
   h3  
     @extends $h3
+    margin-top $space + $space-sm
     margin-bottom $space
     
   h4  
@@ -32,6 +34,13 @@
     @extends $h6 
     margin-bottom $space-xs
      
+
+  // Post
+  // --------------------------------------------------
+  
+  .post 
+    padding-bottom $space-md
+  
     
   // View More
   // --------------------------------------------------
@@ -50,9 +59,16 @@
   .date 
     @extends $p2
     color $gray
-    display inline-block
+    display block
     margin-bottom $space-xs
   
+  // Author
+  // --------------------------------------------------
+    
+  .author  
+    color $gray
+    display block
+    margin-bottom $space
     
 
 // Blog List
