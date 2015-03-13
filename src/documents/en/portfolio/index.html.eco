@@ -7,11 +7,11 @@ path: "../"
 
 <h1 class="page-header"><%= @labelsEn['portfolio'] %></h1>
 
-<div class="projetos-container">
+<div class="projects-container">
 
 	<% for portfolio in @portfolio: %>
 	<!-- <%= portfolio.name %> -->
-	<div class="projetos-box span4">
+	<div class="projects-box">
 		<a href="<%= portfolio.link %>" target="_blank" class="box-mask">
 			<div class="box-img">
 				<img src="<%= portfolio.thumb %>" alt="<%= portfolio.name %>">

@@ -7,12 +7,12 @@ path: "../"
 
 <h1 class="page-header"><%= @labelsEn['projects'] %></h1>
 
-<div class="projetos-container">
+<div class="projects-container">
 
   <% for projetos in @projetos: %>
   <!-- <%= projetos.name %> -->
   
-  <div class="projetos-box span4">
+  <div class="projects-box">
       <% if projetos.demo: %>
     <a href="<%= projetos.demo %>" target="_blank" class="box-mask">
     <% end %>
