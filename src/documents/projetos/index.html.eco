@@ -3,42 +3,42 @@ title: "Projetos"
 layout: "default"
 path: "../../"
 ---
+ 
+<h1 class="page-header"><%= @labels['portfolio'] %></h1>
 
+<div class="projects">
 
-<h1 class="page-header"><%= @labels['projetos'] %></h1>
+  <% for projetos in @projetos: %>
+  <!-- <%= projetos.name %> -->
+  <div class="projects-box"> 
 
-<div class="projects-container">
-
-	<% for projetos in @projetos: %>
-	<!-- <%= projetos.name %> -->
-	<div class="projects-box">
-  		<% if projetos.demo: %>
-		<a href="<%= projetos.demo %>" target="_blank" class="box-mask">
-		<% end %>
-  		<% if projetos.link: %>
-		<a href="<%= projetos.link %>" target="_blank" class="box-mask">
-		<% end %>
-			<div class="box-img">
-				<img src="<%= projetos.thumb %>" alt="<%= projetos.name %>">
-			</div>	
-			<div class="box-tit">
-				<h4><%= projetos.name %></h4>
-			</div>	
-		</a>	
-		<div class="box-info">
-			<p><%= projetos.participation %><p> 
-			<div class="box-link">
-				<ul class="inline">
-  					<% if projetos.demo: %>
-					<li><a href="<%= projetos.demo %>" target="_blank"><span class="icon-eye" aria-hidden="true"></span></a></li>
-					<% end %>
-  					<% if projetos.link: %>
-					<li><a href="<%= projetos.link %>" target="_blank"><span class="icon-github-2" aria-hidden="true"></span></a></li>
-					<% end %>
-				</ul>	
-			</div>	
-		</div>	
-	</div>
-	<% end %>
+    <% if projetos.link: %>
+    <a class="projects-media" style="background-image: url('<%= projetos.thumb %>')" data-text="Ver o projeto!" href="<%= projetos.demo %>" target="_blank">
+    <% end %>
+    <% if !projetos.link: %>
+    <a class="projects-media" style="background-image: url('<%= projetos.thumb %>')" data-text="Ver o projeto!" href="<%= projetos.link %>" target="_blank">
+    <% end %>
+      <img src="<%= projetos.thumb %>" alt="<%= projetos.name %>">
+    </a>   
+    <div class="projects-body"> 
+      <% if projetos.demo: %>
+        <a class="projects-link" href="<%= projetos.demo %>" target="_blank">
+          <span class="sr-only">Visualizar</span>
+          <span class="icon-eye" aria-hidden="true"></span>
+        </a>
+      <% end %>
+      <% if projetos.link: %>
+        <a class="projects-link" href="<%= projetos.link %>" target="_blank">
+          <span class="sr-only">Github</span>
+          <span class="icon-github-2" aria-hidden="true"></span>
+        </a>
+      <% end %>
+      <h2 class="projects-title"><%= projetos.name %></h2> 
+      <div class="projects-caption">
+        <p><%= projetos.participation %><p>   
+      </div>  
+    </div>
+  </div>
+  <% end %>
 
 </div>
