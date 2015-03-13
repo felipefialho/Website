@@ -80,7 +80,7 @@ grunt.initConfig({
     },
     dev: {
       files: {
-        '<%= config.dist %>/assets/css/': ['<%= config.dist %>/assets/css/style.css']
+        '<%= config.dist %>/assets/css/': ['<%= config.dev %>files/assets/css/style.css']
       }
     }
   },
