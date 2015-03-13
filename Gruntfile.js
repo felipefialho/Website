@@ -64,6 +64,11 @@ grunt.initConfig({
       files: {
         '<%= config.dev %>files/assets/css/style.css': '<%= config.dev %>files/assets/stylus/style.styl'
       } 
+    },
+    compress: {
+      files: {
+        '<%= config.dist %>assets/css/style.css': '<%= config.dist %>assets/css/style.css'
+      } 
     }
   },
 
@@ -104,7 +109,7 @@ grunt.loadNpmTasks('grunt-combine-media-queries');
 
 // Tasks runnings
 // ---------------------------------
-grunt.registerTask( 'build', ['htmlmin:dist', 'imagemin:dist', 'stylus', 'cmq', 'clean:dist'] );
+grunt.registerTask( 'build', ['htmlmin:dist', 'imagemin:dist', 'stylus:compile', 'cmq', 'stylus:compress', 'clean:dist'] );
 
 // Watch
 // ---------------------------------
