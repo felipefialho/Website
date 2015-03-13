@@ -75,7 +75,7 @@ grunt.initConfig({
     },
     dev: {
       files: {
-        '<%= css_src %>': ['<%= config.dist %>/assets/css/style.css']
+        '<%= config.dist %>/assets/css/': ['<%= config.dist %>/assets/css/style.css']
       }
     }
   },
