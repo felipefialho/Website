@@ -1,7 +1,10 @@
 //
 // Navbar
 // --------------------------------------------------
- 
+
+$navbar-width-sm = 230px
+$navbar-width-md = 280px
+
 .navbar 
   background $gray-darker
   font-family 'ostrich_sansblack'
@@ -13,11 +16,13 @@
     top     0
     left    0 
     bottom  0
-    text-align center
-    min-width 225px
-    max-width 300px 
-    width 20%
+    text-align center 
+    width $navbar-width-sm
   
+  @media (min-width $screen-md)
+    width $navbar-width-md
+  
+
   // Resets
   // --------------------------------------------------
     
