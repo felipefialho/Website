@@ -12,13 +12,15 @@ path: "../../"
 	<% for portfolio in @portfolio: %>
 	<!-- <%= portfolio.name %> -->
 	<a class="projects-box" href="<%= portfolio.link %>" target="_blank"> 
-		<div class="media">
+		<div class="projects-media" style="background-image: url('<%= portfolio.thumb %>')" data-text="Ver o projeto!">
 			<img src="<%= portfolio.thumb %>" alt="<%= portfolio.name %>">
 		</div>	 
-		<h2 class="projects-title"><%= portfolio.name %></h2> 
-		<div class="projects-caption">
-			<p><%= portfolio.participation %><p>  	
-		</div>  
+    <div class="projects-body">
+      <h2 class="projects-title"><%= portfolio.name %></h2> 
+      <div class="projects-caption">
+        <p><%= portfolio.participation %><p>    
+      </div>  
+    </div>
   </a>
 	<% end %>
 
