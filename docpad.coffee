@@ -276,7 +276,7 @@ docpadConfig = {
       # AASC
       name: "African American Studies Center"
       idName: "aasc"
-      thumb: "/assets/img/portfolio/aasc.jpg" 
+      thumb: "/assets/img/portfolio/aasc-thumb.jpg" 
       participation: "Desenvolvimento do HTML (Jade), CSS (LESS) e Javascript."
       participationEn: "Development of HTML (Jade), CSS (LESS) and Javascript (Angular)."
       link: "http://aasc.oupexplore.com/"
@@ -284,7 +284,7 @@ docpadConfig = {
       # OBO
       name: "Oxford Bibliographies"
       idName: "obo"
-      thumb: "/assets/img/portfolio/obo.jpg" 
+      thumb: "/assets/img/portfolio/obo-thumb.jpg" 
       participation: "Desenvolvimento do HTML (Jade), CSS (LESS) e Javascript."
       participationEn: "Development of HTML (Jade), CSS (LESS) and Javascript."
       link: "http://oxbib-info.oupexplore.com/"
@@ -292,7 +292,7 @@ docpadConfig = {
       # Filtro Structure
       name: "Filtro Structure - 2014"
       idName: "filtro-structure"
-      thumb: "/assets/img/portfolio/filtro-structure.jpg" 
+      thumb: "/assets/img/portfolio/filtro-structure-thumb.jpg" 
       participation: "Desenvolvimento do HTML (Jade), CSS (LESS) e Javascript."
       participationEn: "Development of HTML (Jade), CSS (LESS) and Javascript."
       link: "http://2014.filtro.us/"

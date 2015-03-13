@@ -3,9 +3,10 @@ title: "Blog"
 layout: "default"
 path: "../../"
 ---
+ 
+<h1 class="page-header"><%= @labels['blog'] %></h1>
 
 <div class="blog">
-  <h1 class="page-header"><%= @labels['blog'] %></h1>
 
 	<ul class="blog-list">
  	<% for posts in @posts : %>
@@ -18,4 +19,4 @@ path: "../../"
       </li>
     <% end %>
 	</ul>
-</div>
+</div> 

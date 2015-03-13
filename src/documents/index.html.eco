@@ -3,44 +3,46 @@ title: ""
 layout: "default"
 ---
 
-<div class="home" itemscope itemtype="http://schema.org/Person">
+<div class="container">
+  <div class="home" itemscope itemtype="http://schema.org/Person">
 
-	<p class="lead">Olá amigos, tudo bem?</p>
+  	<p class="lead">Olá amigos, tudo bem?</p>
 
-	<p>Sou <em itemprop="name">Luiz Felipe Tartarotti Fialho</em>, tenho <strike>23 anos</strike> 24 anos e trabalho como <strong itemprop="jobTitle">Desenvolvedor Front-End</strong> desde 2009.</p>
+  	<p>Sou <em itemprop="name">Luiz Felipe Tartarotti Fialho</em>, tenho <strike>23 anos</strike> 24 anos e trabalho como <strong itemprop="jobTitle">Desenvolvedor Front-End</strong> desde 2009.</p>
 
-	<p>Atualmente trabalho na <a href="http://filtro.cc/" itemprop="affiliation">Filtro</a>. Sou um dos organizadores do <a href="http://www.meetup.com/CSS-SP/">Meetup CSS SP</a> e da <a href="http://cssconfbrasil.com.br/">Conferência CSS Brasil</a>.</p>
+  	<p>Atualmente trabalho na <a href="http://filtro.cc/" itemprop="affiliation">Filtro</a>. Sou um dos organizadores do <a href="http://www.meetup.com/CSS-SP/">Meetup CSS SP</a> e da <a href="http://cssconfbrasil.com.br/">Conferência CSS Brasil</a>.</p>
 
-  <p>Entre os projetos que mais gostei de desenvolver estão o <a href="http://www.felipefialho.com/css-components/">CSS Components</a> e o <a href="http://www.felipefialho.com/piano/">Piano Keyboard.</a></p>
+    <p>Entre os projetos que mais gostei de desenvolver estão o <a href="http://www.felipefialho.com/css-components/">CSS Components</a> e o <a href="http://www.felipefialho.com/piano/">Piano Keyboard.</a></p>
 
-	<p>Criei esse espaço, primeiro para brincar de designer, segundo para testar geradores estáticos e por último, e não menos importante... ter um lugar bacana para expressar minha opinião, dar dicas, etc.</p>
+  	<p>Criei esse espaço, primeiro para brincar de designer, segundo para testar geradores estáticos e por último, e não menos importante... ter um lugar bacana para expressar minha opinião, dar dicas, etc.</p>
 
-	<p>Aliás, o site foi desenvolvido com <a href="http://docpad.org/">Docpad</a>, deixei o código aberto no <a href="https://github.com/LFeh/Website">Github</a>.</p>
+  	<p>Aliás, o site foi desenvolvido com <a href="http://docpad.org/">Docpad</a>, deixei o código aberto no <a href="https://github.com/LFeh/Website">Github</a>.</p>
 
-	<p class="lead"><span aria-hidden="true" class="icon-happy"></span></p>
+  	<p class="lead"><span aria-hidden="true" class="icon-happy"></span></p>
 
-</div>
+  </div>
 
-<div class="blog">
+  <div class="blog">
 
-	<h2 class="page-header">Rolando no blog...</h2>
+  	<h2 class="page-header">Rolando no blog...</h2>
 
-	<ul class="blog-list">
-		<% i= 0 %>
-	 	<% for posts in @posts : %>
-	 		<% i++ %>
-	 		<% if i <= 2 : %>
-				<li class="blog-item" itemscope itemtype="http://schema.org/BlogPosting">
-				<a class="blog-link" href="blog/<%= posts.year %>/<%= posts.path %>/" itemprop="url">
-				  	<span class="date" itemprop="datePublished"><%= posts.date %></span>
-				  	<h4 class="tit" itemprop="headline"><%= posts.name %></h4>
-				  	<p class="description" itemprop="articleBody"><%= posts.description %></p>
-				</a>
-				</li>
-			<% end %>
-		<% end %>
-	</ul>
+  	<ul class="blog-list">
+  		<% i= 0 %>
+  	 	<% for posts in @posts : %>
+  	 		<% i++ %>
+  	 		<% if i <= 2 : %>
+  				<li class="blog-item" itemscope itemtype="http://schema.org/BlogPosting">
+  				<a class="blog-link" href="blog/<%= posts.year %>/<%= posts.path %>/" itemprop="url">
+  				  	<span class="date" itemprop="datePublished"><%= posts.date %></span>
+  				  	<h4 class="tit" itemprop="headline"><%= posts.name %></h4>
+  				  	<p class="description" itemprop="articleBody"><%= posts.description %></p>
+  				</a>
+  				</li>
+  			<% end %>
+  		<% end %>
+  	</ul>
 
-	<a class="view-more" href="blog/">Gostou? Veja mais do blog...</a>
+  	<a class="view-more" href="blog/">Gostou? Veja mais do blog...</a>
 
+  </div>
 </div>

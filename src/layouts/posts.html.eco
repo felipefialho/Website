@@ -2,8 +2,9 @@
 layout: "default"
 ---
 
-<section class="blog" itemscope itemtype="https://schema.org/Blog">
-  <h1 class="page-header"><%= @labels['blog'] %></h1>
+<h1 class="page-header"><%= @labels['blog'] %></h1>
+
+<section class="blog" itemscope itemtype="https://schema.org/Blog"> 
 
   <span class="date" itemprop="datePublished"><%= @document.datePost %></span>
 

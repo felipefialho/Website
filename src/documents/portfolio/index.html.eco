@@ -7,30 +7,19 @@ path: "../../"
 
 <h1 class="page-header"><%= @labels['portfolio'] %></h1>
 
-<div class="projects-container">
+<div class="projects">
 
 	<% for portfolio in @portfolio: %>
 	<!-- <%= portfolio.name %> -->
-	<div class="projects-box">
-		<a href="<%= portfolio.link %>" target="_blank" class="box-mask">
-			<div class="box-img">
-				<img src="<%= portfolio.thumb %>" alt="<%= portfolio.name %>">
-			</div>	
-			<div class="box-tit">
-				<h4><%= portfolio.name %></h4>
-			</div>	
-		</a>	
-		<div class="box-info box-info-portfolio">
-			<p><%= portfolio.participation %><p> 
-			<div class="box-link">
-				<ul class="inline"> 
-  				<% if portfolio.link: %>
-					<li><a href="<%= portfolio.link %>" target="_blank"><span aria-hidden="true" class="icon-link"></span></a></li>
-					<% end %>
-				</ul>	
-			</div>	
+	<a class="projects-box" href="<%= portfolio.link %>" target="_blank"> 
+		<div class="media">
+			<img src="<%= portfolio.thumb %>" alt="<%= portfolio.name %>">
 		</div>	 
-	</div>
+		<h2 class="projects-title"><%= portfolio.name %></h2> 
+		<div class="projects-caption">
+			<p><%= portfolio.participation %><p>  	
+		</div>  
+  </a>
 	<% end %>
 
 </div>
