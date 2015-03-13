@@ -47,10 +47,8 @@
     <!-- /NAV -->  
 
     <!-- MAIN -->
-    <main class="main" role="main">
-      <div class="container">
-        <%- @content %>
-      </div>
+    <main class="main" role="main"> 
+        <%- @content %> 
     </main>
     <!-- /MAIN -->
 	</div>
