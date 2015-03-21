@@ -273,12 +273,20 @@ docpadConfig = {
 
 		# Portfolio list
 		portfolio: [
+      # Civil War
+      name: "Civil War - 150th Anniversary"
+      idName: "civilwar"
+      thumb: "/assets/img/portfolio/civilwar-thumb.jpg" 
+      participation: "Desenvolvimento do HTML (Jade), CSS (LESS) e Javascript."
+      participationEn: "Development of HTML (Jade), CSS (LESS) and Javascript."
+      link: "http://civilwar.oupexplore.com/"
+    ,
       # AASC
       name: "African American Studies Center"
       idName: "aasc"
       thumb: "/assets/img/portfolio/aasc-thumb.jpg" 
-      participation: "Desenvolvimento do HTML (Jade), CSS (LESS) e Javascript."
-      participationEn: "Development of HTML (Jade), CSS (LESS) and Javascript (Angular)."
+      participation: "Desenvolvimento do HTML (Jade), CSS (LESS) e Javascript (AngularJS)."
+      participationEn: "Development of HTML (Jade), CSS (LESS) and Javascript (AngularJS)."
       link: "http://aasc.oupexplore.com/"
     ,
       # OBO
@@ -301,8 +309,8 @@ docpadConfig = {
       name: "Oxford - Corporate Sales"
       idName: "corporate-sales"
       thumb: "/assets/img/portfolio/site-corporate-sales-thumb.jpg" 
-      participation: "Desenvolvimento do HTML (Jade), CSS (LESS) e Javascript."
-      participationEn: "Development of HTML (Jade), CSS (LESS) and Javascript."
+      participation: "Desenvolvimento do HTML (Jade), CSS (LESS) e Javascript (AngularJS)."
+      participationEn: "Development of HTML (Jade), CSS (LESS) and Javascript (AngularJS)."
       link: "http://oupmediainfo.com/"
     ,
       # Ivanovic
