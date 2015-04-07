@@ -1,15 +1,15 @@
-<aside class="aside">
-  <a href="/">
-    <!-- If you want to use your picture instead,
-         you can give the image the `aside-avatar` class -->
-    <img class="" src="<%= base %>img/stamp.svg" alt="<%= name %> avatar">
-  </a>
-  <a class="aside-hamburger" href="#top"></a>
-  <div class="aside-target">
-    <a href="/">
-      <h1 class="aside-title"><%= name %></h1>
+<aside class="navbar">
+  <header class="header" itemscope itemtype="http://schema.org/Person">
+    <a class="photo" href="/"> 
+      <img src="<%= base %>img/etc/luiz-felipe-tartarotti-fialho.png" alt="<%= name %> avatar" height="151" width="100">
     </a>
-    <p class="aside-description"><%= description %></p>
+    <h1 class="logo">
+      <a href="/" itemprop="additionalName"><%= name %></a>
+    </h1>
+    <h4 itemprop="jobTitle"><%= description %></h4>
+  </header> 
+
+  <div class="navbar-wrap"> 
     <% include nav %>
   </div>
 </aside>

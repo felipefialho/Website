@@ -1,11 +1,52 @@
-<nav class="nav">
-    <div class="nav-group">
-        <a class="nav-item <% if(current.path[0] == "projects") { %>active<% } %>" href="/projects">Projects</a>
-        <a class="nav-item <% if(current.path[0] == "lab") { %>active<% } %>" href="/lab">Lab</a>
-        <a class="nav-item <% if(current.path[0] == "blog") { %>active<% } %>" href="/blog">Blog</a>
-    </div>
-    <div class="nav-group">
-        <a class="nav-item <% if(current.path[0] == "about") { %>active<% } %>" href="/about">About</a>
-        <a class="nav-item <% if(current.path[0] == "contact") { %>active<% } %>" href="/contact">Contact</a>
-    </div>
+<label for="collapse-menu" class="navbar-btn">&#9776;</label>
+<input class="collapse-open" type="checkbox" id="collapse-menu" aria-hidden="true" hidden>
+
+<nav class="nav-collapse"> 
+  <ul class="nav" role="navigation">
+    <li class="nav-item">
+      <a class="nav-link <% if(current.path[0] == "blog") { %>active<% } %>" href="/blog">Blog</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link <% if(current.path[0] == "lab") { %>active<% } %>" href="/lab">Lab</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link <% if(current.path[0] == "projects") { %>active<% } %>" href="/projects">Portfolio</a>
+    </li>
+  </ul> 
 </nav>
+
+<ul class="social-media">
+  <li>
+    <a href="/blog/atom.xml">
+      <span class="sr-only">Feed</span>
+      <span class="icon-feed" aria-hidden="true"></span>
+    </a>
+  </li>
+  <li>
+    <a href="https://www.facebook.com/LFehh">
+      <span class="sr-only">Facebook</span>
+      <span class="icon-facebook" aria-hidden="true"></span>
+    </a>
+  </li>
+  <li>
+    <a href="https://twitter.com/LFeh">
+      <span class="sr-only">Twitter</span>
+      <span class="icon-twitter" aria-hidden="true"></span>
+    </a>
+  </li>
+  <li>
+    <a href="https://github.com/LFeh">
+      <span class="sr-only">Github</span>
+      <span class="icon-github-2" aria-hidden="true"></span>
+    </a>
+  </li>
+  <li>
+    <a href="http://www.linkedin.com/in/lfehfrontend">
+      <span class="sr-only">Linkedin</span>
+      <span class="icon-linkedin" aria-hidden="true"></span>
+    </a>
+  </li>
+  <li><a href="https://plus.google.com/101721187531748531230?rel=author">Google +</a></li>
+</ul>
+
+<a href="/en/" class="translate">View in English</a>  

@@ -8,9 +8,16 @@
     "author": "felipe",
     "published": false
   },
+  "draft-post": {
+    "title": "Draft post",
+    "date": "2013-12-20",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, ex.",
+    "author": "felipe" 
+  },
   "example-post": {
     "title": "Example Post",
     "date": "2013-07-03",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, ex.",
     "tags": ["lorem" , "harp", "css"],
     "author": "felipe"
   }

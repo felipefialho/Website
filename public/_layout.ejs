@@ -5,14 +5,18 @@
    for (i=0;i<current.path.length-1;i++){ base += '../' } %>
 <body>
 
-    <div class="wrapper">
+    <div class="wrap">
         <% include _includes/aside %>
 
-        <% if(current.path[0] == "blog" && current.source !== 'index') { %>
-          <%- partial(current.path[0] + "/_nest") %>
-        <% } else { %>
-          <%- yield %>
-        <% } %> 
+
+        <main class="main" role="main"> 
+          <% if(current.path[0] == "blog" && current.source !== 'index') { %>
+            <%- partial(current.path[0] + "/_nest") %>
+          <% } else { %>
+            <%- yield %>
+          <% } %> 
+        </main>
+        
     </div>
 
     <% include _includes/analytics %>

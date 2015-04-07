@@ -4,6 +4,7 @@
     "title": "Felipe Fialho",
     "url": "http://www.felipefialho.com/",
     "description": "Desenvolvedor Front-End",
+    "descriptionSEO": "Site para Desenvolvedores Front-End, com dicas do mercado web, tutoriais e projetos na qual participei.",
     "authors": {
       "felipe": {
         "name": "Felipe Fialho",
@@ -12,7 +13,7 @@
         "twitter": "LFeh",
         "github": "LFeh",
         "facebook": "LFehh",
-        "tlkio": "LFeh",
+        "linkedin": "lfehfrontend",
         "codepen": "LFeh"
       } 
     },
