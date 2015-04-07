@@ -3,23 +3,25 @@
   else return content.split("<p>")[1].split("</p>")[0];
 } %>
 
-<ul class="index">
-  <% for(var slug in public.blog._data){ %>
-    <% var post = public.blog._data[slug] %>
-    <% if(post.title && post.published!==false) { %>
-      <li class="index-item">
-        <a class="index-link" href="<%= slug %>">
-          <h2 class="index-title">
-            <%= post.title %>
-          </h2>
-          <% if(post.author) { %><span class="meta-author">
-            <a href="http://twitter.com/<%= authors[post.author].twitter %>"><%= authors[post.author].name %></a>
-          <% } %>
-          <time class="time time--inline"> on <%= post.date %></time>
-        </a>
-        <p><%- excerpt(partial(slug)) %></p>
-        <a class="index-more" href="">•••</a>
-      </li>
+<h1 class="page-header">Blog</h1>
+
+<div class="blog">
+
+  <ul class="blog-list"> 
+    <% for(var slug in public.blog._data){ %>
+      <% var post = public.blog._data[slug] %>
+      <% if(post.title && post.published!==false) { %>
+        <li class="blog-item" itemscope itemtype="http://schema.org/BlogPosting">
+          <a class="blog-link" href="blog/<%= slug %>" itemprop="url">
+            <time class="date" itemprop="datePublished"><%= post.date %></time>
+            <h3 class="tit" itemprop="headline">
+              <%= post.title %>
+            </h3> 
+            <p class="description" itemprop="articleBody"><%= post.description %></p>
+          </a> 
+        </li>
+      <% } %>
     <% } %>
-  <% } %>
-</ul>
+  </ul>
+  
+</div>
