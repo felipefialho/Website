@@ -2,55 +2,95 @@
 <html lang="pt-br">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"> 
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="description" content="Site para Desenvolvedores Front-End, com dicas do mercado web, tutoriais e projetos na qual participei."/> 
 
   <title>Felipe Fialho – Desenvolvedor Front-End</title>
 
-  <link rel="shortcut icon" href="img/favicon.ico">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
 
-  <link rel="stylesheet" href="/css/style.css">
-
-  <!-- {% if page.blog %}
-  <link rel="alternate" type="application/atom+xml" title="simurai" href="http://feeds.feedburner.com/simurai">
-  {% endif %} -->
+  <link rel="stylesheet" href="/css/style.css"> 
 </head>
 
 
 <body>
 
-    <div class="wrapper">
-        <aside class="aside">
-  <a href="/">
-    <!-- If you want to use your picture instead,
-         you can give the image the `aside-avatar` class -->
-    <img class="" src="../img/stamp.svg" alt="Felipe Fialho avatar">
-  </a>
-  <a class="aside-hamburger" href="#top"></a>
-  <div class="aside-target">
-    <a href="/">
-      <h1 class="aside-title">Felipe Fialho</h1>
+    <div class="wrap">
+        <aside class="navbar">
+  <header class="header" itemscope itemtype="http://schema.org/Person">
+    <a class="photo" href="/"> 
+      <img src="../img/etc/luiz-felipe-tartarotti-fialho.png" alt="Felipe Fialho avatar" height="151" width="100">
     </a>
-    <p class="aside-description">Desenvolvedor Front-End</p>
-    <nav class="nav">
-    <div class="nav-group">
-        <a class="nav-item active" href="/projects">Projects</a>
-        <a class="nav-item " href="/lab">Lab</a>
-        <a class="nav-item " href="/blog">Blog</a>
-    </div>
-    <div class="nav-group">
-        <a class="nav-item " href="/about">About</a>
-        <a class="nav-item " href="/contact">Contact</a>
-    </div>
+    <h1 class="logo">
+      <a href="/" itemprop="additionalName">Felipe Fialho</a>
+    </h1>
+    <h4 itemprop="jobTitle">Desenvolvedor Front-End</h4>
+  </header> 
+
+  <div class="navbar-wrap"> 
+    <label for="collapse-menu" class="navbar-btn">&#9776;</label>
+<input class="collapse-open" type="checkbox" id="collapse-menu" aria-hidden="true" hidden>
+
+<nav class="nav-collapse"> 
+  <ul class="nav" role="navigation">
+    <li class="nav-item">
+      <a class="nav-link " href="/blog">Blog</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link " href="/lab">Lab</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="/projects">Portfolio</a>
+    </li>
+  </ul> 
 </nav>
+
+<ul class="social-media">
+  <li>
+    <a href="/blog/atom.xml">
+      <span class="sr-only">Feed</span>
+      <span class="icon-feed" aria-hidden="true"></span>
+    </a>
+  </li>
+  <li>
+    <a href="https://www.facebook.com/LFehh">
+      <span class="sr-only">Facebook</span>
+      <span class="icon-facebook" aria-hidden="true"></span>
+    </a>
+  </li>
+  <li>
+    <a href="https://twitter.com/LFeh">
+      <span class="sr-only">Twitter</span>
+      <span class="icon-twitter" aria-hidden="true"></span>
+    </a>
+  </li>
+  <li>
+    <a href="https://github.com/LFeh">
+      <span class="sr-only">Github</span>
+      <span class="icon-github-2" aria-hidden="true"></span>
+    </a>
+  </li>
+  <li>
+    <a href="http://www.linkedin.com/in/lfehfrontend">
+      <span class="sr-only">Linkedin</span>
+      <span class="icon-linkedin" aria-hidden="true"></span>
+    </a>
+  </li>
+  <li><a href="https://plus.google.com/101721187531748531230?rel=author">Google +</a></li>
+</ul>
+
+<a href="/en/" class="translate">View in English</a>  
 
   </div>
 </aside>
 
 
-        
-          <h1>Projects</h1>
+
+        <main class="main" role="main"> 
+          
+            <h1>Projects</h1>
 
 <p>Share your portfolio here by editing the <code>projects/_data.json</code> file.</p>
 
@@ -108,7 +148,9 @@
     </li>
   
 </ul>
-         
+           
+        </main>
+        
     </div>
 
     
