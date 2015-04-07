@@ -1,0 +1,26 @@
+{
+  "globals": {
+    "name": "Felipe Fialho",
+    "title": "Felipe Fialho",
+    "url": "http://www.felipefialho.com/",
+    "description": "Desenvolvedor Front-End",
+    "authors": {
+      "felipe": {
+        "name": "Felipe Fialho",
+        "email": "hi@felipefialho.com",
+        "bio": "The HTML boy",
+        "twitter": "LFeh",
+        "github": "LFeh",
+        "facebook": "LFehh",
+        "tlkio": "LFeh",
+        "codepen": "LFeh"
+      } 
+    },
+    "service": {
+      "analytics": "UA-XXXXXX-1",
+      "service": "example",
+      "prism": true
+    }
+  },
+  "domains": []
+}

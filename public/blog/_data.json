@@ -1,0 +1,17 @@
+{
+  "atom": {
+    "layout": false
+  }, 
+  "draft-post": {
+    "title": "Draft post",
+    "date": "2013-12-20",
+    "author": "felipe",
+    "published": false
+  },
+  "example-post": {
+    "title": "Example Post",
+    "date": "2013-07-03",
+    "tags": ["lorem" , "harp", "css"],
+    "author": "felipe"
+  }
+}
