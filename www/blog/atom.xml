@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Felipe Fialho</title>
+    <link>http://www.felipefialho.com/</link>
+    <description>Desenvolvedor Front-End</description>
+    <atom:link href="http://www.felipefialho.com//blog/atom.xml" rel="self" type="application/rss+xml" />
+    
+       
+    
+       
+        <item>
+          <title>Draft post</title>
+          <description><![CDATA[<p>This post hasn’t been published yet. Remove <code>&quot;published&quot;: false</code> in <code>blog/_data.json</code> for it to appear. If you want to customise this further, read about <a href="kennethormandy.com/journal/static-draft-posts-with-harp">Static draft posts with Harp</a>.</p>
+]]></description>
+          <pubDate>Thu Dec 19 2013 22:00:00 GMT-0200 (Horário brasileiro de verão)</pubDate>
+          <link>http://www.felipefialho.com//blog/[object Object]</link>
+          <guid isPermaLink="true">http://www.felipefialho.com//blog/[object Object]</guid>
+        </item>
+      
+    
+       
+        <item>
+          <title>Example Post</title>
+          <description><![CDATA[<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
+<p>Donec eu libero sit amet quam egestas semper. <strong>Aenean ultricies mi vitae est.</strong> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+<pre><code class="language-css">#header h1 a {
+  display: block;
+  width: 300px;
+  height: 80px;
+}
+</code></pre>
+<h2>Header Level 2</h2><ol>
+<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+<li>Aliquam tincidunt mauris eu risus.</li>
+</ol>
+<blockquote>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>
+</blockquote>
+<h3>Header Level 3</h3><ul>
+<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li></li>
+<li>Aliquam tincidunt mauris eu risus.</li></li>
+</ul>
+]]></description>
+          <pubDate>Tue Jul 02 2013 21:00:00 GMT-0300 (Hora oficial do Brasil)</pubDate>
+          <link>http://www.felipefialho.com//blog/[object Object]</link>
+          <guid isPermaLink="true">http://www.felipefialho.com//blog/[object Object]</guid>
+        </item>
+      
+    
+  </channel>
+</rss>

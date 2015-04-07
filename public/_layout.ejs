@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="top">
+<html lang="pt-br">
 <% include _includes/head %>
 <% var base = '';
    for (i=0;i<current.path.length-1;i++){ base += '../' } %>
@@ -12,9 +12,7 @@
           <%- partial(current.path[0] + "/_nest") %>
         <% } else { %>
           <%- yield %>
-        <% } %>
-
-        <% include _includes/footer %>
+        <% } %> 
     </div>
 
     <% include _includes/analytics %>

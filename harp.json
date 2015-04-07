@@ -17,9 +17,7 @@
       } 
     },
     "service": {
-      "analytics": "UA-XXXXXX-1",
-      "service": "example",
-      "prism": true
+      "analytics": "UA-40410936-1"
     }
   },
   "domains": []
