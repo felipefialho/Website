@@ -13,10 +13,10 @@ path: "../../"
   <div class="projects-box"> 
 
     <% if projetos.link: %>
-    <a class="projects-media" style="background-image: url('<%= projetos.thumb %>')" data-text="Ver o projeto!" href="<%= projetos.demo %>" target="_blank">
+    <a class="projects-media" data-text="Ver o projeto!" href="<%= projetos.demo %>" target="_blank">
     <% end %>
     <% if !projetos.link: %>
-    <a class="projects-media" style="background-image: url('<%= projetos.thumb %>')" data-text="Ver o projeto!" href="<%= projetos.link %>" target="_blank">
+    <a class="projects-media" data-text="Ver o projeto!" href="<%= projetos.link %>" target="_blank">
     <% end %>
       <img src="<%= projetos.thumb %>" alt="<%= projetos.name %>">
     </a>   
