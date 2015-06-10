@@ -1,0 +1,112 @@
+---
+title: "Não use Placeholder no lugar da Label"
+datePost: 02/06/2014
+layout: "post"
+relativeOutDirPath: 'posts'
+path: "../../../"
+pathBlog: "../../"
+---
+
+<p class="lead">O <code>&lt;placeholder&gt;</code> ajuda muito com informações complementares do campo de formulário, mas não deveria ser utilizado para substituir o <code>&lt;label&gt;</code>.</p>
+
+<h3>Label x Placeholder</h3>
+
+<p>O <code>&lt;label&gt;</code> deve ser utilizado como rótulo de um campo de formulário e deve ser sempre utilizado. Já o <code>&lt;placeholder&gt;</code> passa informações complementares sobre o campo antes do usuário digitar e seu uso é opcional.</p>
+
+<p>O problema é que tem sido muito comum encontrar formulários que utilizam apenas o <code>&lt;placeholder&gt;</code>.</p>
+
+<p>Essa prática é muito ruim, pois além de não ser semântico, já que o <code>&lt;placeholder&gt;</code> não funciona como rótulo, ainda trás problemas de acessibilidade. Leitores de tela, por exemplo, podem não ser capazes de passar a informação corretamente.</p>
+
+<p>Além disso, em um formulário grande, o usuário pode ficar confuso, já que o comportamento padrão do <code>&lt;placeholder&gt;</code> é sumir após o usuário clicar.</p>
+
+<p>Uma boa forma de contornar esse problema, é adicionar uma <code>&lt;label&gt;</code>, fora do campo. Mas muitas vezes nos deparamos com projetos que necessitam de um texto dentro do campo, e nesse caso vou passar uma boa solução para vocês.</p>
+
+<h3>A Solução</h3>
+
+<p data-height="550" data-theme-id="0" data-slug-hash="ijBDF" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/LFeh/pen/ijBDF/'>Label - Good use</a> by Luiz Felipe Tartarotti Fialho (<a href='http://codepen.io/LFeh'>@LFeh</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+<p>Observem, que ao clicar sobre o campo, a <code>&lt;label&gt;</code> muda de posição e permanece sempre visível. Essa solução usa apenas CSS e é muito simples de ser implementada:</p>
+
+<h4>HTML</h4>
+
+<p><pre><code>&lt;div class="form-item"&gt;
+  &lt;input class="form-control" id="name" name="name" type="text" required&gt;
+  &lt;label class="label-float" for="name"&gt;Nome&lt;/label&gt;
+&lt;/div&gt;</code></pre> </p>
+
+<p>Uma marcação básica, apenas adicionei a <code>&lt;label&gt;</code> logo após o campo relacionado.</p>
+
+<h4>CSS</h4>
+
+<p><pre><code>.form-item {
+  position: relative;
+}</code></pre> </p>
+
+<p>Deixo o <code>.form-item</code> como relativo, para os filhos absolutos se posicionarem a partir dele.</p>
+
+<p><pre><code>.form-control {
+  box-sizing: border-box;
+  border-radius: 2px;
+  border: 1px solid @gray-light;
+  color: @gray;
+  font-size: 16px;
+  display: block;
+  height: (@space * 1.5);
+  padding: (@space / 2) (@space / 2) 0;
+  width: 100%;
+
+  &:valid {
+    border-color: @green;
+  }
+
+  &:focus  {
+    border-color: @blue;
+  }
+}</code></pre> </p>
+
+<p>Uma estilização bem simples de um campo de formulário.</p>
+
+<p><pre><code>.label-float {
+  color: @gray-light;
+  position: absolute;
+  top: 0;
+  line-height: (@space * 1.5);
+  padding: 0 (@space / 2);
+  .transition(line-height linear .2s);
+  cursor: text;
+
+  .form-control:focus + &,
+  .form-control:valid + & {
+    color: @gray-light;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}</code></pre> </p>
+
+<p>E aqui a mágica acontece.</p>
+
+<p>Primeiramente deixamos o elemento <code>absolute</code> e <code>top: 0</code> para ficar posicionado em cima do campo e no topo como base.</p>
+
+<p>Em seguida definimos o <code>line-height</code> igual ao do campo de formulário para que fique centralizado. Adicionamos ainda um <code>transition</code> no <code>line-height</code> para que faça uma transição animada.</p>
+
+<p>Agora definimos que quando o <code>.form-control</code> irmão for <code>:valid</code> ou <code>:focus</code> ele terá uma cor mais clara, uma tamanho de fonte menor e ai o <code>line-height</code> alterado, assim ele ficará posicionado próximo do topo e não mais centralizado.</p>
+
+<h3>Uso real</h3>
+
+<p>Utilizei essa abordagem em um projeto recente, e vocês podem ver o <a href="http://trendi.com.br/contato/">resultado aqui</a>.</p>
+
+<p>Mostrei apenas uma abordagem padrão de uso, partindo do mesmo conceito é possível criar vários tipos interação, use de acordo com a necessidade do projeto.</p>
+
+<h3>Referencias</h3>
+
+<p>A seguir algumas referencias sobre o mesmo assunto / abordagem:</p>
+
+<ul>
+  <li><a href="http://www.pardot.com/faqs/best-practices/placeholders-and-labels/">http://www.pardot.com/faqs/best-practices/placeholders-and-labels/</a></li>
+  <li><a href="http://css-tricks.com/float-labels-css/">http://css-tricks.com/float-labels-css/</a></li>
+  <li><a href="http://bradfrostweb.com/blog/post/float-label-pattern/">http://bradfrostweb.com/blog/post/float-label-pattern/</a></li>
+  <li><a href="http://mozmonkey.com/2013/12/good-ux-for-placeholders-as-field-labels/">http://mozmonkey.com/2013/12/good-ux-for-placeholders-as-field-labels/</a></li>
+</ul>
+
+<p class="end">Até mais!</p>

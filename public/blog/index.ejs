@@ -12,7 +12,7 @@
       <% var post = public.blog._data[slug] %>
       <% if(post.title && post.published!==false) { %>
         <li class="blog-item" itemscope itemtype="http://schema.org/BlogPosting">
-          <a class="blog-link" href="blog/<%= slug %>" itemprop="url">
+          <a class="blog-link" href="<%= slug %>" itemprop="url">
             <time class="date" itemprop="datePublished"><%= post.date %></time>
             <h3 class="tit" itemprop="headline">
               <%= post.title %>

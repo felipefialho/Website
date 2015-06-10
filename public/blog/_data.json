@@ -4,21 +4,162 @@
   }, 
   "draft-post": {
     "title": "Draft post",
-    "date": "2013-12-20",
+    "date": "",
     "author": "felipe",
     "published": false
   },
-  "draft-post": {
-    "title": "Draft post",
-    "date": "2013-12-20",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, ex.",
+  "2015/meu-dia-a-dia-como-dev-frontend": {
+    "title": "Meu dia a dia como desenvolvedor Front-End",
+    "date": "20/01/2015",
+    "description": "Enfim o primeiro post de 2015. Vou contar um pouco sobre meu dia a dia como desenvolvedor Front-End, equipamentos, aplicativos, workflow...",
+    "tags": ["dia-a-dia", "workflow"],
     "author": "felipe" 
   },
-  "example-post": {
-    "title": "Example Post",
-    "date": "2013-07-03",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, ex.",
-    "tags": ["lorem" , "harp", "css"],
+  "falando-em-organizacao-css": {
+    "title": "Falando em organização... CSS",
+    "date": "13/11/2014",
+    "description": "Dando continuidade a série sobre minha organização e fluxo de trabalho atual, vou contar um pouco sobre como tenho trabalhado o CSS.",
+    "tags": ["organização", "workflow"],
+    "author": "felipe" 
+  },
+  "falando-em-organizacao-parte-1": {
+    "title": "Falando em organização... - Parte I",
+    "date": "15/10/2014",
+    "description": "'O Universo, é um lugar desconcertantemente grande, um fato que, para continuar levando uma vida tranquila, a maioria das pessoas tende a ignorar.'",
+    "tags": ["organização", "workflow"],
+    "author": "felipe" 
+  },
+  "estamos-realmente-interessados-em-formar-bons-profissionais": {
+    "title": "Estamos realmente interessados em formar bons profissionais?",
+    "date": "25/08/2014",
+    "description": "Esse texto não é técnico, e também não é direcionado apenas para Desenvolvedores Front-End, é um desabafo de quem também teve dificuldades para iniciar a carreira.",
+    "tags": ["carreira"],
+    "author": "felipe" 
+  },
+  "5-anos-atras-eu-me-tornava-o-menino-do-html": {
+    "title": "E 5 anos atrás eu me tornava o menino do HTML...",
+    "date": "21/07/2014",
+    "description": "Parece que foi ontem, mas faz 5 anos que oficialmente escrevi a primeira linha de código e dava meus primeiros passos em uma profissão que se quer existia.. ou existia?",
+    "tags": ["carreira"],
+    "author": "felipe" 
+  },
+  "sobre-data-atributes-e-javascript": {
+    "title": "Sobre Data Atributes e Javascript",
+    "date": "08/07/2014",
+    "description": "Nos últimos projetos comecei a testar o uso do [data-*] do HTML5 como seletor no Javascript. Agora vou listar algumas coisas que observei com essa prática.",
+    "tags": ["data-atributes"],
+    "author": "felipe" 
+  },
+  "nao-use-placeholder-no-lugar-da-label": {
+    "title": "Não use Placeholder no lugar da Label",
+    "date": "02/06/2014",
+    "description": "O placeholder ajuda muito com informações complementares do campo de formulário, mas não deveria ser utilizado para substituir o label.",
+    "tags": ["placeholder"],
+    "author": "felipe" 
+  },
+  "e-possivel-utilizar-componentes-desenvolvidos-apenas-com-css": {
+    "title": "É possível utilizar componentes desenvolvidos apenas com CSS?",
+    "date": "22/04/2014",
+    "description": "Após o lançamento do Pure CSS Components, escrevo as minhas impressões sobre a possibilidade de usar componentes desenvolvidos apenas com CSS.",
+    "tags": ["css components"],
+    "author": "felipe" 
+  },
+  "css-modular-com-mobile-first": {
+    "title": "CSS Modular com Mobile First",
+    "date": "10/03/2014",
+    "description": "Mobile First vai muito além de código, é um pensamento que precisa existir desde o ínicio do projeto. mas nesse artigo vou abordar apenas codificação e maneiras de deixar o workflow mais agradavel.",
+    "tags": ["mobile first"],
+    "author": "felipe" 
+  },
+  "utilizando-o-bootstrap-de-forma-consistente": {
+    "title": "Utilizando o Bootstrap de forma consistente",
+    "date": "09/01/2014",
+    "description": "Parte do sucesso do Bootstrap está ligado a facilidade de uso, responsividade e soluções interessantes prontas para usar. Mas será que podemos aperfeiçoar essa utilização?",
+    "tags": ["bootstrap"],
+    "author": "felipe" 
+  },
+  "retrospectiva-2013": {
+    "title": "Retrospectiva 2013",
+    "date": "17/12/2013",
+    "description": "Último dia de trabalho no ano, e é o momento ideal para analisar o que foi feito, reforçar as bases e se preparar para ter um 2014 ainda mais produtivo.",
+    "tags": ["retrospectiva 2013"],
+    "author": "felipe" 
+  },
+  "usando-height-com-css-transitions": {
+    "title": "Usando height com CSS Transitions",
+    "date": "18/11/2013",
+    "description": "Me deparei com um problema que alguns de vocês já devem ter passado, e posto aqui a resolução dele: A limitação do uso de 'height: auto' em CSS Transitions.",
+    "tags": ["tutorial css" , "css transitions"],
+    "author": "felipe" 
+  },
+  "tutorial-tabela-responsiva": {
+    "title": "Tutorial - Tabela Responsiva",
+    "date": "14/10/2013",
+    "description": "Em layouts responsivos, um dos componentes que sempre me incomodava eram as tabelas. Acredito que isso também ocorra com outros desenvolvedores...",
+    "tags": ["tutorial css" , "tabela responsiva"],
+    "author": "felipe" 
+  },
+  "tutorial-botao-de-progresso": {
+    "title": "Tutorial - Botão de Progresso",
+    "date": "02/10/2013",
+    "description": "Vou mostrar mais um tutorial simples... o desenvolvimento de um botão de progresso, que pode fornecer um feedback importante para o usuário.",
+    "tags": ["tutorial css" , "botão de progresso"],
+    "author": "felipe" 
+  },
+  "tutorial-botao-de-progresso": {
+    "title": "Tutorial - Botão de Progresso",
+    "date": "02/10/2013",
+    "description": "Vou mostrar mais um tutorial simples... o desenvolvimento de um botão de progresso, que pode fornecer um feedback importante para o usuário.",
+    "tags": ["tutorial css" , "botão de progresso"],
+    "author": "felipe" 
+  },
+  "tutorial-caixa-de-compartilhar-em-puro-css": {
+    "title": "Tutorial - Caixa de compartilhar em Puro CSS",
+    "date": "17/09/2013",
+    "description": "Nunca escrevi um tutorial em CSS por aqui, e começo mostrando como desenvolvi uma caixa de compartilhamento que pode ser bastante útil.",
+    "tags": ["tutorial css" , "caixa de compartilhar"],
+    "author": "felipe" 
+  },
+  "um-conto-sobre-componentizacao-e-quebra-de-paradigmas": {
+    "title": "Um conto sobre componentização e quebra de paradigmas",
+    "date": "29/07/2013",
+    "description": "Melhorar processos é parte essencial do nosso trabalho, mas em algum momento percebemos que só melhorar pode não ser o suficiente, as vezes é preciso quebrar paradigmas.",
+    "tags": ["atomic design" , "organização"],
+    "author": "felipe" 
+  },
+  "sobre-organizacao-de-componentes-com-pre-processadores": {
+    "title": "Sobre organização de componentes com pré-processadores",
+    "date": "18/06/2013",
+    "description": "No último post dei uma passada pelo Grunt e mostrei como ele pode ajudar a otimizar suas tarefas. Se você usa pré-processadores a organização dos componentes é essencial.",
+    "tags": ["organização" , "pre-processadores css"],
+    "author": "felipe" 
+  },
+  "grunt-voce-deveria-estar-usando": {
+    "title": "Otimize suas tarefas com o Grunt!",
+    "date": "04/06/2013",
+    "description": "Pense nas atividades que você faz (ou deveria fazer) no momento que vai colocar o projeto em produção. Provavelmente você minifica e concatena o CSS e o javascript. Talvez também minifique o HTML e otimiza as imagens...",
+    "tags": ["task builders" , "grunt", "automatizadores de tarefa"],
+    "author": "felipe" 
+  },
+  "primeiros-passos-com-o-docpad": {
+    "title": "Primeiros passos com o Docpad",
+    "date": "21/05/2013",
+    "description": "No último post dei uma breve explicação sobre geradores estáticos. Algumas pessoas me pediram para fazer um tutorial básico do Docpad.",
+    "tags": ["geradores estáticos" , "docpad"],
+    "author": "felipe" 
+  },
+  "geradores-estaticos-breve-explicacao": {
+    "title": "Geradores estáticos - Breve explicação",
+    "date": "06/05/2013",
+    "description": "Quando escutamos falar em geradores estáticos pela primeira vez normalmente não compreendemos qual vantagem eles poderiam ter em relação a sistemas como o Wordpress.",
+    "tags": ["geradores estáticos" , "docpad"],
+    "author": "felipe" 
+  },
+  "o-que-um-bom-desenvolvedor-front-end-precisa-saber": {
+    "title": "O que um bom desenvolvedor Front-End precisa saber?",
+    "date": "29/04/2013",
+    "description": "Não tive formação como programador, sempre fui focado no HTML e CSS, apesar de claro, saber fazer integração e trabalhar no ambiente Back-End, além de me virar com JQuery.",
+    "tags": ["o que um desenvolvedor front-end precisa saber" , "carreira", "css"],
     "author": "felipe"
   }
 }

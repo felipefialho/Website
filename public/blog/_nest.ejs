@@ -3,15 +3,35 @@
 
   <main class="main">
 
-      <article class="article">
+      <article class="article" itemscope itemtype="https://schema.org/Blog">
           <h1><%- title %></h1>
-          <div class="article-meta">
-              <% if(author) { %>
-                <a href="http://twitter.com/<%= authors[author].twitter %>"><%= authors[author].name %></a>
-              <% } %> 
-              <time class="time"> on <%- date %></time> 
+          <div class="article-meta"> 
+              <a href="https://plus.google.com/101721187531748531230?rel=author" itemprop="author"><%= authors[author].name %></a> 
+              <time class="time" itemprop="datePublished"> on <%- date %></time> 
           </div>
-          <%- yield %>
+          <div class="share-block"> 
+            <div class="addthis_toolbox addthis_default_style">
+              <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+              <a class="addthis_button_tweet"></a>
+              <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+            </div>
+            <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51124ac82d52f270"></script> 
+          </div>
+
+          <div class="post" itemprop="blogPost">
+            <%- yield %>
+          </div>
+
+          <div class="share-block"> 
+            <div class="addthis_toolbox addthis_default_style">
+              <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+              <a class="addthis_button_tweet"></a>
+              <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+            </div>
+            <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51124ac82d52f270"></script> 
+          </div>
       </article>
 
       <% include ../_includes/comments %>
