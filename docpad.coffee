@@ -77,7 +77,7 @@ docpadConfig = {
 		# Blog posts
 		posts: [
       name: 'Sobre trabalhar remoto'
-      description: 'Ia escrever um texto técnico, mas como muitas pessoas tem curiosidade nesse sentido, achei que seria legal abordar esse tema.'
+      description: 'Estava pensando em escrever um texto técnico mas como muitas pessoas tem curiosidade nesse sentido, achei que seria legal abordar esse tema.'
       date: '10/06/2015'
       year: '2015'
       path: 'sobre-trabalhar-remoto'
