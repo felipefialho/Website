@@ -76,6 +76,12 @@ docpadConfig = {
 
 		# Blog posts
 		posts: [
+      name: 'Sobre trabalhar remoto'
+      description: 'Ia escrever um texto técnico, mas como muitas pessoas tem curiosidade nesse sentido, achei que seria legal abordar esse tema.'
+      date: '10/06/2015'
+      year: '2015'
+      path: 'sobre-trabalhar-remoto'
+    ,
       name: 'Meu dia a dia como desenvolvedor Front-End'
       description: 'Enfim o primeiro post de 2015. Vou contar um pouco sobre meu dia a dia como desenvolvedor Front-End, equipamentos, aplicativos, workflow...'
       date: '20/01/2015'
