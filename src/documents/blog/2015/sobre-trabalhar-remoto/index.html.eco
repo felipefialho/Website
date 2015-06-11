@@ -13,6 +13,8 @@ pathBlog: "../../"
 
 <p>Ia escrever um texto técnico, mas como também faz 6 meses que estou trabalhando remoto, e muitas pessoas tem curiosidade nesse sentido, achei que seria legal abordar esse tema.</p>
 
+<p>Como a maioria que acompanha o meu site ou redes sociais devem saber, atualmente estou trablhando remotamente na <a href="http://2014.filtro.us/">Filtro</a>, falei um pouco disso no <a href="http://localhost:9778/blog/2015/meu-dia-a-dia-como-dev-frontend/">post anterior</a>, mas vou ser um pouco mais abrangente agora.</p>
+
 <div class="img-box">
   <img src="/assets/img/blog/etc/notebook-na-praia.jpg" alt="Foto de um Notebook em frente a praia">
 </div>
@@ -30,6 +32,8 @@ pathBlog: "../../"
 <p>É importante ter um espaço longe de interrupções e tranqüilo, uma rotina bem definida todos os dias também ajuda muito. Fazer pausas para se alimentar e descansar são imprescindíveis, mas não pode chutar o balde... Elas não podem demorar mais do que 10 ou 15 minutos.</p>
 
 <p>Tento também finalizar todas as issues previstas para o dia e nunca deixar trabalho para o dia seguinte. Essa meta ajuda para eu não perder produtividade e continuar focado até o fim do expediente. Nós usamos o <a href="https://sifterapp.com/">Sifter</a> para gerenciar as issues e o <a href="https://trello.com/">Trello</a> para delegar prioridades</p>
+
+<p>Na realidade, trabalhando remoto, me sinto ainda mais obrigado em entregar o melhor trabalho possível. Me cobro bastante nesse sentido.</p>
 
 <p>Apesar de teoricamente poder trabalhar de qualquer lugar, sendo necessário apenas o notebook e internet, o ideal é tentar desenvolver em um local que ofereça a melhor infraestrutura possível e trabalhar em outras condições apenas esporadicamente.</p>
 
@@ -59,7 +63,7 @@ pathBlog: "../../"
 
 <p>Claro que faz falta conversar com alguém na hora do almoço. Mas no restante do dia consigo manter o foco tranquilamente.</p>
 
-<p>Não me considero nenhum ptenhostagnado. Converso com outros desenvolvedores quase todo dia, estudo e leio artigos. E normalmente organizo (com o Rapha) o Meetup CSS uma vez por mês.</p>
+<p>Não me considero nenhum ptenhostagnado. Converso com outros desenvolvedores quase todo dia, estudo e leio artigos. E normalmente organizo o <a href="http://www.meetup.com/pt/CSS-SP/">Meetup CSS</a>, junto com o <a href="https://twitter.com/raphaelfabeni">Rapha Fabeni</a> uma vez por mês.</p>
 
 <p>Como plus, acho que tenho mantido mais contato com meus amigos agora do que antes, já que tenho mais tempo para tomar uma cerveja de noite e estou mais descansado no fim de semana.</p>
 
