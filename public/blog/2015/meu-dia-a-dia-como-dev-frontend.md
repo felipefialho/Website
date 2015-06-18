@@ -1,12 +1,12 @@
-## Enfim o primeiro post de 2015. Vou contar um pouco sobre meu dia a dia como desenvolvedor Front-End, equipamentos, aplicativos, workflow...
+# Enfim o primeiro post de 2015. Vou contar um pouco sobre meu dia a dia como desenvolvedor Front-End, equipamentos, aplicativos, workflow...
 
-### Mas antes...
+## Mas antes...
 
 Muitos já devem ter visto, mas [criei um repositório](https://github.com/LFeh/1-post-por-dia) para resolver um dos maiores problemas na hora de escrever um novo artigo: escolher um assunto/tema.
 
 Esse post foi feito em cima de [um pedido](https://github.com/LFeh/1-post-por-dia/issues/12) do [Matheus Moraes](https://github.com/matheusmmo), e o assunto já teve postagens do [Willian Justen](http://willianjusten.com.br/meu-dia-a-dia-como-dev-frontend/) e do [Fernando Daciuk](http://blog.da2k.com.br/2015/01/15/como-ser-um-dev-frontend-usando-linux/).
 
-### Local de trabalho
+## Local de trabalho
 
 Esse ano comecei a trabalhar remoto. Portanto minha casa também virou meu local de trabalho, e esse é um ponto importante. É interessante ter um ambiente legal e confortável, e de preferência com lazer próximo para poder se distrair quando necessário.
 
@@ -14,7 +14,7 @@ Considero apartamentos uma boa alternativa, já que normalmente oferecem coisas 
 
 ![Foto de uma sacada](/assets/img/blog/etc/sacada-do-predio.jpg)
 
-### Equipamentos
+## Equipamentos
 
 Uma bancada para os seus equipamentos é uma solução barata e que funciona muito bem. Também é legal manter por perto um caderninho para anotações rápidas.
 
@@ -35,11 +35,11 @@ Meu notebook é um **DELL** com a seguinte configuração:
 
 Além disso, tenho um monitor de 23' IPS da LG como tela secundária. Nada como deixar o **Sublime** na tela principal, e o projeto atualizando na tela secundária em tempo real através do **Browser Sync**.
 
-E claro... tenho um gato, eles são fontes inesgotáveis de entretenimento e diversão.<span aria-hidden="true" class="icon-happy"></span>
+E claro... tenho um gato, eles são fontes inesgotáveis de entretenimento e diversão. :D
 
-<div class="img-box">![Foto da Agnes (um gato) deitada](/assets/img/blog/etc/agnes.jpg)</div>
+![Foto da Agnes (um gato) deitada](/assets/img/blog/etc/agnes.jpg)
 
-### Aplicativos
+## Aplicativos
 
 Basicamente os aplicativos que utilizo para trabalhar são:
 
@@ -59,7 +59,7 @@ Como aplicativos de suporte:
 *   [Tomato Timer](http://tomato-timer.com/#) ,para calculo de Pomodoros
 *   [Grooveshark](http://grooveshark.com/), como player de música
 
-### Workflow
+## Workflow
 
 Podem ter uma noção melhor do meu workflow técnico lendo os posts abaixo:
 
@@ -77,4 +77,4 @@ Atualmente utilizo no meu workflow:
 
 Importante lembrar que ferramentas, aplicativos e todas essas maravilhas modernas, são apenas facilitadores para que possamos entregar o melhor trabalho possível. Se apegue mais ao conceito, e menos nas ferramentas, porque normalmente, elas são passageiras.
 
-E é isso! :D
+E é isso! \o
