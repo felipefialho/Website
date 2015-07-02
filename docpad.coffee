@@ -76,6 +76,12 @@ docpadConfig = {
 
 		# Blog posts
 		posts: [
+      name: 'Aproximando seus estudos de cenários reais'
+      description: 'Sobre aquela velha questão de "Teoria x Prática" e como solucionar isso.'
+      date: '02/07/2015'
+      year: '2015'
+      path: 'aproximando-seus-estudos-de-cenarios-reais'
+    ,
       name: 'Sobre trabalhar remoto'
       description: 'Estava pensando em escrever um texto técnico mas como muitas pessoas tem curiosidade nesse sentido, achei que seria legal abordar esse tema.'
       date: '10/06/2015'

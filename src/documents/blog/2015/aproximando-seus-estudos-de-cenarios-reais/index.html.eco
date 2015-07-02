@@ -1,0 +1,92 @@
+---
+title: "Aproximando seus estudos de cenários reais"
+datePost: 02/07/2015
+layout: "post"
+relativeOutDirPath: 'posts'
+path: "../../../"
+pathBlog: "../../"
+---
+
+<p class="lead">Sobre aquela velha questão de "Teoria x Prática" e como solucionar isso.</p>
+ 
+<div class="img-box">
+  <img src="/assets/img/blog/etc/teoria-vs-pratica.jpg" alt="As palavras 'theory' e 'practice' escritas em um quadro">
+</div>
+
+<h3>O problema</h3>
+ 
+<p>Uma das perguntas mais comuns entre desenvolvedores iniciantes ou que estão estudando alguma ferramenta nova, é: "Certo, estudei um monte de coisa legal, tudo parece muito útil e totalmente incrível! Mas... como testar isso na prática?"</p>
+
+<p>E realmente não é pouca coisa. Pode ser desmotivante você ficar um tempão estudando, aprendendo um monte de coisas legais e não conseguir colocar aquilo em prática no seu dia-a-dia.</p>
+
+<p>Ou pior, você pode estar procurando seu primeiro emprego, ou uma nova oportunidade e fica com receio que seus conhecimentos não sejam o suficiente para alcançar o objetivo.</p>
+
+<h3>As soluções</h3>
+
+<h4>Quer fazer uma demo ou testar alguma coisa rapidamente?</h4>
+
+<p>Nesse caso aé desnecessário criar repositórios, teste rapidamente usando ferramentas como:</p>
+
+<ul>
+  <li><a href="http://codepen.io/">Codepen</a></li>
+  <li><a href="https://jsfiddle.net/">JSFiddle</a></li>
+</ul>
+
+<p>Assim fica mais fácil para você ou outros desenvolvedores estudarem o código e fazer modificações caso queiram.</p>
+
+<p>Costumo usar o Codepen  para pequenos projetos ou brincadeiras (olha algumas <a href="http://codepen.io/LFeh">aqui</a>) e o JSFiddle para testes mais simples ou pedaços de código que quero deixar guardado. Veja o que se adapta melhor as suas necessidades.</p>
+
+<h4>Quer testar uma solução com alguma finalidade definida?</h4>
+
+<p>Esse é o caso de literalmente transformar seu estudo em um projeto e criar uma solução mais completa. Eu costumo usar:</p>
+ 
+<ul>
+  <li><a href="https://github.com/">Github</a></li>
+  <li><a href="https://bitbucket.org/">Bitbucket</a></li>
+</ul>
+
+<p>Uso o o Github para repositórios públicos e o Bitbucket para repositórios privados ou que ainda não quero deixar aberto.</p>
+
+<p>Quando colocar seu projeto no Github, outros desenvolvedores terão a possibilidade de estudar e ajudar no seu projeto. E claro, ele vai poder ser usado por outras pessoas, que podem achar bugs e problemas. Isso gera um ciclo super efetivo.</p>
+
+<h4>Quer testar seus conhecimentos?</h4>
+
+<p>Uma boa ideia nesse caso é procurar projetos que já existem e usem alguma técnica que você estava estudando (acredite, existe projeto de tudo!) e contribuir de alguma forma, seja propondo melhorias, seja arrumando issues que estavam abertas.</p>
+
+<p>Além de contribuir para um projeto aberto (isso faz a você e a comunidade crescer) e testar suas habilidades, também vai precisar seguir documentações, criar branchs e trabalhar em equipe. Vale muito a pena em todos os sentidos.</p>
+
+<p>E não se intimide. Todos gostam de receber contribuições.</p>
+
+<h3>Como deixar tudo mais real...</h3>
+
+<p>O único problema dessas técnicas é que existe uma diferença muito grande entre contribuir para projetos open source, com todo tempo e tranquilidade, e estar em uma empresa, desenvolvendo com prazos apertados e pressão do gerente de projetos ou do cliente.</p>
+
+<p>Uma solução que parece ser a melhor tecnicamente mas que leva muito tempo para ser aplicada, pode não ser a melhor solução para projetos com prazo apertados. Isso pode criar pressões desnecessárias caso não esteja preparado.<p>
+
+<p>Então a dica para deixar os seus estudos ainda mais próximos do "mundo real" - Seja você mesmo o seu gerente de projetos:</p>
+
+<ol>
+  <li>Defina um dia para a "entrega"</li>
+  <li>Faça uma estimativa de quantas horas vai gastar no desenvolvimento</li>
+  <li>Quais os problemas e dificuldades que imagina encontrar</li>
+  <li>Cumpra o prazo!</li>
+</ol>
+
+<p>Em uma empresa, vai existir muita pressão caso o prazo não seja cumprido, então siga a risca o que você definiu.</p>
+
+<p>Ao final do projeto, analise:</p>
+
+<ol>
+  <li>Você conseguiu entrar o projeto no prazo?</li>
+  <li>Sua estimativa de horas foi condizente com o tempo gasto? Foi mais ou foi menos?</li>
+  <li>Teve mais dificuldades do que imaginou ou conseguiu se sair melhor do que achava?</li>
+  <li>Conseguiu se manter focado durante o desenvolvimento? Alguma coisa atrapalhou?</li>
+</ol>
+ 
+<p>Essa abordagem é especialmente util para desenvolvedores que ainda não iniciaram no mercado de trabalho e assim podem se sentir mais confortáveis com pressão na entrega dos projetos. Mas pode ser utilizada facilmente por qualquer profissional, experiente ou não.</p>
+ 
+<p class="end">Espero que tenham gostado ;)</p>
+
+ 
+
+
