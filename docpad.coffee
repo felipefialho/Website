@@ -285,6 +285,14 @@ docpadConfig = {
 
 		# Portfolio list
 		portfolio: [
+      # ORE
+      name: "Oxford Research Encyclopedias"
+      idName: "ore"
+      thumb: "/assets/img/portfolio/ore-thumb.jpg" 
+      participation: "Desenvolvimento do HTML (Jade), CSS (Stylus) e Javascript."
+      participationEn: "Development of HTML (Jade), CSS (Stylus) and Javascript."
+      link: "http://oxfordre.com/"
+    ,
       # Civil War
       name: "Civil War - 150th Anniversary"
       idName: "civilwar"
