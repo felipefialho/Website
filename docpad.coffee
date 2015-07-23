@@ -76,6 +76,12 @@ docpadConfig = {
 
 		# Blog posts
 		posts: [
+      name: 'Otimizando e Organizando as Media Queries'
+      description: 'Quando o assunto é mobile first, media queries e otimização de código eu tenho uma regra: Evitar ao máximo resetar propriedades.'
+      date: '23/07/2015'
+      year: '2015'
+      path: 'otimizando-e-organizando-as-media-queries'
+    ,
       name: 'Aproximando seus estudos de cenários reais'
       description: 'Sobre aquela velha questão de "Teoria x Prática" e como solucionar isso.'
       date: '02/07/2015'
