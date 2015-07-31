@@ -291,6 +291,14 @@ docpadConfig = {
 
 		# Portfolio list
 		portfolio: [
+      # Van Gogh
+      name: "Van Gogh - 125 Years of Inspiration & Mystery"
+      idName: "van-gogh"
+      thumb: "/assets/img/portfolio/van-gogh-thumb.jpg" 
+      participation: "Desenvolvimento do HTML (Jade), CSS (Stylus) e Javascript."
+      participationEn: "Development of HTML (Jade), CSS (Stylus) and Javascript."
+      link: "http://vangogh.oupexplore.com/"
+    ,
       # ORE
       name: "Oxford Research Encyclopedias"
       idName: "ore"
