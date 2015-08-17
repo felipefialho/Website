@@ -291,6 +291,14 @@ docpadConfig = {
 
 		# Portfolio list
 		portfolio: [
+      # Wendy
+      name: "Photobook Website"
+      idName: "wendy"
+      thumb: "/assets/img/portfolio/wendy-thumb.jpg" 
+      participation: "Desenvolvimento do HTML (Jade), CSS (Stylus) e Javascript."
+      participationEn: "Development of HTML (Jade), CSS (Stylus) and Javascript."
+      link: "http://myholidayinnorthkorea.com/"
+    ,
       # Van Gogh
       name: "Van Gogh - 125 Years of Inspiration & Mystery"
       idName: "van-gogh"
