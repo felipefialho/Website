@@ -73,11 +73,10 @@ pathBlog: "../../"
 <ul>
   <li><a href="https://www.dropbox.com/">Dropbox</a>, para troca de arquivos</li>
   <li><a href="https://evernote.com/intl/pt-br/">Evernote</a>, para organização pessoal</li> 
-  <li><a href="https://sifterapp.com/">Sifter</a>, como <em>issue tracking</em></li>
-  <li><a href="https://www.toggl.com/">Toggl</a>, para marcação geral de tempo</li>
+  <li><a href="https://sifterapp.com/">Sifter</a>, como <em>issue tracking</em></li> 
   <li><a href="https://www.getharvest.com/">Harvest</a>, para marcação especifica de tempo</li>
   <li><a href="http://tomato-timer.com/#">Tomato Timer</a> ,para calculo de Pomodoros</li>
-  <li><a href="http://grooveshark.com/">Grooveshark</a>, como player de música</li>
+  <li><a href="https://www.spotify.com/br/">Spotify</a>, como player de música</li>
 </ul>
 
 <h3>Workflow</h3>
@@ -92,7 +91,7 @@ pathBlog: "../../"
 <p>Atualmente utilizo no meu workflow:</p>
 
 <ul>
-  <li><a href="http://lesscss.org/">LESS</a> ou <a href="http://learnboost.github.io/stylus/">Stylus</a>, como pré-processador CSS</li>
+  <li><a href="http://learnboost.github.io/stylus/">Stylus</a>, como pré-processador CSS</li>
   <li><a href="http://jade-lang.com/">Jade</a>, como template engine</li>
   <li><a href="https://angularjs.org/">AngularJS</a>, como JavaScript framework</li>
   <li><a href="http://git-scm.com/">Git</a>, para versiomento</li>
