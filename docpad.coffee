@@ -76,6 +76,12 @@ docpadConfig = {
 
 		# Blog posts
 		posts: [
+      name: 'Uma reflexão sobre salários, valor hora e qualidade de vida'
+      description: 'Esses dias estava observando os carros presos no transito e as pessoas na correria maluca do dia-a-dia quando fiz uma reflexão sobre qualidade de vida, salários, valor hora, a vida, o universo e tudo mais.'
+      date: '28/09/2015'
+      year: '2015'
+      path: 'uma-reflexao-sobre-salarios-valor-hora-e-qualidade-de-vida'
+    ,
       name: 'Otimizando e Organizando as Media Queries'
       description: 'Quando o assunto é mobile first, media queries e otimização de código eu tenho uma regra: Evitar ao máximo resetar propriedades.'
       date: '23/07/2015'
