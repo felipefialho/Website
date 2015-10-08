@@ -32,7 +32,7 @@ All changes must be made in `/src` folder. The CSS should be modified using the 
   # Run project
   docpad run 
 
-  # For watching your .less files changes and compile CSS
+  # For watching your .styl files changes and compile CSS
   grunt w
 
   # Build the project for deploy
