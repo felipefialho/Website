@@ -27,7 +27,7 @@ pathBlog: "../../"
 
 <p><a href="http://simplaio.github.io/rucksack/">Rucksack</a> é um pacote de funcionalidades que pode ser usado em qualquer pré-processador, com o PostCSS ou até mesmo ser injetado diretamente no Stylus.</p>
 
-<p>Um detalhe importante, é que seu CSS gerado não terá NENHUMA código extra.</p>
+<p>Um detalhe importante, é que seu CSS gerado não terá <b>nenhum</b> código extra.</p>
 
 <h3>Instalação</h3>
 
