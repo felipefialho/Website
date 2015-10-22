@@ -76,6 +76,12 @@ docpadConfig = {
 
 		# Blog posts
 		posts: [
+      name: 'Apresento o Rucksack'
+      description: 'Nesse artigo vou mostrar para vocês o Rucksack, um pacote de features desenvolvido em PostCSS que pode ser de grande ajuda no seu workflow.'
+      date: '21/10/2015'
+      year: '2015'
+      path: 'apresento-o-rucksack'
+    ,
       name: 'Uma reflexão sobre salários, valor hora e qualidade de vida'
       description: 'Esses dias estava observando os carros presos no transito e as pessoas na correria maluca do dia-a-dia quando fiz uma reflexão sobre qualidade de vida, salários, valor hora, a vida, o universo e tudo mais.'
       date: '28/09/2015'

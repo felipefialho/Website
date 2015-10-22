@@ -47,8 +47,7 @@ pathBlog: "../../"
 
 <p>O primeiro ponto, é que crio algumas variáveis de breakpoints e replico elas conforme a necessidade. Peguei esse costume no tempo em que usava o Bootstrap e mantive até hoje, eu acho que faz todo sentido e torna o fluxo mais fluido.</p>
 
-<p><code>
-<pre>// 
+<pre><code>// 
 // Media Queries 
 // --------------------------------------------------
 
@@ -63,14 +62,13 @@ $screen-xs-max = ($screen-sm - 1)
 $screen-sm-max = ($screen-md - 1)
 $screen-md-max = ($screen-lg - 1)
 $screen-lg-max = ($screen-xlg - 1)
-$screen-xlg-max = ($screen-xxlg - 1)</pre></code></p>
+$screen-xlg-max = ($screen-xxlg - 1)</code></pre>
 
 <p>O segundo ponto é que eu uso Stylus e SEMPRE adiciono as linhas de Media Querie aninhadas dentro do elemento.  E não no final do arquivo do componente, e muito menos em um arquivo separado.</p>
 
-<p><code>
-<pre>.header 
+<pre><code>.header 
     @media (min-width $screen-sm)
-       ...</pre></code></p>
+       ...</code></pre>
 
 <p>O terceiro ponto, é que nos exemplos desse artigo não vou levar em consideração propriedades muito especificas de cada dispositivo, resoluções em retina, nem nada do tipo, mas o conceito é exatamente o mesmo.</p>
 
