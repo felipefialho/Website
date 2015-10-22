@@ -39,11 +39,7 @@ pathBlog: "../../"
 
 <p>Em seguida crie uma função para utilizar o PostCSS na sua configuração do Stylus no Grunt:</p>
 
-<pre><code>//
-// Functions
-// ---------------------------------
-
-var rucksack = require('rucksack-css');
+<pre><code>var rucksack = require('rucksack-css');
 
 var postcss = function(){
   return require('poststylus')(['rucksack-css']);
