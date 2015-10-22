@@ -45,7 +45,7 @@ var postcss = function(){
   return require('poststylus')(['rucksack-css']);
 }</code></pre>
 
-<p>Caso queira utilizar outra ferramenta em PostCSS, como Lost, também deve chamar dessa forma, por exemplo:</p>
+<p>Caso queira utilizar outra ferramenta em PostCSS, como o Lost, também deve chamar dessa forma, por exemplo:</p>
 
 <pre><code>var postcss = function(){
   return require('poststylus')(['rucksack-css', 'lost']);
