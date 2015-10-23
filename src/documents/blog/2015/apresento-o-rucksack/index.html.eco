@@ -23,7 +23,7 @@ pathBlog: "../../"
  
 <h3>O que é?</h3>
 
-<p>Quem me mostrou essa ferramenta foi o <a href="https://github.com/mjn">Milson Junior</a> e desde então fiquei fascinado com algumas coisas que ela oferece.</p>
+<p>Quem me mostrou essa ferramenta foi o <a href="https://github.com/mjnr">Milson Junior</a> e desde então fiquei fascinado com algumas coisas que ela oferece.</p>
 
 <p><a href="http://simplaio.github.io/rucksack/">Rucksack</a> é um pacote de funcionalidades que pode ser usado em qualquer pré-processador, com o PostCSS ou até mesmo ser injetado diretamente no Stylus.</p>
 
