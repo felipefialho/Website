@@ -46,16 +46,16 @@
       left 0
       text-align center
       width 100% 
-      transform translateY(100%)
+      transform translate3d(0, 100%, 0)
       transition transform .3s ease-out
       
       // FIx Chrome transform bug 
       -webkit-backface-visibility hidden
-      -webkit-transform translateZ(0, -100%, 0) scale(1.0, 1.0)
+      -webkit-transform translate3d(0, 100%, 0) scale(1.0, 1.0)
     
     &:hover:after
       transform translateY(0)
-      -webkit-transform translateZ(0, 0, 0) scale(1.0, 1.0)
+      -webkit-transform translate3d(0, 0, 0) scale(1.0, 1.0)
    
   img  
     object-fit cover
