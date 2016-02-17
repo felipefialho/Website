@@ -9,14 +9,15 @@
     "url": "https://github.com/LFeh/Website"
   },
   "dependencies": {
+    "bal-util": ">=1.13.10 <1.14",
     "docpad": "6.38",
     "docpad-plugin-coffeescript": "latest",
-    "sitemap": "latest",
-    "bal-util": ">=1.13.10 <1.14",
-    "docpad-plugin-eco": "2.0.2",
+    "docpad-plugin-eco": "^2.1.0",
     "docpad-plugin-marked": "~2.1.0",
     "docpad-plugin-partials": "2.6.3",
-    "docpad-plugin-text": "2.2.4"
+    "docpad-plugin-text": "2.2.4",
+    "js2coffee": "^2.1.0",
+    "sitemap": "latest"
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "devDependencies": {
