@@ -73,15 +73,15 @@ pathBlog: "../../"
 <ul>
   <li><a href="https://www.dropbox.com/">Dropbox</a>, para troca de arquivos</li>
   <li><a href="https://evernote.com/intl/pt-br/">Evernote</a>, para organização pessoal</li> 
-  <li><a href="https://sifterapp.com/">Sifter</a>, como <em>issue tracking</em></li> 
-  <li><a href="https://www.getharvest.com/">Harvest</a>, para marcação especifica de tempo</li>
+  <li><a href="https://www.atlassian.com/software/jira">Jira</a>, como <em>issue tracking</em></li> 
+  <li><a href="https://www.getharvest.com/">Harvest</a>, para marcação de tempo</li>
   <li><a href="http://tomato-timer.com/#">Tomato Timer</a> ,para calculo de Pomodoros</li>
   <li><a href="https://www.spotify.com/br/">Spotify</a>, como player de música</li>
 </ul>
 
 <h3>Workflow</h3>
 
-<p>Podem ter uma noção melhor do meu workflow técnico lendo os posts abaixo:</p>
+<p>Podem ter uma noção melhor do meu workflow técnico (de 2014) lendo os posts abaixo:</p>
  
 <ul>
   <li><a href="http://www.felipefialho.com/blog/2014/falando-em-organizacao-parte-1/">Falando em organização - Parte I</a></li>
@@ -91,12 +91,15 @@ pathBlog: "../../"
 <p>Atualmente utilizo no meu workflow:</p>
 
 <ul>
-  <li><a href="http://learnboost.github.io/stylus/">Stylus</a>, como pré-processador CSS</li>
+  <li><a href="http://learnboost.github.io/stylus/">Stylus</a> e <a href="https://github.com/postcss">PostCSS</a>, como pré-processador CSS</li>
+  <li><a href="http://jeet.gs/">Jeet</a>, para criação de grids</li>
+  <li><a href="https://jenius.github.io/rupture/">Rupture</a>, para fornecer media queries</li>
+  <li><a href="http://simplaio.github.io/rucksack/">Rucksack</a>, para incrementar o CSS</li>
   <li><a href="http://jade-lang.com/">Jade</a>, como template engine</li>
-  <li><a href="https://angularjs.org/">AngularJS</a> e <a href="http://zeptojs.com/">Zepto.js</a>, como framework JavaScript</li>
+  <li><a href="http://zeptojs.com/">Zepto.js</a>, como framework JavaScript</li> 
   <li><a href="http://git-scm.com/">Git</a>, para versiomento</li>
   <li><a href="http://gruntjs.com/">Grunt</a>, como <em>task-builder</em></li>
-  <li><a href="http://bower.io/">Bower</a>, como gerenciador de dependências</li>
+  <li><a href="https://www.npmjs.com/">NPM</a>, como gerenciador de dependências</li>
 </ul>
 
 <p>Importante lembrar que ferramentas, aplicativos e todas essas maravilhas modernas, são apenas facilitadores para que possamos entregar o melhor trabalho possível. Se apegue mais ao conceito, e menos nas ferramentas, porque normalmente, elas são passageiras.</p>
