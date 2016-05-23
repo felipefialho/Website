@@ -1,3 +1,5 @@
+[DEPRECATED] A new version is [managed here](https://github.com/LFeh/lfeh.github.io)
+
 My Website
 ============
 
